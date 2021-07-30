@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+  <!--  <item
+   app:showAsAction="always"
+        android:id="@+id/menu_coll_back"
+        android:orderInCategory="100"
+        android:title="@string/back_menu"/>-->
+
+    <!--<item-->
+        <!--app:showAsAction="never"-->
+        <!--android:id="@+id/menu_coll_list"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/device_collection_menu"/>-->
+
+    <item
+        android:visible="false"
+        app:showAsAction="always"
+        android:id="@+id/menu_refresh_coll"
+        android:orderInCategory="100"
+        android:title="@string/lbl_refresh"/>
+
+    <item
+        android:visible="false"
+        app:showAsAction="always"
+        android:id="@+id/menu_sync_coll"
+        android:orderInCategory="100"
+        android:title="@string/sync_menu"/>
+
+</menu>

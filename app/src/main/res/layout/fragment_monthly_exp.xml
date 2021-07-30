@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+  <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/BLACK" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Expenses (Enter Once in a Month)"
+            android:textColor="@color/BLACK"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/BLACK" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/retailer_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/keyboard_custom_invoice_sel"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:stretchColumns="2">
+                <TableRow>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dip"
+                            android:text="Expense Date"
+                            android:textColor="#000033"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="20dip"
+                            android:gravity="top|center"
+                            android:text="@string/star"
+                            android:textColor="#FF0000"
+                            android:textSize="@dimen/medium_text" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:width="20dip"
+                        android:gravity="center"
+                        android:text="@string/lbl_semi_colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/tv_expense_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:hint="@string/lbl_select_date"
+                        android:maxLength="40"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                </TableRow>
+                <TableRow>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dip"
+                            android:text="Phone/Mobile Bill"
+                            android:textColor="#000033"
+                            android:textSize="@dimen/medium_text" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="20dip"
+                            android:id="@+id/tv_daily_allowance_mandatory"
+                            android:visibility="gone"
+                            android:gravity="top|center"
+                            android:text="@string/star"
+                            android:textColor="#FF0000"
+                            android:textSize="@dimen/medium_text" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:width="20dip"
+                        android:gravity="center"
+                        android:text="@string/lbl_semi_colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile_bill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                    <EditText
+                        android:id="@+id/et_daily_allowance"
+                        style="@style/EditBookTextEdit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:visibility="gone"
+                        android:inputType="numberDecimal"
+                        android:maxLength="15"
+                        android:scrollHorizontally="true"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                </TableRow>
+
+
+               <!-- <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dip"
+                            android:text="Other Expenses  "
+                            android:textColor="#000033"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="20dip"
+                            android:id="@+id/tv_other_expense_mandatory"
+                            android:gravity="top|center"
+                            android:text="@string/star"
+                            android:textColor="#FF0000"
+                            android:textSize="@dimen/medium_text" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:width="20dip"
+                        android:gravity="center"
+                        android:text="@string/lbl_semi_colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_text" />
+
+                    &lt;!&ndash;<Spinner
+                        android:id="@+id/sp_district"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:paddingLeft="5sp"
+                        android:text="" />&ndash;&gt;
+
+                    <EditText
+                        android:id="@+id/et_other_expenses"
+                        style="@style/EditBookTextEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"
+                        android:maxLength="40"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:id="@+id/tv_other_expense_inr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_margin="4dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:id="@+id/tv_other_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_margin="4dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                </TableRow>-->
+                <TableRow>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dip"
+                            android:text="Other Expenses  "
+                            android:textColor="#000033"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="20dip"
+                            android:id="@+id/tv_other_expense_mandatory"
+                            android:gravity="top|center"
+                            android:text="@string/star"
+                            android:textColor="#FF0000"
+                            android:textSize="@dimen/medium_text" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:width="20dip"
+                        android:gravity="center"
+                        android:text="@string/lbl_semi_colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_text" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:id="@+id/ll_other_expense"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_other_expenses"
+                            style="@style/EditBookTextEdit"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+                            android:inputType="numberDecimal"
+                            android:maxLength="15"
+                            android:scrollHorizontally="true"
+                            android:textColor="@color/BLACK"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:id="@+id/tv_other_expense_uom"
+                            android:layout_weight="1.9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:textSize="@dimen/medium_text" />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_other_expense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                </TableRow>
+
+
+                <!--<TableRow>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dip"
+                            android:text="Mode of Conveyance"
+                            android:textColor="#000033"
+                            android:textSize="@dimen/medium_text" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:width="20dip"
+                        android:gravity="top|center"
+                        android:text="@string/lbl_semi_colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_text" />
+
+                  <ImageView
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/ic_merch_create"/>
+                </TableRow>-->
+                <TableRow
+                    android:id="@+id/tr_remarks" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="3dip"
+                            android:text="Remarks"
+                            android:textColor="#000033"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:width="20dip"
+                            android:id="@+id/tv_remarks_mandatory"
+                            android:gravity="top|center"
+                            android:text="@string/star"
+                            android:textColor="#FF0000"
+                            android:textSize="@dimen/medium_text" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:width="20dip"
+                        android:gravity="center"
+                        android:text="@string/lbl_semi_colon"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/medium_text" />
+
+                    <!--<Spinner
+                        android:id="@+id/sp_district"
+                        android:layout_width="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:paddingLeft="5sp"
+                        android:text="" />-->
+
+                    <EditText
+                        android:id="@+id/et_remarks"
+                        style="@style/EditBookTextEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:maxLength="100"
+                        android:minLines="2"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                </TableRow>
+
+                <!--<TableRow
+                    android:id="@+id/tr_remarks">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="3dip"
+                        android:text="Remarks"
+                        android:textColor="#000033"
+                        android:textSize="@dimen/medium_text"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:width="20dip"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:width="20dip"
+                        android:gravity="top|center"
+                        android:text=":"
+                        android:textSize="@dimen/medium_text" />
+
+                    <EditText
+                        android:id="@+id/et_remarks"
+                        style="@style/EditBookTextEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+
+                        android:layout_margin="4dp"
+                        android:gravity="top|left"
+                        android:maxLength="100"
+                        android:minLines="2"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences|textMultiLine"
+
+                        android:scrollHorizontally="false"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+                </TableRow>-->
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ll_photo_edit"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fl_item_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_custom_invoice_sel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:keyPreviewLayout="@layout/preview"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

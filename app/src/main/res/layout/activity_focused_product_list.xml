@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_focused_product_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:id="@+id/tv_last_sync_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/icon_text_blue"
+            android:textSize="@dimen/very_small_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/BLACK" >
+    </LinearLayout>
+
+    <include layout="@layout/retailer_detail_header_lay" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/BLACK" >
+    </LinearLayout>
+
+
+    <EditText
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:id="@+id/ed_mat_name_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_search_by_mat_name"
+        style="@style/EditBookTextEdit"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/line_color"/>
+
+
+
+
+    <ListView
+        android:id="@+id/lv_focused_prod_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/line_color"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <include layout="@layout/empty_list_lay" />
+
+</LinearLayout>

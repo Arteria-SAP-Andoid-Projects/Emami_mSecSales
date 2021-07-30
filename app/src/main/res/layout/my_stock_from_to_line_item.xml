@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vertical_line_color"
+        android:orientation="horizontal" >
+
+
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_point_one_dip"
+        android:layout_marginRight="@dimen/margin_point_one_dip"
+        android:background="@color/WHITE"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/from"
+        android:textColor="@color/BLACK"
+        android:id="@+id/tv_from_my_stock"
+        android:textSize="@dimen/medium_text" />
+
+    <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_point_one_dip"
+        android:layout_marginRight="@dimen/margin_point_one_dip"
+        android:background="@color/WHITE"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/to"
+        android:id="@+id/tv_to_my_stock"
+        android:textColor="@color/BLACK"
+        android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_point_five_dip"
+        android:background="@color/line_color">
+    </LinearLayout>
+
+</LinearLayout>

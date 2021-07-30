@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/title_bar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_one_dip"
+        android:background="@color/BLACK" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground" >
+
+        <TextView
+            android:id="@+id/tv_main_menu_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lbl_main_menu"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/autotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_five_dip"
+            android:paddingTop="@dimen/padding_five_dip"
+            android:text="@string/auto_sync"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" >
+        </TextView>
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_auto_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/autotext"
+            android:paddingBottom="@dimen/padding_five_dip"
+            android:paddingTop="@dimen/padding_five_dip"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" >
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_one_dip"
+        android:background="@color/BLACK"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BLACK"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:background="@color/light_alice_blue"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_today_achieved"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:text=""
+            android:textColor="@color/icon_text_blue"
+            android:textSize="@dimen/medium_sixteen_text" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/single_line_lay"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/WHITE"
+            android:orientation="vertical" >
+
+            <com.arteriatech.emami.common.ScrollableGridView
+                android:id="@+id/gv_today_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/WHITE"
+                android:descendantFocusability="afterDescendants"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:numColumns="3">
+            </com.arteriatech.emami.common.ScrollableGridView>
+
+
+            <LinearLayout
+                android:id="@+id/ll_reports_top_line"
+                android:layout_width="fill_parent"
+               android:layout_height="@dimen/padding_one_dip"
+                tools:ignore="SmallSp"
+                android:orientation="horizontal"
+                android:background="@color/blue_ivy" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_alice_blue"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_alice_blue"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/tv_visit_achieved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/padding_three_dip"
+                        android:paddingRight="@dimen/padding_zero_dip"
+                        android:paddingStart="@dimen/padding_zero_dip"
+                        android:paddingEnd="@dimen/padding_zero_dip"
+                        android:text=""
+                        android:textColor="@color/icon_text_blue"
+                        android:textSize="@dimen/medium_sixteen_text" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_reports_bottom_line"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/padding_one_dip"
+                tools:ignore="SmallSp"
+                android:background="@color/blue_ivy" />
+
+            <com.arteriatech.emami.common.ScrollableGridView
+                android:id="@+id/gv_reports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/WHITE"
+                android:descendantFocusability="afterDescendants"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:numColumns="3" >
+            </com.arteriatech.emami.common.ScrollableGridView>
+
+            <include layout="@layout/single_line_lay"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_alice_blue"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_alice_blue"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+
+
+                    <TextView
+                        android:id="@+id/tv_admin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/padding_three_dip"
+                        android:paddingRight="@dimen/padding_zero_dip"
+                        android:paddingStart="@dimen/padding_zero_dip"
+                        android:paddingEnd="@dimen/padding_zero_dip"
+                        android:text="@string/lbl_admin"
+                        android:textColor="@color/icon_text_blue"
+                        android:textSize="@dimen/medium_sixteen_text" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/single_line_lay"/>
+
+
+           <com.arteriatech.emami.common.ScrollableGridView
+                android:id="@+id/gv_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:background="@color/WHITE"
+               android:descendantFocusability="afterDescendants"
+               android:focusableInTouchMode="true"
+               android:gravity="center"
+               android:numColumns="3" >
+            </com.arteriatech.emami.common.ScrollableGridView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

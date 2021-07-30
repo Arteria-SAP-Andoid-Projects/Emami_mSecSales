@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dist_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/line_color"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sp_distributor"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="@dimen/medium_text" />
+
+    <EditText
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:id="@+id/et_name_search_route_paln"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_search_by_retailer_name"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:textColor="@color/BLACK"
+        style="@style/EditBookTextEdit"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/line_color"
+        android:id="@+id/ll_edit_text_above_line"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_route_ret_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!--<include layout="@layout/empty_list_lay" />-->
+
+    <TextView
+        android:id="@+id/tv_empty_lay_other_beat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/lbl_no_records_found"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

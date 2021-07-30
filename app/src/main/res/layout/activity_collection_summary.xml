@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/title_bar" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_one_dip"
+        android:background="@color/BLACK"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground">
+
+        <TextView
+            android:id="@+id/tv_main_menu_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_coll_summary"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_point_five_dip"
+        android:background="@color/line_color">
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/vertical_line_color"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:layout_width="@dimen/width_one_ten_dip"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="@dimen/margin_point_one_dip"
+             android:layout_marginRight="@dimen/margin_point_one_dip"
+             android:layout_weight="1"
+             android:background="@color/light_alice_blue"
+             android:gravity="center"
+             android:text="@string/lbl_ret_mobile"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#000000"
+             android:textSize="@dimen/medium_text" />
+
+
+
+
+         <TextView
+             android:layout_width="@dimen/width_100_dip"
+             android:layout_height="match_parent"
+             android:layout_marginLeft="@dimen/margin_point_one_dip"
+             android:layout_marginRight="@dimen/margin_point_one_dip"
+             android:layout_weight="1"
+             android:background="@color/light_alice_blue"
+             android:gravity="center"
+             android:text="@string/lbl_coll_time"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#000000"
+             android:textSize="@dimen/medium_text" />
+
+         <TextView
+             android:layout_width="@dimen/width_100_dip"
+             android:layout_height="match_parent"
+             android:layout_marginRight="@dimen/margin_point_one_dip"
+             android:layout_weight="1"
+             android:background="@color/light_alice_blue"
+             android:gravity="center"
+             android:text="@string/lbl_Amount_rupee_symbol"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#000000"
+             android:textSize="@dimen/medium_text" />
+
+         <TextView
+             android:layout_width="@dimen/width_twenty"
+             android:layout_height="match_parent"
+             android:layout_marginRight="@dimen/margin_point_one_dip"
+             android:layout_weight="1"
+             android:background="@color/light_alice_blue"
+             android:gravity="center"
+             android:text=""
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="#000000"
+             android:textSize="@dimen/medium_text" />
+
+     </LinearLayout>
+
+
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/line_height_point_five_dip"
+         android:background="@color/line_color">
+     </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="@dimen/line_height_one_dip"
+         android:background="@color/BLACK">
+     </LinearLayout>-->
+
+    <ScrollView
+         android:id="@+id/scroll_coll_summary_list"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:fillViewport="true">
+     </ScrollView>
+
+
+
+
+</LinearLayout>

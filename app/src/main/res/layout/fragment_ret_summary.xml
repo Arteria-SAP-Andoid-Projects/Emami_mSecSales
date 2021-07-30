@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:paddingLeft="@dimen/padding_five_dip"
+    android:paddingRight="@dimen/padding_zero_dip"
+    android:paddingStart="@dimen/padding_zero_dip"
+    android:paddingEnd="@dimen/padding_zero_dip"
+    android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/line_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Item"
+                    android:layout_marginTop="@dimen/margin_point_five_dip"
+                    android:layout_marginBottom="@dimen/margin_point_five_dip"
+                    android:gravity="center"
+                    android:textColor="@color/BLACK"
+                    android:background="@color/WHITE"
+                    android:textSize="@dimen/medium_text"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/margin_point_five_dip"
+                    android:layout_marginBottom="@dimen/margin_point_five_dip"
+                    android:text="Target"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/padding_three_dip"
+                    android:textColor="@color/BLACK"
+                    android:background="@color/WHITE"
+                    android:textSize="@dimen/medium_text"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="MTD"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/margin_point_five_dip"
+                    android:layout_marginBottom="@dimen/margin_point_five_dip"
+                    android:paddingRight="@dimen/padding_three_dip"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="@color/BLACK"
+                    android:background="@color/WHITE"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="BTD"
+                    android:layout_marginTop="@dimen/margin_point_five_dip"
+                    android:layout_marginBottom="@dimen/margin_point_five_dip"
+                    android:paddingRight="@dimen/padding_three_dip"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:background="@color/WHITE"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" />
+                </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_retailer_summary_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+    </ScrollView>
+
+</LinearLayout>

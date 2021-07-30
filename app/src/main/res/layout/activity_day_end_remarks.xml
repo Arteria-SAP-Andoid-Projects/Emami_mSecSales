@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+
+  <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7BAAFF"
+        android:gravity="center" >
+
+        <TextView
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_not_visited_retailer"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000" >
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3sp"
+            android:text="@string/lbl_retailer"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3sp"
+            android:gravity="right"
+            android:layout_marginRight="4dp"
+            android:text="@string/str_colon"
+            android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_weight="2"
+            style="@style/spinner_style"
+            android:id="@+id/spDealers"
+            android:maxLength="50"
+            android:layout_margin="4dp"
+            android:paddingLeft="@dimen/padding_fifteen_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:textSize="@dimen/medium_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="@string/lbl_reason"
+                android:textSize="15sp" />
+            <TextView
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:text="*"
+                android:textColor="#ff0000" />
+
+            <TextView
+                style="@style/Label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3sp"
+                android:gravity="right"
+                android:layout_marginRight="4dp"
+                android:text="@string/str_colon"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_weight="2"
+            style="@style/spinner_style"
+            android:id="@+id/spReason"
+            android:maxLength="50"
+            android:layout_margin="4dp"
+            android:paddingLeft="@dimen/padding_fifteen_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:textSize="@dimen/medium_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp" >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3sp"
+            android:text="Remarks"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3sp"
+            android:text=""
+            android:textColor="#ff0000" />
+        <TextView
+            style="@style/Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3sp"
+            android:gravity="right"
+            android:layout_marginRight="4dp"
+            android:text="@string/str_colon"
+            android:textSize="15sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_weight="2"
+            android:id="@+id/etRemarks"
+            android:layout_width="0dp"
+            android:maxLength="250"
+            android:minHeight="@dimen/width_one_twenty_dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_two_dip"
+            android:paddingLeft="@dimen/padding_fifteen_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:textSize="@dimen/medium_text"
+            style="@style/EditBookTextEdit"
+            android:singleLine="false" />
+    </LinearLayout>
+    
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dip" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+             android:layout_marginLeft="15dp"
+            android:textSize="@dimen/medium_text"
+            android:paddingRight="5sp"
+            android:text=" Back " />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+               android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/medium_text"
+            android:text=" Save " >
+        </Button>
+        </LinearLayout>-->
+    
+    
+
+</LinearLayout>

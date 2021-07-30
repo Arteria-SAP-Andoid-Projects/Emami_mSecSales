@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vg_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_header_body_area_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <!--android:background="@drawable/cell_white_border_bottom_right_gray"-->
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingRight="@dimen/_2sdp"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/black"
+        tools:text="text" />
+
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/et_item_so_create_ord_qty"
+        android:layout_width="1dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="right|center"
+        android:paddingRight="4dp"
+        android:textSize="@dimen/medium_text"
+        android:hint="@string/qty"
+        android:textColor="@color/BLACK"
+        style="@style/EditBookTextEdit"
+        android:inputType="numberDecimal" />
+
+    </LinearLayout>
+</LinearLayout>

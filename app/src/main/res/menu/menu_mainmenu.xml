@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_mainmenu_log"
+        android:orderInCategory="100"
+        android:visible="true"
+        android:title="@string/log_menu"
+        />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_mainmenu_settings"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_extend_pwd"
+        android:visible="true"
+        android:orderInCategory="100"
+        android:title="@string/change_pwd_menu"/>
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_mainmenu_export"
+        android:orderInCategory="100"
+        android:title="@string/export_menu"
+        android:visible="true"
+        />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_mainmenu_import"
+        android:orderInCategory="100"
+        android:title="@string/import_menu"
+        android:visible="false"/>
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_mainmenu_aboutus"
+        android:orderInCategory="100"
+        android:title="@string/aboutus_menu"/>
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_mainmenu_update_pwd"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:title="@string/update_pwd_menu"/>
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:orderInCategory="100"
+        android:id="@+id/menu_exportcrashlog"
+        android:title="@string/export_device_log_menu"/>
+    <item
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:orderInCategory="100"
+        android:id="@+id/menu_re_register"
+        android:title="@string/init_db_menu"/>
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:orderInCategory="100"
+        android:id="@+id/menu_exportdatavault"
+        android:title="@string/export_datavault_data_menu"/>
+    <item
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:orderInCategory="100"
+        android:id="@+id/menu_importdatavault"
+        android:title="@string/import_datavault_data_menu"/>
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:visible="true"
+        android:orderInCategory="100"
+        android:id="@+id/menu_logout"
+        android:title="@string/logout_menu"/>
+</menu>

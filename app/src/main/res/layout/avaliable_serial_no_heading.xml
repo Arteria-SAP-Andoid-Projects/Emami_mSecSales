@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_three_dip"
+        android:gravity="left"
+        android:text="@string/available_sno"
+        android:textColor="@color/BLACK"
+        android:background="@color/WHITE"
+        android:textSize="@dimen/large_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_alice_blue"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_five_dip"
+            android:layout_marginLeft="@dimen/padding_five_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/from"
+            android:textColor="@color/BLACK"
+
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_five_dip"
+            android:layout_marginLeft="@dimen/padding_five_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/to"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_five_dip"
+            android:layout_marginLeft="@dimen/padding_five_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/available"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/large_text" />
+
+       <!-- <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_five_dip"
+            android:layout_marginLeft="@dimen/padding_five_dip"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/large_text" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

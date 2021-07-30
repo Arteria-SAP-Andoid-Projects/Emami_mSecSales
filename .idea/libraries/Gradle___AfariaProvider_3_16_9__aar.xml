@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :AfariaProvider-3.16.9:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/9210a79d0ff22725cfa260fd5353e4add587d755/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/9210a79d0ff22725cfa260fd5353e4add587d755/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/9210a79d0ff22725cfa260fd5353e4add587d755/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/a9e38f6b0111510d43c51e8677b2e0267cb7b2fd/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/a9e38f6b0111510d43c51e8677b2e0267cb7b2fd/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/a9e38f6b0111510d43c51e8677b2e0267cb7b2fd/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/e75499080875a7cefc59a71f9a38f5248c0ee167/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e75499080875a7cefc59a71f9a38f5248c0ee167/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e75499080875a7cefc59a71f9a38f5248c0ee167/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/fe9aad879aaa4f79d534d32a841f9bae306e10ff/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/fe9aad879aaa4f79d534d32a841f9bae306e10ff/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/fe9aad879aaa4f79d534d32a841f9bae306e10ff/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

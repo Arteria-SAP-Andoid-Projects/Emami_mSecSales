@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_update_retailer"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+
+    </LinearLayout>
+
+    <include layout="@layout/single_line_lay"/>
+
+    <ScrollView
+        android:id="@+id/retailer_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:stretchColumns="2" >
+
+            <TableRow android:id="@+id/tr_retailer_code">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="3dip"
+                    android:text="Retailer Code"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/tv_retailer_code"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:paddingLeft="5sp"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="3dip"
+                    android:text="Retailer Type"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text" />
+
+                <Spinner
+                    style="@style/spinner_style"
+                    android:layout_margin="4dp"
+                    android:id="@+id/sp_retailer_type"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:spinnerMode="dropdown"
+                    android:text="" />
+
+
+            </TableRow>
+            <TableRow android:paddingTop="@dimen/padding_three_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="3dip"
+                        android:text="@string/lbl_Distributor"
+                        android:textColor="#000033"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:paddingLeft="@dimen/padding_three_dip"
+                        android:text=""
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/tv_parent_name"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:paddingLeft="5sp"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Outlet Name"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_outlet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Owner Name"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_category"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <Spinner
+                    style="@style/spinner_style"
+                    android:layout_margin="4dp"
+                    android:id="@+id/sp_retailer_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:spinnerMode="dropdown"
+                    android:text="" />
+
+               <!-- <EditText
+                    android:id="@+id/et_retailer_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textColor="#000000"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />-->
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_Classification"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <Spinner
+                    style="@style/spinner_style"
+                    android:layout_margin="4dp"
+                    android:id="@+id/sp_classfication"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:spinnerMode="dropdown"
+                    android:text="" />
+
+                <!-- <EditText
+                     android:id="@+id/et_retailer_profile"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_column="2"
+                     android:layout_weight="1"
+                     android:gravity="left"
+                     android:imeOptions="actionNext"
+                     android:inputType="textCapSentences|textMultiLine"
+                     android:scrollHorizontally="false"
+                     android:textColor="#000000"
+                     android:maxLength="40"
+                     android:textSize="@dimen/medium_text" />-->
+            </TableRow>
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Address"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="State"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <!--<EditText
+                    android:id="@+id/et_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:textColor="#000000"
+                    android:maxLength="40"
+                    android:textSize="@dimen/mediumtext" />-->
+
+                <Spinner
+                    style="@style/spinner_style"
+                    android:layout_margin="4dp"
+                    android:id="@+id/sp_state"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:spinnerMode="dropdown"
+                    android:text="" />
+            </TableRow>
+
+
+
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="District"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <!--<Spinner
+                    android:id="@+id/sp_district"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:text="" />-->
+
+              <EditText
+                  style="@style/EditBookTextEdit"
+                  android:layout_margin="4dp"
+                  android:textColor="@color/BLACK"
+                    android:id="@+id/et_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+
+            </TableRow>
+
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="City"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <!--<Spinner
+                    android:id="@+id/sp_city"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:text="" />-->
+
+               <EditText
+                   style="@style/EditBookTextEdit"
+                   android:layout_margin="4dp"
+                   android:textColor="@color/BLACK"
+                    android:id="@+id/et_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="center_vertical"
+                    android:text="Landmark"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_land_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="PIN Code"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_pin_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:scrollHorizontally="false"
+                    android:maxLength="10"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+
+            <TableRow>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Mobile #"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="@string/star"
+                        android:textColor="#FF0000"
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text="@string/lbl_semi_colon"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_mobile_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:scrollHorizontally="false"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="center_vertical"
+                    android:text="E-Mail ID"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="left"
+                    android:paddingLeft="3dip"
+                    android:text="DOB"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+               <!-- <Button
+                    android:id="@+id/btn_date_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/custom_button"
+                    android:paddingLeft="5sp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="@dimen/medium_text" />-->
+                <TextView
+                    android:id="@+id/btn_date_of_birth"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingLeft="@dimen/padding_three_dip"
+                    android:paddingRight="@dimen/padding_three_dip"
+                    android:paddingTop="@dimen/padding_three_dip"
+                    android:paddingBottom="@dimen/padding_three_dip"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:hint="@string/lbl_date_of_birth"
+                    android:text=""
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow android:paddingTop="@dimen/_4sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="left"
+                    android:paddingLeft="3dip"
+                    android:text="@string/lbl_RetailerAnniversary"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <!-- <Button
+                     android:id="@+id/btn_date_of_annverisary"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center_vertical"
+                     android:background="@drawable/custom_button"
+                     android:paddingLeft="5sp"
+                     android:text=""
+                     android:textColor="#000000"
+                     android:textSize="@dimen/medium_text" />-->
+                <TextView
+                    android:id="@+id/btn_date_of_annverisary"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:paddingLeft="@dimen/padding_three_dip"
+                    android:paddingRight="@dimen/padding_three_dip"
+                    android:paddingTop="@dimen/padding_three_dip"
+                    android:paddingBottom="@dimen/padding_three_dip"
+                    android:drawableRight="@drawable/ic_calendar"
+                    android:hint="@string/lbl_annv_date"
+                    android:text=""
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_WeeklyOff"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <Spinner
+                    style="@style/spinner_style"
+                    android:layout_margin="4dp"
+                    android:id="@+id/sp_week_off"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:spinnerMode="dropdown"
+                    android:text="" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_tax_reg_status"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <Spinner
+                    style="@style/spinner_style"
+                    android:layout_margin="4dp"
+                    android:id="@+id/sp_tax_reg_status"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:paddingLeft="5sp"
+                    android:spinnerMode="dropdown"
+                    android:text="" />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="center_vertical"
+                    android:text="PAN #"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_pan_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine|textCapCharacters"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tr_vat_tin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="center_vertical"
+                    android:text="VAT / TIN #"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_vat_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+            <TableRow >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_column="0"
+                    android:gravity="center_vertical"
+                    android:text="@string/lbl_tax_one"
+                    android:paddingLeft="3dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textSize="@dimen/medium_text"
+                    android:width="20dip" />
+
+                <EditText
+                    style="@style/EditBookTextEdit"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/BLACK"
+                    android:id="@+id/et_tax_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:scrollHorizontally="false"
+                    android:maxLength="40"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/padding_one_dip"
+                tools:ignore="SmallSp"
+                android:background="@color/blue_ivy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/light_alice_blue"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icon_text_blue"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_ret_loc"
+                    android:textSize="@dimen/medium_sixteen_text"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/icon_text_blue"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_please_ensure"
+                    android:textSize="@dimen/medium_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/padding_one_dip"
+                tools:ignore="SmallSp"
+                android:background="@color/blue_ivy" />
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_column="0"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Latitude"
+                        android:paddingLeft="3dip"
+                        android:textColor="#000033"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Longitude"
+                        android:paddingLeft="3dip"
+                        android:textColor="#000033"
+                        android:textSize="@dimen/medium_text" />
+
+                </LinearLayout>
+
+
+
+                <!-- <TextView
+                     android:layout_column="1"
+                     android:gravity="top|center"
+                     android:textSize="@dimen/mediumtext"
+                     android:width="20dip" />-->
+
+
+
+                <ImageView
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/btn_lat_long_update"
+                    android:layout_width="@dimen/width_thirty_dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_loca_red_mark_small"
+                    />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_column="2"
+                    >
+
+                    <EditText
+                        style="@style/EditBookTextEdit"
+                        android:layout_margin="4dp"
+                        android:textColor="@color/BLACK"
+                        android:id="@+id/et_latitude_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:imeOptions="actionNext"
+                        android:maxLength="40"
+                        android:textSize="@dimen/medium_text" />
+
+                    <EditText
+                        style="@style/EditBookTextEdit"
+                        android:layout_margin="4dp"
+                        android:textColor="@color/BLACK"
+                        android:id="@+id/et_longitude_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:imeOptions="actionNext"
+                        android:maxLength="40"
+                        android:textSize="@dimen/medium_text" />
+                </LinearLayout>
+
+            </TableRow>
+
+
+            <!-- <TableRow>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_column="0"
+                     android:gravity="center_vertical"
+                     android:text="TIN #"
+                     android:paddingLeft="3dip"
+                     android:textColor="#000033"
+                     android:textSize="@dimen/medium_text" />
+
+                 <TextView
+                     android:layout_column="1"
+                     android:gravity="top|center"
+                     android:text=""
+                     android:textSize="@dimen/medium_text"
+                     android:width="20dip" />
+
+                 <EditText
+                     android:id="@+id/et_tin_no"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_column="2"
+                     android:layout_weight="1"
+                     android:gravity="left"
+                     android:imeOptions="actionNext"
+                     android:inputType="textCapSentences|textMultiLine"
+                     android:scrollHorizontally="false"
+                     android:textColor="#000000"
+                     android:maxLength="40"
+                     android:textSize="@dimen/medium_text" />
+             </TableRow>-->
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_cb_number"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <CheckBox
+                    android:id="@+id/cb_etop_allowed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/lbl_etop_up_allowed"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+
+                <TableRow android:id="@+id/tr_etop_up_number"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="center_vertical"
+                        android:text="@string/lbl_mobile_number"
+                        android:paddingLeft="3dip"
+                        android:textColor="#000033"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_column="1"
+                        android:gravity="top|center"
+                        android:text=""
+                        android:textSize="@dimen/medium_text"
+                        android:width="20dip" />
+
+                    <EditText
+                        style="@style/EditBookTextEdit"
+                        android:layout_margin="4dp"
+                        android:textColor="@color/BLACK"
+                        android:id="@+id/et_pretup_mobile_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:textSize="@dimen/medium_text" />
+                </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

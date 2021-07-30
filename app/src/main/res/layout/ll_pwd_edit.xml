@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/approval_dialog_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Header"
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal_16"
+        android:text="@string/set_password" />
+
+    <include layout="@layout/single_line_lay" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_normal_16"
+        android:layout_marginRight="@dimen/padding_normal_16"
+        android:layout_marginTop="@dimen/padding_normal_16"
+        android:orientation="horizontal"
+        android:theme="@style/MyEditTextTheme">
+
+        <com.maksim88.passwordedittext.PasswordEditText
+            android:id="@+id/etNewPsw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableTint="@color/BLACK"
+            android:hint="@string/new_plw"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/padding_normal_16"
+        android:layout_marginLeft="@dimen/padding_normal_8"
+        android:layout_marginRight="@dimen/padding_normal_8"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btNo"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btYes"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+
+</LinearLayout>

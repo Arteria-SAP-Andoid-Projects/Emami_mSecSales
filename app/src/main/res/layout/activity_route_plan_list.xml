@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/tv_retailer_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lbl_retailer_list"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:id="@+id/tv_last_sync_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/icon_text_blue"
+            android:textSize="@dimen/very_small_text" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/BLACK" >
+    </LinearLayout>
+
+
+
+    <TableLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:stretchColumns="2" >
+
+        <TableRow  android:id="@+id/tr_distributor_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:gravity="center_vertical"
+                android:text="Distributor Name"
+                android:paddingLeft="3dip"
+                android:textColor="#000033"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="@string/lbl_semi_colon"
+                android:textSize="@dimen/medium_text"
+                android:textColor="@color/BLACK"
+                android:width="20dip" />
+
+
+
+            <TextView
+                android:id="@+id/tv_distributor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text"
+                android:paddingLeft="@dimen/padding_three_dip"
+                android:paddingStart="@dimen/padding_three_dip"
+                android:paddingRight="@dimen/padding_zero_dip"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:orientation="vertical">
+
+
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                style="@style/MyCustomTabLayout"
+                app:tabMaxWidth="0dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed"    />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </LinearLayout>
+
+</LinearLayout>

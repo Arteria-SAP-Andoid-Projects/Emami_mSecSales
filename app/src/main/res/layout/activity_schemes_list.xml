@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_one_dip"
+        android:background="@color/BLACK"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground">
+
+        <TextView
+            android:id="@+id/tv_main_menu_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_schemes"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_one_dip"
+        android:background="@color/BLACK"
+        tools:ignore="SmallSp" />
+
+    <EditText
+        android:id="@+id/et_name_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_search_by_scheme_desc"
+        android:inputType="textVisiblePassword" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/BLACK"
+        android:id="@+id/ll_edit_text_above_line"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_point_five_dip"
+        android:background="@color/line_color">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vertical_line_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_scheme_name_heading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_scheme_name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/tv_scheme_description_heading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_scheme_description"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_point_five_dip"
+        android:background="@color/line_color">
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/line_color">
+    </LinearLayout>-->
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/line_color"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_no_data_found"
+        android:textColor="@color/BLACK"
+        android:textSize="@dimen/medium_text" />
+
+</LinearLayout>

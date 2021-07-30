@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PopUpView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llButton"
+        android:background="@color/WHITE"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/show_all_drop_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_two_dip"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_five_dip"
+                    android:text="@string/lbl_category"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_category"
+                    style="@style/spinner_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/medium_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_five_dip"
+                    android:text="@string/lbl_brand"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_brand"
+                    style="@style/spinner_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/medium_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_crs_sku_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_five_dip"
+                    android:text="@string/lbl_crs_sku_grp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_crs_sku_group"
+                    style="@style/spinner_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/medium_text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_dbstk_search"
+            style="@style/EditBookTextEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:hint="@string/lbl_search_material_Desc" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/BLACK" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dialog_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/no_record_found"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lbl_no_records_found"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/Label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

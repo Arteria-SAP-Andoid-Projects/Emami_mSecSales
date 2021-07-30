@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:customview:28.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3e59f2f7a4371c3400fdff2d3178f5e58f9469ae/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3e59f2f7a4371c3400fdff2d3178f5e58f9469ae/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/3e59f2f7a4371c3400fdff2d3178f5e58f9469ae/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/d9d38e76779d6a9dca429ba826f810c14c73a6f5/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d9d38e76779d6a9dca429ba826f810c14c73a6f5/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d9d38e76779d6a9dca429ba826f810c14c73a6f5/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

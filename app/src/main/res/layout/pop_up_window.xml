@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PopUpView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/light_custom_spinner_bg_clr">
+
+	<ListView
+	    android:id="@+id/list_drop_down"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:cacheColorHint="#00000000"
+	    android:choiceMode="singleChoice"
+	    android:divider="@color/BLACK"
+	    android:dividerHeight="0.1dp" >
+
+</ListView>
+</LinearLayout>

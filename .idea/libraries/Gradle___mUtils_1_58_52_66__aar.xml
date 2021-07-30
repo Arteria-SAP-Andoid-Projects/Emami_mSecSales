@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: :mUtils-1.58.52.66:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/96da3317428d5d035595a8e3ac8c102b0c0333f2/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/96da3317428d5d035595a8e3ac8c102b0c0333f2/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/96da3317428d5d035595a8e3ac8c102b0c0333f2/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/96da3317428d5d035595a8e3ac8c102b0c0333f2/output/jars/libs/gson-2.2.4.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/cb2cffd5b8483308ab4414086b0880a1165d52b4/output/jars/libs/gson-2.2.4.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/cb2cffd5b8483308ab4414086b0880a1165d52b4/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/cb2cffd5b8483308ab4414086b0880a1165d52b4/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/cb2cffd5b8483308ab4414086b0880a1165d52b4/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3ce97cd81de0aa38b3218ba8ccdd4fd42966f176/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3ce97cd81de0aa38b3218ba8ccdd4fd42966f176/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/3ce97cd81de0aa38b3218ba8ccdd4fd42966f176/output/jars/libs/gson-2.2.4.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3ce97cd81de0aa38b3218ba8ccdd4fd42966f176/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e3aaf42db9e1d432725d4777acc1266cb04e4b41/output/jars/libs/gson-2.2.4.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e3aaf42db9e1d432725d4777acc1266cb04e4b41/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/e3aaf42db9e1d432725d4777acc1266cb04e4b41/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e3aaf42db9e1d432725d4777acc1266cb04e4b41/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

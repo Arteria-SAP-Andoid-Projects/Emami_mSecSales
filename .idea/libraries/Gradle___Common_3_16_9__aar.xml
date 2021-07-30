@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :Common-3.16.9:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/7bc912a78aa7d494b5a42fa8ed14e36765c77cf9/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/7bc912a78aa7d494b5a42fa8ed14e36765c77cf9/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/7bc912a78aa7d494b5a42fa8ed14e36765c77cf9/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d2941f7eef6a334530dd7b82a1114e9e7721dd96/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d2941f7eef6a334530dd7b82a1114e9e7721dd96/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/d2941f7eef6a334530dd7b82a1114e9e7721dd96/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/6726f258dbdbf2b02bdabb14e875aa02e5bc5e3f/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/6726f258dbdbf2b02bdabb14e875aa02e5bc5e3f/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6726f258dbdbf2b02bdabb14e875aa02e5bc5e3f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b38a3a8a39e03442c8ce238f3c358cdd23dd352e/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/b38a3a8a39e03442c8ce238f3c358cdd23dd352e/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b38a3a8a39e03442c8ce238f3c358cdd23dd352e/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

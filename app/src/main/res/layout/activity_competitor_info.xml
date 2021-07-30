@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mainmenuHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_competitor_info"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+
+    <include layout="@layout/single_line_lay"/>
+
+    <include layout="@layout/retailer_detail_header_lay"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/line_color" >
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+           android:orientation="horizontal"
+            android:background="@color/WHITE"
+            >
+        <TextView
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:text="Competitor"
+            android:paddingLeft="@dimen/padding_three_dip"
+        android:textColor="@color/BLACK"
+            android:gravity="left|center_vertical"
+        android:textSize="@dimen/medium_text"
+
+        />
+
+        <Spinner
+            style="@style/spinner_style"
+            android:layout_margin="4dp"
+            android:id="@+id/sp_competitor_spinner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Competitor"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+        <Spinner
+            style="@style/spinner_style"
+            android:layout_margin="4dp"
+            android:id="@+id/sp_competitor_spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Competitor"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text"
+
+            />
+
+        <Spinner
+            style="@style/spinner_style"
+            android:layout_margin="4dp"
+            android:id="@+id/sp_competitor_spinner3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Competitor"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text"
+
+            />
+    </LinearLayout>
+
+            <include layout="@layout/single_line_lay"/>
+
+    <ScrollView
+        android:id="@+id/scroll_com_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+    </ScrollView>
+
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

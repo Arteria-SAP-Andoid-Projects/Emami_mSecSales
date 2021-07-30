@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!--<item-->
+        <!--android:id="@+id/menu_feedback_back"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/back_menu"/>-->
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/menu_refresh_inv"
+        android:orderInCategory="100"
+        android:title="@string/lbl_refresh"/>
+
+</menu>

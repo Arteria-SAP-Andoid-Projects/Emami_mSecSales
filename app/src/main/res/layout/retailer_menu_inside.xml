@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout  android:id="@+id/ll_main_menu_icon_sel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    android:background="@color/WHITE"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/padding_ten_dip"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/ib_must_sell"
+        android:layout_width="66dip"
+        android:layout_height="52dip"
+        android:background="@drawable/my_button"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/medium_text">
+    </TextView>
+
+</LinearLayout>
+    </LinearLayout>

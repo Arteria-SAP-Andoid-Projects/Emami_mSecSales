@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/BLACK">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_coll_det_item_no"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="4dp"
+            android:text="10"
+            android:minWidth="24dp"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:paddingRight="4dp" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.8">
+            <LinearLayout
+                android:layout_weight=".8"
+                android:layout_width="0dp"
+                android:paddingLeft="4dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_coll_det_bill_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/BLACK"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_coll_det_bill_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/BLACK"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_coll_det_inv_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/BLACK"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_coll_det_paid_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:layout_gravity="center_vertical|right"
+                    android:textColor="@color/BLACK"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:id="@+id/tv_coll_det_bal_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/BLACK"
+                android:src="@drawable/down"
+                android:text="1000" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_expand_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/padding_four_dip"
+                android:src="@drawable/down" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/BLACK">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_down_color"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="right"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_alice_blue"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/lbl_invoice_item_no"
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_coll_det_item_no_ex"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="1dip"
+
+                    android:textColor="@color/BLACK"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:paddingLeft="4dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_bill_number"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:width="5dip" />
+
+                    <TextView
+                        android:id="@+id/tv_coll_det_bill_num_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_bill_date"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_coll_det_bill_date_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_payment_mode"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:layout_width="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_coll_payment_mode_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_dd_cheque"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_coll_det_inst_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_inv_amt"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:layout_width="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_coll_det_inv_amt_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_paid_amt"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:layout_width="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_coll_det_paid_amt_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_total_paid_amt"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:layout_width="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_coll_total_paid_amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:gravity="left"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_column="0"
+                        android:gravity="left"
+                        android:text="@string/lbl_bal_amt"
+                        android:textColor="@color/BLACK" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:text=" :"
+                        android:textColor="@color/BLACK"
+                        android:layout_width="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_coll_det_bal_amt_ex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="15dip"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="@color/BLACK" />
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <!--    <TextView
+                android:id="@+id/tv_down_color"
+                android:layout_width="@dimen/padding_twenty_dip"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:gravity="right"
+                android:background="@color/GREEN"/>-->
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/lt_lastLine_ex"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@color/BLACK"/>
+
+
+
+</LinearLayout>

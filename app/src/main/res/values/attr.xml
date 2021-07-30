@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlowLayout">
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_Layout">
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialDesignSpinner">
+        <attr name="ms_baseColor" format="color"/>
+        <attr name="ms_highlightColor" format="color"/>
+        <attr name="ms_errorColor" format="color"/>
+        <attr name="ms_error" format="string"/>
+        <attr name="ms_hint" format="string"/>
+        <attr name="ms_hintColor" format="color"/>
+        <attr name="ms_hintTextSize" format="dimension"/>
+        <attr name="ms_floatingLabelText" format="string"/>
+        <attr name="ms_floatingLabelColor" format="color"/>
+        <attr name="ms_multiline" format="boolean"/>
+        <attr name="ms_nbErrorLines" format="integer"/>
+        <attr name="ms_typeface" format="string"/>
+        <attr name="ms_alignLabels" format="boolean"/>
+        <attr name="ms_thickness" format="dimension"/>
+        <attr name="ms_thickness_error" format="dimension"/>
+        <attr name="ms_arrowSize" format="dimension"/>
+        <attr name="ms_arrowColor" format="color"/>
+        <attr name="ms_enableFloatingLabel" format="boolean"/>
+        <attr name="ms_enableErrorLabel" format="boolean"/>
+        <attr name="ms_alwaysShowFloatingLabel" format="boolean"/>
+        <attr name="ms_isRtl" format="boolean"/>
+        <attr name="ms_hintView" format="reference"/>
+        <attr name="ms_dropDownHintView" format="reference"/>
+        <attr name="ms_isHintSelectable" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="EditTextClearButton">
+        <attr name="clearButtonMode">
+            <enum name="never" value="0" />
+            <enum name="always" value="1" />
+            <enum name="whileEditing" value="2" />
+            <enum name="unlessEditing" value="3" />
+        </attr>
+        <attr name="clearButtonDrawable" format="reference"/>
+        <attr name="clearButtonDontClearText" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="MultiStateToggleButton">
+        <attr name="values" format="reference" />
+        <attr name="mstbPrimaryColor" format="reference" />
+        <attr name="mstbSecondaryColor" format="reference" />
+        <attr name="mstbColorPressedText" format="reference" />
+        <attr name="mstbColorPressedBackground" format="reference" />
+        <attr name="mstbColorPressedBackgroundResource" format="reference" />
+        <attr name="mstbColorNotPressedText" format="reference" />
+        <attr name="mstbColorNotPressedBackground" format="reference" />
+        <attr name="mstbColorNotPressedBackgroundResource" format="reference" />
+    </declare-styleable>
+    <!--fab toolbar styles-->
+    <declare-styleable name="FABToolbarLayout">
+        <attr name="showDuration" format="integer"/>
+        <attr name="hideDuration" format="integer"/>
+        <attr name="verticalMargin" format="dimension"/>
+        <attr name="horizontalMargin" format="dimension"/>
+        <attr name="fadeInPivotX" format="dimension"/>
+        <attr name="fadeInPivotY" format="dimension"/>
+        <attr name="fadeInFraction" format="float"/>
+        <attr name="fabId" format="reference"/>
+        <attr name="containerId" format="reference"/>
+        <attr name="fabToolbarId" format="reference"/>
+        <attr name="fabDrawableAnimationEnabled" format="boolean"/>
+    </declare-styleable>
+</resources>

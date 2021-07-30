@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_allocated_from_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_five_dip"
+        android:layout_marginLeft="@dimen/padding_five_dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/from"
+        android:textColor="@color/BLACK"
+
+        android:textSize="@dimen/large_text" />
+
+    <TextView
+        android:id="@+id/tv_allocated_to_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_five_dip"
+        android:layout_marginLeft="@dimen/padding_five_dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/to"
+        android:textColor="@color/BLACK"
+        android:textSize="@dimen/large_text" />
+
+    <TextView
+        android:id="@+id/tv_allocated_qty_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_five_dip"
+        android:layout_marginLeft="@dimen/padding_five_dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/available"
+        android:textColor="@color/BLACK"
+        android:textSize="@dimen/large_text" />
+
+ <!--   <ImageView
+        android:id="@+id/iv_serial_no_un_select"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:contentDescription="@string/navigateTo"
+        android:src="@drawable/ic_remove_serial_no" />-->
+
+</LinearLayout>

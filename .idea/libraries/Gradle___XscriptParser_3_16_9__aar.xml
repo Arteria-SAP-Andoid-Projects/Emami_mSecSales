@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :XscriptParser-3.16.9:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/e786ac90dabd6382ed96e98537b5f8b3d6051074/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e786ac90dabd6382ed96e98537b5f8b3d6051074/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/e786ac90dabd6382ed96e98537b5f8b3d6051074/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/d6eb3a1c2f3d66b4780406388670d28fb1cb8e38/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d6eb3a1c2f3d66b4780406388670d28fb1cb8e38/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/d6eb3a1c2f3d66b4780406388670d28fb1cb8e38/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/8ee3eaf8eb3099626a1d3298afaa4b4a0d057ad7/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/8ee3eaf8eb3099626a1d3298afaa4b4a0d057ad7/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/8ee3eaf8eb3099626a1d3298afaa4b4a0d057ad7/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/37b7b8d59495165f811fe3de77265c9d678d47c5/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/37b7b8d59495165f811fe3de77265c9d678d47c5/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/37b7b8d59495165f811fe3de77265c9d678d47c5/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

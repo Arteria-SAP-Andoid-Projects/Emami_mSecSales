@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Dealer_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lbl_so_create"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/BLACK" />
+
+    <include layout="@layout/retailer_detail_header_lay" />
+
+    <include layout="@layout/black_line_lay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/GREY"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lbl_bmt"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_2sdp"
+                android:text="@string/str_colon"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/large_text" />
+
+            <TextView
+                android:id="@+id/tv_so_create_bmt_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2ssp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/large_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lbl_tlsd"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_2ssp"
+                android:text="@string/str_colon"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/large_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_so_create_tlsd_amt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/large_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/BLACK" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/tv_must_sell_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/padding_five_dip"
+                android:text="@string/lbl_must_sel"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnr_so_create_sku_group_type"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/tv_cat_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/padding_five_dip"
+                android:text="@string/lbl_category"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnr_so_create_category"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/tv_brand_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/padding_five_dip"
+                android:text="@string/lbl_brand"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnr_so_create_brand"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/black_line_lay" />
+
+    <EditText
+        android:id="@+id/et_so_create_search"
+        style="@style/EditBookTextEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:hint="@string/lbl_search_by_sku_group"
+        android:paddingLeft="8dp"
+        android:textColor="@color/BLACK" />
+
+    <include layout="@layout/black_line_lay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/keyboard_custom_invoice_sel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="@dimen/_169sdp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_crs_sku_name"
+                        android:layout_width="@dimen/_145sdp"
+                        android:layout_height="50dp"
+                        android:background="@color/GREY"
+                        android:gravity="center"
+                        android:text="@string/lbl_crs_sku_group"
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="50dp"
+                        android:layout_toRightOf="@id/tv_crs_sku_name"
+                        android:background="@color/GREY"
+                        android:gravity="center"
+                        android:text="  "
+                        android:textColor="@color/BLACK"
+                        android:textSize="@dimen/medium_text" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/relativeLayout1">
+
+                    <HorizontalScrollView
+
+                        android:id="@+id/sv_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:scrollbars="none">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableLayout
+                                android:id="@+id/tl_header1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/GREY">
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_60sdp"
+                                        android:height="50dp"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="@dimen/_3sdp"
+                                        android:text="@string/lbl_soq"
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="@dimen/medium_text" />
+
+
+                                    <TextView
+                                        android:layout_width="@dimen/_60sdp"
+                                        android:height="50dp"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="@dimen/_3sdp"
+                                        android:text="@string/lbl_ord_qty"
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="@dimen/medium_text" />
+
+                                    <TextView
+                                        android:layout_width="@dimen/_75sdp"
+                                        android:height="50dp"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="@dimen/_3sdp"
+                                        android:text="@string/mat_rate"
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="@dimen/medium_text" />
+
+                                    <TextView
+                                        android:layout_width="@dimen/_70sdp"
+                                        android:height="50dp"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="@dimen/_3sdp"
+                                        android:text="@string/lbl_db_stock"
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="@dimen/medium_text" />
+
+                                    <TextView
+                                        android:layout_width="@dimen/_70sdp"
+                                        android:height="50dp"
+                                        android:gravity="center_vertical|right"
+                                        android:paddingRight="@dimen/_3sdp"
+                                        android:text="@string/lbl_rl_stock"
+                                        android:textColor="@color/BLACK"
+                                        android:textSize="@dimen/medium_text" />
+
+
+                                </TableRow>
+
+                            </TableLayout>
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout1">
+
+                    <RelativeLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableLayout
+                            android:id="@+id/crs_sku"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TableLayout>
+
+                        <HorizontalScrollView
+                            android:id="@+id/sv_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/crs_sku"
+                            android:fillViewport="true"
+                            android:scrollbars="none">
+
+
+                            <TableLayout
+                                android:id="@+id/report_table"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TableLayout>
+                        </HorizontalScrollView>
+
+                    </RelativeLayout>
+
+                </ScrollView>
+            </RelativeLayout>
+
+            <android.inputmethodservice.KeyboardView
+                android:id="@+id/keyboard_custom_invoice_sel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:keyPreviewLayout="@layout/preview"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="@dimen/width_zero_dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/lbl_crs_sku_group"
+                    android:textColor="@color/header_tile_text_color"
+                    android:textSize="@dimen/large_text" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/GREY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/lbl_soq"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="4dp"
+                        android:text="@string/mat_rate"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/lbl_db_stock"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/lbl_rl_stock"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/lbl_ord_qty"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+
+        <include layout="@layout/black_line_lay" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+</LinearLayout>

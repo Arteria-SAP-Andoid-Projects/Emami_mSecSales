@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :MAFLogonUI-3.16.6:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/fbb807695ae43ae7ec924c525b0e2bf198977039/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/fbb807695ae43ae7ec924c525b0e2bf198977039/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/fbb807695ae43ae7ec924c525b0e2bf198977039/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/e810562238b4aff9c8bf8f2d327cd04573442637/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e810562238b4aff9c8bf8f2d327cd04573442637/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e810562238b4aff9c8bf8f2d327cd04573442637/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/9fe35202cdbcc7098b6f8e7ece803f556d110a12/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/9fe35202cdbcc7098b6f8e7ece803f556d110a12/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/9fe35202cdbcc7098b6f8e7ece803f556d110a12/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/7359235ee9fecdf612cdc3d7d45a6aa7c7ac8b20/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/7359235ee9fecdf612cdc3d7d45a6aa7c7ac8b20/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/7359235ee9fecdf612cdc3d7d45a6aa7c7ac8b20/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

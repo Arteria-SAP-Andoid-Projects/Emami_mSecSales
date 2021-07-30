@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical"
+    tools:context="com.arteriatech.emami.scheme.SchemeListActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE">
+
+        <Spinner
+            android:id="@+id/spSearch"
+            style="@style/spinner_style"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ss_list"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/spSearch"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etSearchInput"
+                style="@style/EditBookTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/scheme_search_hint"
+                android:inputType="textFilter" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/single_line_lay" />
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/_1sdp"
+         android:background="@color/BLACK" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/noRecordFound"
+        layout="@layout/no_data_found_ll"
+        android:visibility="gone" />
+</LinearLayout>

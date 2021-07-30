@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/report_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableRow
+        android:background="@color/GREY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_sqq"
+            android:width="@dimen/_75sdp"
+            android:height="50dp"
+            android:gravity="right|center_vertical"
+            android:text="@string/lbl_ord_qty"
+            android:textSize="@dimen/medium_text"  />
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_qrtystak"
+            android:width="@dimen/_100sdp"
+            android:gravity="right|center_vertical"
+            android:height="50dp"
+            android:text="@string/lbl_pmr_scheme"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_rate"
+            android:width="@dimen/_100sdp"
+            android:text="@string/lbl_sec_scheme"
+            android:height="50dp"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_sec_sch_amt"
+            android:width="@dimen/_100sdp"
+            android:text="@string/lbl_sec_scheme_amt"
+            android:height="50dp"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_ratio_discount_amt"
+            android:width="@dimen/_100sdp"
+            android:text="@string/lbl_ratio_dis_amount"
+            android:height="50dp"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_free_discount_amt"
+            android:width="@dimen/_100sdp"
+            android:text="@string/lbl_free_dis_amount"
+            android:height="50dp"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_dbstak"
+            android:width="@dimen/_100sdp"
+            android:text="@string/lbl_net_amount"
+            android:textSize="@dimen/medium_text"
+            android:height="50dp"
+            android:gravity="right|center_vertical"  />
+
+    </TableRow>
+    <TableRow
+        android:background="@color/GREY"
+        android:id="@+id/tr_items"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp">
+
+
+    </TableRow>
+
+
+</TableLayout>

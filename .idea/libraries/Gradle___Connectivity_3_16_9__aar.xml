@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :Connectivity-3.16.9:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/4fbfcbea2d9a4f5915f4e8f3ba8dd6345a740d60/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/4fbfcbea2d9a4f5915f4e8f3ba8dd6345a740d60/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/4fbfcbea2d9a4f5915f4e8f3ba8dd6345a740d60/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/640240ee8969b962fe693a4caba024523fdd6ce7/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/640240ee8969b962fe693a4caba024523fdd6ce7/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/640240ee8969b962fe693a4caba024523fdd6ce7/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/0a062b2ec729e1396908d26cbbc57308448a070c/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/0a062b2ec729e1396908d26cbbc57308448a070c/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/0a062b2ec729e1396908d26cbbc57308448a070c/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/fc4939b8941b031021ae91d1d10f9907378f6874/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/fc4939b8941b031021ae91d1d10f9907378f6874/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/fc4939b8941b031021ae91d1d10f9907378f6874/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

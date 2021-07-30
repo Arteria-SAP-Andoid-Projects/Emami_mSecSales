@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/lbl_from"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/medium_text"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <EditText
+            android:id="@+id/edit_from_range"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLength="32"
+            android:inputType="number"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="@string/lbl_to"
+            android:textSize="@dimen/medium_text"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <EditText
+            android:id="@+id/edit_to_range"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLength="32"
+            android:inputType="number"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

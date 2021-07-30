@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE">
+
+   <LinearLayout
+       android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingTop="@dimen/padding_three_dip"
+            android:paddingBottom="@dimen/padding_five_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            >
+
+            <ImageView
+                android:id="@+id/iv_show_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_hide_details" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tv_RetailerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_RetailerID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/icon_text_blue"
+                android:textSize="@dimen/medium_text"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_ret_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/tv_ret_behaviour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/text_red"
+                android:textSize="@dimen/medium_text" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center|center_vertical"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:id="@+id/iv_visit_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_visit_not_start" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address_heading_line"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/padding_point_five_dip"
+        android:background="@color/BLACK" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_address_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_alice_blue"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_three_dip"
+        android:paddingRight="@dimen/padding_zero_dip"
+        android:paddingStart="@dimen/padding_zero_dip"
+        android:paddingEnd="@dimen/padding_zero_dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_address_txt"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address_heading_below_line"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/padding_point_five_dip"
+        android:background="@color/BLACK" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_owner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_five_dip"
+        android:paddingTop="@dimen/padding_five_dip"
+        android:paddingRight="@dimen/padding_zero_dip"
+        android:paddingStart="@dimen/padding_zero_dip"
+        android:paddingEnd="@dimen/padding_zero_dip">
+
+        <TextView
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_owner_name"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@color/BLACK"/>
+
+        <TextView
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text"
+            android:text="@string/lbl_semi_colon"
+            android:textColor="@color/BLACK"/>
+        <LinearLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_zero_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ownerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_address_label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_five_dip"
+        android:paddingTop="@dimen/padding_five_dip"
+        android:paddingRight="@dimen/padding_zero_dip"
+        android:paddingStart="@dimen/padding_zero_dip"
+        android:paddingEnd="@dimen/padding_zero_dip"
+        >
+
+        <TextView
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_address_txt"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@color/BLACK"/>
+        <TextView
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_semi_colon"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@color/BLACK"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_zero_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/tv_second_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/tv_third_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/tv_fourth_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/tv_land_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/tv_postal_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mail_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_five_dip"
+        android:paddingTop="@dimen/padding_five_dip"
+        android:paddingRight="@dimen/padding_zero_dip"
+        android:paddingStart="@dimen/padding_zero_dip"
+        android:paddingEnd="@dimen/padding_zero_dip" >
+
+        <TextView
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text"
+            android:text="@string/lbl_email_id"
+            android:textColor="@color/BLACK"/>
+
+        <TextView
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text"
+            android:text="@string/lbl_semi_colon"
+            android:textColor="@color/BLACK"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_weight="3"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_email_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comm_above_line"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_point_five_dip"
+        android:background="@color/BLACK" />
+
+    <LinearLayout
+        android:id="@+id/ll_comm_Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_alice_blue"
+        android:paddingLeft="@dimen/padding_three_dip"
+        android:paddingRight="@dimen/padding_zero_dip"
+        android:paddingStart="@dimen/padding_zero_dip"
+        android:paddingEnd="@dimen/padding_zero_dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_communications"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comm_below_line"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_point_five_dip"
+        android:background="@color/BLACK" />
+
+    <LinearLayout
+        android:id="@+id/ll_comm_items"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_thirty_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:paddingTop="@dimen/padding_three_dip"
+            android:paddingBottom="@dimen/padding_three_dip"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_call" />
+
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_thirty_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:paddingTop="@dimen/padding_three_dip"
+            android:paddingBottom="@dimen/padding_three_dip"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_sms" />
+
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_thirty_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:paddingTop="@dimen/padding_three_dip"
+            android:paddingBottom="@dimen/padding_three_dip"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_e_mail" />
+    </LinearLayout>
+
+
+</LinearLayout>

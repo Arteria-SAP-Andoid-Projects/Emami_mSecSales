@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/retailer_detail_header_lay" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK"/>
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="@dimen/padding_four_dip"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_sku_desc"
+            android:textStyle="bold"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="1.5"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_quantity"
+            android:layout_marginLeft="@dimen/margin_four_dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="1.5"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_MRP"
+            android:layout_marginLeft="@dimen/margin_four_dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_custom_spinner_bg_clr"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_dbstk_sku_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textStyle="bold"
+                android:text="@string/lbl_sku_desc"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/item_dbstk_selected_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textStyle="bold"
+                android:text="@string/lbl_order_reason"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/edit_quantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="4dp"
+                android:textStyle="bold"
+                android:paddingRight="4dp"
+                android:text="@string/lbl_ord_qty"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/edit_mrp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="@string/lbl_MRP"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+            <TextView
+                android:id="@+id/edit_batch_number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textStyle="bold"
+                android:text="@string/lbl_batch_no"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK">
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

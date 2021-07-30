@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/line_color"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_no_records_found"
+        android:layout_width="@dimen/width_one_twenty_dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_point_five_dip"
+        android:layout_weight="1"
+        android:background="@color/WHITE"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_three_dip"
+        android:paddingStart="@dimen/padding_three_dip"
+        android:paddingRight="@dimen/padding_zero_dip"
+        android:paddingEnd="@dimen/padding_zero_dip"
+        android:text="@string/lbl_no_records_found"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/BLACK"
+        android:textSize="@dimen/medium_text" />
+
+
+
+</LinearLayout>

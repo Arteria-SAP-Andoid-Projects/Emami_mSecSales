@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :Persistence-3.16.9:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/6b3ed2759343a153b8c026377e0f0dd6fdf34bc4/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6b3ed2759343a153b8c026377e0f0dd6fdf34bc4/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/6b3ed2759343a153b8c026377e0f0dd6fdf34bc4/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/52304b9d4d054f3d03dc5baa5966dff1e663a300/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/52304b9d4d054f3d03dc5baa5966dff1e663a300/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/52304b9d4d054f3d03dc5baa5966dff1e663a300/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/9f5b739f16ec7ab5f201088c0e0e4b1d8129185e/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/9f5b739f16ec7ab5f201088c0e0e4b1d8129185e/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/9f5b739f16ec7ab5f201088c0e0e4b1d8129185e/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6b2d1db47ed8d0664b1111adef3e40a9947d0273/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6b2d1db47ed8d0664b1111adef3e40a9947d0273/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/6b2d1db47ed8d0664b1111adef3e40a9947d0273/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

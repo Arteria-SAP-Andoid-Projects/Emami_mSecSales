@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BLACK"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_sales_area_val"
+            android:layout_width="@dimen/width_one_twenty_dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_point_five_dip"
+            android:background="@color/WHITE"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingStart="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:id="@+id/tv_dist_channel_val"
+            android:layout_width="@dimen/width_one_twenty_dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_point_five_dip"
+            android:background="@color/WHITE"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingStart="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/tv_division_val"
+            android:layout_width="@dimen/width_one_twenty_dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_point_five_dip"
+            android:background="@color/WHITE"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingStart="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/tv_dms_div_val"
+            android:layout_width="@dimen/width_one_twenty_dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margin_point_five_dip"
+            android:background="@color/WHITE"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingStart="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

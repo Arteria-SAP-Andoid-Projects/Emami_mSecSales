@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_back"
+        android:orderInCategory="100"
+        android:title="@string/lbl_back"/>
+
+    <item
+        android:id="@+id/menu_delete"
+        android:orderInCategory="100"
+        android:title="@string/lbl_delete"/>
+    <item
+        android:id="@+id/menu_invoice_create"
+        android:orderInCategory="100"
+        android:title="@string/lbl_invoice_create"/>
+
+</menu>

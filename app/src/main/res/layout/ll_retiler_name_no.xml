@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="0dp">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_ret_det_layout"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/padding_normal_16"
+        android:paddingBottom="@dimen/padding_normal_16"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE">
+
+        <ImageView
+            android:id="@+id/iv_show_details"
+            android:layout_width="@dimen/visit_image_hdr"
+            android:layout_height="@dimen/visit_image_hdr"
+            android:layout_marginStart="16dp"
+            android:tint="@color/secondaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_people_black_24dp"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tv_RetailerName"
+            style="@style/UtilsSubHeaderStyles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/iv_visit_status"
+            app:layout_constraintStart_toEndOf="@+id/iv_show_details"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_visit_status"
+            android:visibility="gone"
+            android:layout_width="@dimen/visit_image_item_hdr"
+            android:layout_height="@dimen/visit_image_item_hdr"
+            android:layout_marginEnd="16dp"
+            android:tint="@color/secondaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/start"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/tv_RetailerID"
+            style="@style/UtilsMediumTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/iv_visit_status"
+            app:layout_constraintStart_toEndOf="@+id/iv_show_details"
+            app:layout_constraintTop_toBottomOf="@+id/tv_RetailerName" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

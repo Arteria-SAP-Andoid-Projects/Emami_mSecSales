@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:padding="4dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_one_dip">
+
+        <CheckBox
+            android:id="@+id/ch_invoice_create"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/padding_three_dip"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_one_dip">
+
+
+        <TextView
+            android:id="@+id/tv_invoice_matdesc"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@android:color/white"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:id="@+id/tv_invoice_matcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@android:color/white"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@color/BLACK"
+             />
+
+
+    </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:paddingBottom="1dp"
+        >
+
+
+        <TextView
+            android:textSize="@dimen/medium_text"
+            android:id="@+id/tv_invoice_last_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/padding_three_dip"
+            android:layout_gravity="center_vertical|right"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+
+    </LinearLayout>
+
+    <EditText
+        style="@style/EditBookTextEdit"
+        android:layout_margin="4dp"
+        android:id="@+id/ed_mat_rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical|right"
+        android:layout_weight="3"
+        android:maxLength="16"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_mat_rate"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/padding_three_dip"
+        android:gravity="center_vertical|right"
+        android:layout_weight="3"
+        android:textSize="@dimen/medium_text"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        style="@style/EditBookTextEdit"
+        android:layout_margin="4dp"
+        android:id="@+id/ed_invoice_inv_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="right|center_vertical"
+        android:layout_weight="2.6"
+        android:hint="Qty"
+        android:maxLength="13"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/iv_invoice_serial_no_sel"
+        android:layout_width="@dimen/width_ten_dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.6"
+        android:background="@android:color/white"
+        android:contentDescription="@string/navigateTo"
+        android:src="@drawable/navigateto" />
+
+
+</LinearLayout>

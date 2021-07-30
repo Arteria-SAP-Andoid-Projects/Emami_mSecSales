@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/line_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_scheme_name"
+            android:layout_width="@dimen/width_one_twenty_dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingStart="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+
+      <!--  <TextView
+            android:id="@+id/tv_scheme_size_value"
+            android:layout_width="@dimen/width_eighty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/WHITE"
+            android:gravity="center|center_vertical"
+            android:paddingLeft="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingRight="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/tv_pri_scehme"
+            android:layout_width="@dimen/width_eighty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/WHITE"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding_zero_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingRight="@dimen/padding_three_dip"
+            android:paddingEnd="@dimen/padding_three_dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_point_five_dip"
+        android:background="@color/line_color">
+    </LinearLayout>
+
+</LinearLayout>

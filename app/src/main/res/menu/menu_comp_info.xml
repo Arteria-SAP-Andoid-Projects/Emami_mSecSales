@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_comp_info_list"
+        android:orderInCategory="100"
+        android:title="@string/comp_info_list_menu"/>
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_save"
+        android:orderInCategory="100"
+        android:title="@string/save_menu"/>
+
+</menu>

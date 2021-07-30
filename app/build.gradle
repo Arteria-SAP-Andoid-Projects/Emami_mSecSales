@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.arteriatech.emami.msecsales"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 107
+        versionName "3.0.0.65"
+        multiDexEnabled true
+        buildConfigField 'String', 'BUILD_TIME', 'new java.text.SimpleDateFormat("dd-MM-yyyy HH:mm", java.util.Locale.getDefault()).format(new java.util.Date(' + System.currentTimeMillis() + 'L))'
+
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+
+        packagingOptions {
+            //  exclude "lib/arm64-v8a/libodataofflinejni.so"
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/LICENSE-FIREBASE.txt'
+            exclude 'META-INF/NOTICE'
+
+        }
+    }
+
+
+    dexOptions {
+        javaMaxHeapSize "8g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.google.android.gms:play-services-location:9.0.1'
+    compile 'com.google.android.gms:play-services-maps:9.0.1'
+    compile 'com.android.support:design:28.0.0'
+    compile 'com.android.support:support-v4:28.0.0'
+    compile 'com.intuit.sdp:sdp-android:1.0.4'
+    compile 'com.maksim88:PasswordEditText:v0.9'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+//    testCompile 'junit:junit:4.12'
+    compile 'id.zelory:compressor:1.0.4'
+    compile files('libs/guava-r09.jar')
+    compile files('libs/AfariaSLL-7.00.6169.0.jar')
+    compile files('libs/perflib-1.2.0.jar')
+    compile files('libs/sap-e2etrace-2.3.9.0.jar')
+    compile files('libs/simple-xml-2.7.1.jar')
+    compile 'com.android.support:cardview-v7:28.0.0'
+    compile(name: 'AfariaProvider-3.16.9', ext: 'aar')
+    compile(name: 'android-database-sqlcipher-3.5.9', ext: 'aar')
+    compile(name: 'ClientHubSLL-3.16.9', ext: 'aar')
+    compile(name: 'ClientLog-3.16.9', ext: 'aar')
+    compile(name: 'Common-3.16.9', ext: 'aar')
+    compile(name: 'Connectivity-3.16.9', ext: 'aar')
+    compile(name: 'CoreServices-3.16.9', ext: 'aar')
+    compile(name: 'DataVaultLib-3.16.9', ext: 'aar')
+    compile(name: 'E2ETrace-3.16.9', ext: 'aar')
+    compile(name: 'HttpConvAuthFlows-3.16.9', ext: 'aar')
+    compile(name: 'HttpConversation-3.16.9', ext: 'aar')
+    compile(name: 'MAFLogger-3.16.6', ext: 'aar')
+    compile(name: 'MAFLogonCore-3.16.6', ext: 'aar')
+    compile(name: 'MAFLogonUI-3.16.6', ext: 'aar')
+    compile(name: 'MAFSettingScreen-3.16.6', ext: 'aar')
+    compile(name: 'MAFUIComponents-3.16.6', ext: 'aar')
+    compile(name: 'MobilePlace-3.16.9', ext: 'aar')
+    compile(name: 'ODataOnline-3.16.9', ext: 'aar')
+    compile(name: 'ODataAPI-3.16.9', ext: 'aar')
+    compile(name: 'Parser-3.16.9', ext: 'aar')
+    compile(name: 'Persistence-3.16.9', ext: 'aar')
+    compile(name: 'Request-3.16.9', ext: 'aar')
+    compile(name: 'SupportabilityFacade-3.16.9', ext: 'aar')
+    compile(name: 'Usage-3.16.9', ext: 'aar')
+    compile(name: 'XscriptParser-3.16.9', ext: 'aar')
+    compile 'com.evrencoskun.library:tableview:0.8.8'
+
+    compile(name: 'mUtils-1.58.52.66', ext: 'aar')
+    // compile(name: 'utils', ext: 'aar')
+    compile(name: 'odataoffline-android-4.1.8', ext: 'aar')
+    compile 'org.jsoup:jsoup:1.11.3'
+
+
+
+}
+
+
+android {
+    useLibrary 'org.apache.http.legacy'
+}

@@ -1,0 +1,1378 @@
+﻿<resources>
+    <string name="app_name">mSecSales</string>
+    <string name="str_copy_rights">Copyright &#169; 2016 Arteria. All rights reserved.</string>
+    <string name="app_loading">Loading... </string>
+    <string name="host">172.25.12.48</string>
+    <string name="port">8080</string>
+    <string name="clientValue">001</string>
+    <string name="applicationIDText">mSFA</string>
+    <string name="securityConfigText">mSFA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Q1">What is the Size(Area)of the Store/Outlet?</string>
+    <string name="Q2">What is the Format of the Store/Outlet?</string>
+    <string name="Q3">How Many Manpower the Store/Outlet?</string>
+    <string name="Q4">What are the working Hours of the Store/Outlet?</string>
+    <string name="Q5">Does the Store/Outlet Provide Home Delivery</string>
+    <string name="Q6">Does the Store/Outlet Take Order on Phone?</string>
+    <string name="Q7">Does the Store/Outlet have computer based billing system?</string>
+    <string name="Q8">How Many Checkout counter are there in Store/outlet?</string>
+    <string name="Q9">What is the location of the Store/outlet?</string>
+    <string name="Q10">Is there any hospital nearby?</string>
+    <string name="Q11">Is there any School/College/University nearby?</string>
+    <string name="Q12">How many window display are there in Store/Outlet?</string>
+    <string name="Q13">Does the Store/outlet Carry below categorie?</string>
+    <string name="Q14">Does the Store/Outlet have Smart Phone?</string>
+
+
+    <string name="project_title">mSecSales</string>
+    <string name="registration">Registration</string>
+    <string name="uName">User Name</string>
+    <string name="star">*</string>
+    <string name="st">:</string>
+    <string name="password">Password</string>
+    <string name="serverHost">Server Host</string>
+    <string name="client">Client</string>
+    <string name="applicationID">Application ID</string>
+    <string name="securityConfig">Security Config</string>
+    <string name="showPassword">Show Password</string>
+    <string name="register">Register</string>
+    <string name="clear">Clear</string>
+    <string name="exit">Exit</string>
+    <string name="aboutUs">About Us</string>
+    <string name="auto_sync">Auto Sync :</string>
+    <string name="serverPort">Server Port</string>
+    <string name="syncmenu">Sync Menu</string>
+    <string name="registerationheader">mSFA</string>
+    <string name="_data_data_">/data/data/</string>
+    <string name="uao_3_activations_rs_300_rechagre_month_">UAO(>3 Activations &amp; Rs 300 recharge/ month)</string>
+    <string name="no_req_to_update_sap">No pending requests to update SAP</string>
+    <string name="no_req_to_update_merchant">No pending requests to update Merchant</string>
+    <string name="error_occured_during_get_image">Media download failed</string>
+    <string name="credit_note_menu">Incentive</string>
+    <string name="register_with_server_plz_wait">Registering with server, please wait&#8230;</string>
+    <string name="reterving_with_service_document">Retrieving service document&#8230;</string>
+    <string name="reterving_with_meta_document">Retrieving metadata&#8230;</string>
+    <string name="error_while_meta_document">Error while retrieving metadata.</string>
+    <string name="error_while_service_document">Error while retrieving service document.</string>
+    <string name="sync_progress_msg">Synchronization in Progress</string>
+    <string name="alert_enter_atlest_one_material">Enter quantity for atleast one CRS SKU Group</string>
+    <string name="all_must_sell_qty_should_be_entered">All Must sell sku qty should be entered</string>
+    <string name="msg_update_end">Updating end, please wait</string>
+    <string name="msg_update_non_visted_retilers">Updating day end and non visited retailers remarks to server, please wait</string>
+
+    <string name="title_sample_disbursement">Sample Disbursement</string>
+    <string name="lbl_brand">Brand</string>
+    <string name="msg_secondary_so_created">Sales Order created</string>
+    <string name="msg_inv_created">Secondary Invoice created</string>
+    <string name="msg_return_order_created">Return Order created</string>
+    <string name="msg_material_batch_already_exists">Material Batch already exists</string>
+    <string name="msg_sample_disbursement_created">Sample Disbursement created</string>
+    <string name="msg_customer_complaints_created">Complaint created</string>
+    <string name="msg_customer_complaints_failed_created">Complaints created failed</string>
+    <string name="alert_sync_is_progress">Sync is in progress.Sync cannot be performed now</string>
+    <string name="sync_terminated_data_conn_lost">Sync : Sync terminated as data connectivity was lost</string>
+    <string name="records_sync_successfully">records  synchronized successfully</string>
+    <string name="sync_successfully">Synchronization completed</string>
+    <string name="sync_successfully_completed">Synchronization successfully completed.</string>
+    <string name="do_want_cancel_sync">Do you want to cancel synchronisation?</string>
+    <string name="view_log">View Log</string>
+    <string name="error_occured_during_sync">Error occurred while Synchronizing, Please check the log.</string>
+    <string name="do_u_want_exit">Do you want to exit?</string>
+    <string name="do_u_want_exit_inv_create">Do you want to exit from Sales Order Create?</string>
+    <string name="do_u_want_exit_return_materials">Do you want to exit from Returns?</string>
+    <string name="do_u_want_exit_collection_create">Do you want to exit from Collection?</string>
+    <string name="do_u_want_exit_cef">Do you want to exit from CEF?</string>
+    <string name="do_u_want_exit_img_capture">Do you want to exit from Image Capture?</string>
+    <string name="do_u_want_exit_rela_call">Do you want to exit from RelationShip Call?</string>
+    <string name="do_u_want_exit_business_call">Do you want to exit from Business Call?</string>
+    <string name="do_u_want_exit_shade_card">Do you want to exit from Shared Card?</string>
+    <string name="do_u_want_exit_customer_compliants">Do you want to exit from Complaints?</string>
+    <string name="do_u_want_exit_dealer_stock">Do you want to exit from Dealer Stock?</string>
+    <string name="do_u_want_exit_cometitor_stock">Do you want to exit from Competitor Stock Entry?</string>
+    <string name="complete_sync_in_prog">Completed, Synchronization in Progress.</string>
+    <string name="success">success</string>
+    <string name="plz_select_one_coll">Please select atleast one collection.</string>
+    <string name="beat_plan">Route plan on -</string>
+    <string name="top_dealer_list">Top Dealer List</string>
+    <string name="painter_dealer_list">Painter List</string>
+    <string name="do_u_want_start">Do you want to start?</string>
+    <string name="do_u_want_enter_qty_or_range">Do you want to enter quantity or range?</string>
+    <string name="do_u_want_select_full_or_partial">Do you want to select full or partial?</string>
+    <string name="do_u_want_exit_app">Do you want to exit from the Application?</string>
+    <string name="do_u_want_reset_app">Do you want to Reset the Application?</string>
+    <string name="export_device_log_to_device">Exporting device log to device, Please wait&#8230;</string>
+    <string name="export_device_log_to_device_finish">Device log is export to SD card. Please send the file to support team.</string>
+    <string name="crash_log_to_sdcard_finish">Crash log is export to SD card. Please send the file to support team.</string>
+    <!-- <string name="export_databse_to_sdcard">Exporting DB to SDCard, Please wait&#8230;</string>
+    <string name="import_databse_from_sdcard">Importing DB from SDCard, Please wait&#8230;</string>
+    <string name="export_databse_to_sdcard_finish">DB exported to SD card successfully.</string>
+    <string name="import_databse_from_sdcard_finish">DB imported from SD card successfully.</string>
+    <string name="export_databse_to_sdcard_error_occurred">Error occurred while exporting DB to SD card.</string>
+    <string name="import_databse_from_sdcard_error_occurred">Error occurred while importing DB from SD card.</string>-->
+
+    <string name="export_datavault_data_to_storage">Exporting pending data to device storage, Please wait&#8230;</string>
+    <string name="export_databse_to_sdcard">Exporting DB to device storage, Please wait&#8230;</string>
+    <string name="import_databse_from_sdcard">Importing DB from device storage, Please wait&#8230;</string>
+    <string name="import_datavault_data_from_sdcard">Importing pending data from device storage, Please wait&#8230;</string>
+    <string name="export_databse_to_sdcard_finish">DB exported to device storage successfully.</string>
+    <string name="export_datavault_to_sdcard_finish">Pending data exported to device storage successfully.</string>
+    <string name="import_databse_from_sdcard_finish">DB imported from device storage successfully.</string>
+    <string name="import_datavault_from_sdcard_finish">Pending data imported from device storage successfully.</string>
+    <string name="export_databse_to_sdcard_error_occurred">Error occurred while exporting DB to device storage.</string>
+    <string name="export_datavault_to_sdcard_error_occurred">Error occurred while exporting data to device storage.</string>
+    <string name="import_databse_from_sdcard_error_occurred">Error occurred while importing DB from device storage.</string>
+    <string name="import_datavault_from_sdcard_error_occurred">Error occurred while importing pending data from device storage.</string>
+    <string name="file_not_exist">No file to import</string>
+
+    <string name="cef_created_success">CEF has been created successfully.</string>
+    <string name="snap_created_success">Snapshot saved successfully.</string>
+    <string name="take_pic">Take a picture.</string>
+    <string name="dialog_day_ended">Day ended</string>
+    <string name="dialog_day_started">Day started</string>
+    <string name="dialog_day_reset">Day end reset done</string>
+    <string name="tv_complete">Day Completed</string>
+    <string name="tv_end">End Day</string>
+    <string name="tv_start">Start Day</string>
+    <string name="tv_visit_start">Visit Started</string>
+    <string name="alert_user_is_locked">User is locked.Please reset password</string>
+
+    <string name="tv_visit">Visit</string>
+    <string name="lbl_sample_quantity">Sample Quantity</string>
+    <string name="lbl_quantity">Quantity</string>
+    <string name="lbl_sample_disbursement_create">Sample Disbursement</string>
+    <string name="lbl_return_order_create">Return Order Create</string>
+    <string name="later">Later</string>
+    <string name="msg_on_create">onCreate</string>
+    <string name="reset_is_process_plz_wait">Reset in Process.Please Wait&#8230;</string>
+    <string name="str_dealer_stock">Dealer Stock</string>
+    <string name="insert_failed">Insertion Failed!</string>
+    <string name="insert_sucess">Saved Successfully</string>
+    <string name="insert_success_rela_call">Relationship call saved successfully</string>
+    <string name="insert_success_bussiness_call">Business call saved successfully</string>
+    <string name="insert_success_receipt">New Receipt saved successfully</string>
+    <string name="validation_sel_atlest_one_material">Select atleast one material.</string>
+    <string name="validation_sel_atlest_one_crs_grp">Select atleast one CRS SKU Group</string>
+    <string name="validation_enter_qty_sel_material">Enter quantity for selected material.</string>
+    <string name="validation_plz_enter_qty">Please enter the quantity.</string>
+    <string name="validation_plz_select_reason">Please select reason.</string>
+    <string name="validation_plz_enter_mandatory_flds">Please enter mandatory fields</string>
+    <string name="validation_app_time_incorrect">Device date/time incorrect</string>
+    <string name="validation_new_pwd_confirm_pwd_same">The passwords specified must be identical.</string>
+    <string name="validation_pwd_length_should_6_characters">Password Should Contain Atleast 6 Characters</string>
+    <string name="validation_plz_fill_all_mandatory_flds">Please fill in all the mandatory fields</string>
+    <string name="validation_plz_fill_mandatory_flds">Please fill mandatory fields</string>
+    <string name="validation_plz_enter_instrument_no">Please enter the Instrument #</string>
+    <string name="validation_enter_amount_sel_invoice">Enter amount for selcted invoice.</string>
+    <string name="validation_sel_atlest_one_invoice">Select atleast one invoice number.</string>
+    <string name="validation_req_fields_canot_spaces">Required field cannot contain spaces.</string>
+    <string name="validation_req_fields_canot_left_blank">Required field cannot be left blank.</string>
+    <string name="validation_network_not_avilable_offline_not_possible">Network No Available.Reset not Available in Offline Mode.</string>
+    <string name="validation_plz_enter_username_pwd">Please Enter Valid Username and Password</string>
+    <string name="validation_offline_login_no_internet">Offline Login. Internet Connection not Available..</string>
+    <string name="menu_value_back">Back</string>
+    <string name="menu_value_route_plan_change">Change</string>
+    <string name="tv_value_visit_date">Visit Date</string>
+    <string name="tv_value_planned_route">Planned Route</string>
+    <string name="tv_value_proposed_route">Proposed Route</string>
+    <string name="tv_value_route_login_id">Login Id</string>
+    <string name="tv_value_route_login_name">Login Name</string>
+    <string name="tv_value_route_approval_status">Status</string>
+    <string name="screen_heading_value_route_plan_change">Route Plan Change</string>
+    <string name="screen_heading_value_route_plan_approval">Route Plan Approvals</string>
+    <string name="screen_heading_value_route_plan_approval_list">Route Plan Approval List</string>
+    <string name="no_data_found">No records found</string>
+
+
+    <!-- === Common texts =============================================================================== -->
+
+    <string name="msg_offline_store_success">Offline store opened successfully.</string>
+    <string name="msg_offline_store_failure">Offline store opened failed.</string>
+    <string name="msg_offline_refresh_success">Offline store refreshed successfully.</string>
+    <string name="msg_offline_refresh_failure">Offline store refreshed failed.</string>
+
+    <string name="desc_header_image">Header Image</string>
+
+    <string name="appointment_exists">Appointment already exists for same date and time</string>
+
+    <string name="getting_so_price">Getting SO Price,Please wait...</string>
+
+    <string name="msg_sync_successfully_completed">Synchronization completed successfully</string>
+    <string name="msg_error_occured_during_sync">Synchronization completed with errors</string>
+    <string name="unknown_error">Unknown error occurred during sync. Please check the log</string>
+
+    <string name="msg_start_upd_sync_error">Day start completed with errors</string>
+    <string name="msg_end_upd_sync_error">Day end completed with errors</string>
+    <string name="msg_reset_upd_sync_error">Day reset completed with errors</string>
+
+    <string name="msg_remarks">Please select the reason</string>
+    <string name="msg_remarks_par_retailer">Please enter the remarks for %1$s</string>
+    <string name="title2">%1$s %2$s</string>
+    <string name="msg_exit_attendance">Do you want to exit from attendance?</string>
+
+    <string name="msg_coll_created">Collection created</string>
+    <string name="msg_snap_shot_created">Snapshot created</string>
+
+
+    <string name="msg_marking_attendance">Marking Attendance, please wait</string>
+
+    <!-- === Confirmation Dialog ======================================================================== -->
+
+    <string name="btn_confirm_confirm">Yes</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_confirm_cancel">No</string>
+    <string name="title_delete_agency">Delete Agency</string>
+    <string name="msg_delete_agency">Are you sure that you wish to delete this travel agency?</string>
+    <string name="msg_confirm_delete_log">Do you want to delete the log</string>
+    <string name="msg_confirm_upload_log">Do you want to upload the log to server</string>
+    <string name="msg_confirm_day_end">Do you want to End the Day?</string>
+
+    <string name="msg_appointement_created_successfully">Appointment Created</string>
+    <string name="alert_please_start_time">Please select start time</string>
+    <string name="msg_invalid_time_selection">End time should be greater than start time</string>
+    <string name="msg_appointment_creation_failed">Failed to create appointment</string>
+
+    <string name="msg_previous_day_end">Please click yes to update the end for previous day</string>
+    <string name="msg_close_previous_day_end">Please close previous day</string>
+
+    <string name="msg_update_previous_day_end">Updating previous day end, please wait</string>
+
+    <string name="msg_reset_day_end">Do you want to reset day end?</string>
+
+    <string name="msg_resetting_day_end">Resetting end, please wait</string>
+
+    <!-- === Main Screen ================================================================================= -->
+
+    <string name="title_welcome">Welcome %1$s</string>
+    <string name="btn_online">Online</string>
+    <string name="btn_offline">Offline</string>
+    <string name="lbl_json">JSON Format</string>
+
+    <!-- === Menu  ====================================================================================== -->
+    <string name="desc_menu_save">Save</string>
+    <string name="desc_menu_delete">Delete</string>
+
+    <string name="review_menu">Review</string>
+    <string name="log_menu">Log</string>
+    <string name="back_menu">Back</string>
+    <string name="map_menu">Map</string>
+    <string name="home_menu">Home</string>
+    <string name="sync_menu">Sync</string>
+    <string name="save_menu">Save</string>
+    <string name="submit_menu">Submit</string>
+    <string name="options_menu">Options</string>
+    <string name="next_menu">Next</string>
+    <string name="feed_back_list_menu">Device Feedback</string>
+    <string name="merchindising_list_menu">Device SnapShot</string>
+    <string name="comp_info_list_menu">Device Competitor Info</string>
+    <string name="create_retailer_menu">Device Retailers</string>
+    <string name="device_invoice_menu">Device Invoices</string>
+    <string name="device_collection_menu">Device  Collections</string>
+
+    <string name="sync_hist">Sync History</string>
+
+
+    <string name="str_ret_loc">Retailer Location</string>
+    <string name="str_please_ensure">Please ensure you are at retailer\'s location</string>
+
+    <string name="msg_remarks_pending_visit">Please fill the remarks for pending retailer visit</string>
+
+    <!-- === Agency list screen  ======================================================================= -->
+    <string name="title_agency_total">There are %1$d agencies</string>
+    <string name="desc_agency_id">(Agency ID)</string>
+    <string name="desc_agency_name">(Agency Name)</string>
+    <string name="desc_agency_location">(Location)</string>
+
+    <!-- === Detail screen  ======================================================================= -->
+    <string name="lbl_agency_id">Agency ID</string>
+    <string name="lbl_agency_name">Agency Name</string>
+    <string name="lbl_agency_street">Street</string>
+    <string name="lbl_agency_city">City</string>
+    <string name="lbl_agency_country">Country</string>
+    <string name="lbl_agency_url">URL</string>
+
+    <!--<string name="lbl_search_by_retailer_name">Search</string>-->
+    <string name="lbl_search_by_retailer_name">Retailer name search</string>
+    <string name="lbl_search_by_benefits">Benefits search</string>
+    <string name="lbl_search_by_scheme_desc">Scheme description search</string>
+
+    <!-- === Screen Names  ======================================================================= -->
+    <string name="lbl_main_menu">Main Menu</string>
+    <string name="lbl_retailer_list">Retailer List</string>
+    <string name="lbl_adhoc_list">Adhoc Visit</string>
+    <string name="lbl_appointment_list">Appointment List</string>
+    <string name="lbl_appointment_create">Appointment Create</string>
+    <string name="lbl_retailer_details">Retailer Details</string>
+    <string name="lbl_beat_paln">Beat Work</string>
+    <string name="lbl_visit">Retailer Visit</string>
+    <string name="lbl_merchndising_rivews">Merchandising</string>
+    <string name="lbl_merchndising_list">Merchandising List</string>
+    <string name="lbl_create_invioce">Create_Invioce</string>
+    <string name="lbl_merchndising">Merchandising Snapshot</string>
+    <string name="lbl_invoice_create">Create Invoice</string>
+    <string name="lbl_so_create">Sales Order Create</string>
+    <string name="lbl_visual_aid">Visual Aid</string>
+    <string name="lbl_collection_create">Collection</string>
+    <string name="lbl_feed_back_create">Feedback</string>
+    <string name="lbl_log">Log</string>
+    <string name="title_Login">Login</string>
+    <string name="title_about_us">About Us</string>
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="title_user_name">User Name</string>
+    <string name="title_pass_word">Password</string>
+    <string name="title_show_pass_word"> Show Password</string>
+    <string name="title_save_pass_word">Save Password</string>
+    <string name="title_forgot_pass_word">Forgot Password?</string>
+    <string name="title_login_login">Log-in</string>
+    <string name="title_login_clear">Clear</string>
+    <string name="title_login_exit">Exit</string>
+    <string name="title_forgot_pass_select_mode">Select mode for getting new password</string>
+    <string name="title_forgot_pass_gen_otp"> <u>Generate OTP for New Password</u> </string>
+    <string name="title_forgot_pass_enter_otp">Enter OTP</string>
+    <string name="title_forgot_pass_resend_otp"><u>Re-send OTP</u></string>
+    <string name="title_forgot_pass_submit">Submit</string>
+    <string name="title_forgot_pass_cancel">Cancel</string>
+    <string name="title_forgot_pass_mobile">Mobile</string>
+    <string name="title_forgot_pass_email">E-Mail</string>
+    <string name="lbl_sync_menu">Sync Menu</string>
+    <string name="lbl_sync_sel">Sync Selection</string>
+    <string name="title_create_retailer">Create Retailer</string>
+    <string name="title_retailer_details">Retailer Details</string>
+    <string name="lbl_address_txt">Address</string>
+    <string name="lbl_actions">Actions</string>
+    <string name="lbl_communications">Communication</string>
+    <string name="lbl_related_links">Related Links</string>
+    <string name="lbl_helpline_call">Contact Call Centre</string>
+    <string name="title_helpline">Help Line</string>
+    <string name="title_tariff">Tariff</string>
+    <string name="title_schemes">Schemes</string>
+    <string name="title_my_targets">My Targets</string>
+    <string name="title_sku_grp_targets">SKU Group Wise Performance</string>
+
+    <string name="title_sync_settings">Sync Setting</string>
+    <string name="lbl_back">Back</string>
+    <string name="lbl_delete">Delete</string>
+    <string name="title_invoiceCreate">Create Invoice</string>
+    <string name="title_serialNoSelection">Select Serial Numbers</string>
+    <string name="title_collection_entry">Collection Entry</string>
+    <string name="title_out_standing_bills">Outstanding Bills</string>
+    <string name="title_update_retailer">Update Retailer</string>
+    <string name="title_device_retailer">Device Retailers</string>
+    <string name="lbl_search">Search</string>
+    <string name="title_activation_status">Activation Status</string>
+    <string name="title_my_stock">My Stock</string>
+    <string name="title_retailer_stock">Retailer Stock</string>
+    <string name="title_stock">Stock</string>
+    <string name="title_material_serial_numbers">Material Serial Numbers</string>
+    <string name="title_feed_back">Feedback/ Inputs</string>
+    <string name="title_my_performance">My Performance</string>
+    <string name="title_retailer_summary">Retailer Summary</string>
+    <string name="title_outstanding_invoices">Outstanding Invoices</string>
+
+    <string name="title_behaviour_list">Behaviour List</string>
+    <string name="title_retailer_behaviour">Behaviour</string>
+    <string name="title_retailer_activation_status">Retailer Activation Status</string>
+    <string name="title_coll_summary">Collection Summary</string>
+    <string name="lbl_channel_partner">Channel Partner</string>
+    <string name="lbl_ss_invoices">SS Invoices</string>
+    <string name="title_retailer_trends">Trend</string>
+    <string name="lbl_attendances">Attendances</string>
+    <string name="title_visit_summary">Visit &amp; MTD Summary</string>
+    <string name="lbl_inv_colon">Invoice:</string>
+    <string name="export_datavault_data_menu">Export Data</string>
+    <string name="import_datavault_data_menu">Import Data</string>
+    <string name="logout_menu">Re-Register</string>
+    <string name="logout_conformation">Do you want to Re-Register?\n\nNote:- If yes, app will close now, please open it again.</string>
+    <string name="export_menu">Export</string>
+    <string name="export_device_log_menu">Export Crash Log</string>
+    <string name="import_menu">Import</string>
+    <string name="aboutus_menu">About Us</string>
+    <string name="update_pwd_menu">Update Password</string>
+    <string name="enter_new_pwd">Enter New Password : </string>
+    <string name="enter_confirm_pwd">Confirm Password : </string>
+    <string name="note_pwd_is_case_sensitive">NOTE : Entry is case sensitive.  </string>
+    <string name="init_db_menu">Initialize DB</string>
+    <!-- ===Main Menu Filed Names  ======================================================================= -->
+    <string name="lbl_today">Today</string>
+    <string name="lbl_admin">Admin</string>
+    <string name="lbl_reports">Reports</string>
+    <string name="str_concat_today_achieved">Today(Achieved: %1$s)</string>
+    <string name="str_concat_visit_achieved">Visit(Achieved: %1$s/%2$s )</string>
+    <!-- === Filed Names  ======================================================================= -->
+    <string name="lbl_type">Type</string>
+    <string name="lbl_remarks">Remarks</string>
+    <string name="lbl_inr">INR</string>
+    <string name="btn_take_a_picture">Take a Picture</string>
+    <string name="lbl_star">*</string>
+    <string name="lbl_collection_method">Collection Method</string>
+    <string name="lbl_coll_method">Coll Method</string>
+    <string name="lbl_complaint_category">Complaint Category</string>
+    <string name="lbl_complaint">Complaint</string>
+    <string name="lbl_collection_date">Collection Date</string>
+    <string name="lbl_cheque_date">Cheque Date</string>
+    <string name="lbl_payment_mode">Payment Mode</string>
+    <string name="lbl_instrument">Instrument #</string>
+    <string name="lbl_bank_name">Bank Name</string>
+    <string name="lbl_branch_name">Branch Name</string>
+    <string name="lbl_dd_cheque">Cheque/DD</string>
+    <string name="lbl_utr_no">UTR Number</string>
+    <string name="lbl_current_invoice_value">Current Invoice Value</string>
+    <string name="lbl_outstanding_value">Outstanding Value</string>
+    <string name="lbl_amount">Amount </string>
+
+    <string name="lbl_inst">Ins</string>
+    <string name="lbl_balance">Balance</string>
+    <string name="lbl_billed">Billed</string>
+    <string name="lbl_paid">Paid</string>
+    <string name="lbl_day_summary">Day Summary</string>
+    <string name="lbl_summary">Summary</string>
+    <string name="lbl_pending">Pending</string>
+    <string name="lbl_coll">Coll</string>
+    <string name="lbl_invoice_item_no">Item #</string>
+    <string name="lbl_inv_no">Invoice #</string>
+
+    <string name="lbl_bill_no">Bill Number</string>
+    <string name="lbl_bill_value">Bill Value</string>
+
+    <string name="title_activity_incoive_create">IncoiveCreateActivity</string>
+    <string name="material_desc">Material Desc</string>
+    <string name="material_code">Material Code</string>
+    <string name="last_pur_qty">Last Pur Qty</string>
+    <string name="mat_rate">MRP</string>
+    <string name="inv_qty">Inv Qty</string>
+    <string name="title_activity_serial_no_selection">SerialNoSelectionActivity</string>
+    <string name="total_price">Total Price</string>
+    <string name="invoice_quantity">Invoice Qty</string>
+    <string name="allocated_quantity">Allocated Qty</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="btn_partial">Partial</string>
+    <string name="btn_full">Full</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="available">Available</string>
+    <string name="allocated">Allocated</string>
+    <string name="allocated_sno">Allocated Serial Numbers</string>
+    <string name="available_sno">Available Serial Numbers</string>
+    <string name="navigateTo">navigateTo</string>
+    <string name="lbl_must_sell">Must Sell Product</string>
+    <string name="lbl_sample_collection">Sample Collection</string>
+    <string name="lbl_new_product">New Launched Product</string>
+    <string name="lbl_addtional_material">Additional Product</string>
+    <string name="lbl_must_sel">Must Sell</string>
+    <string name="lbl_materials">Materials</string>
+    <string name="lbl_targets">Targets</string>
+    <string name="lbl_focused_product">Focused Product</string>
+    <string name="lbl_price">Price</string>
+    <string name="lbl_validity">Validity</string>
+    <string name="lbl_benefits">Benefits</string>
+    <string name="lbl_scheme_name">Scheme Name</string>
+    <string name="lbl_scheme_description">Scheme Description</string>
+    <string name="scheme_search_hint">Search...</string>
+    <string name="lbl_select_view">Select View</string>
+    <string name="lbl_semi_colon">:</string>
+    <string name="lbl_select_dob">Select DOB</string>
+
+    <string name="lbl_etop_up_allowed">Etop-up SIM Allotted</string>
+    <string name="lbl_collection">Collection</string>
+    <string name="lbl_db_sock">DB Stock</string>
+
+    <string name="title_gps_setting">GPS settings</string>
+
+    <string name="lbl_invoices_date">Invoice Date</string>
+    <string name="lbl_invoices_amount">Invoice Amount</string>
+    <string name="lbl_invoices_out">Outstanding</string>
+    <string name="lbl_invoices_status">Invoice Status</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_no_records_found"> No records found </string>
+    <string name="lbl_no_sample_records_found"> No sample added </string>
+    <string name="lbl_system_no_records">System kpi records not available</string>
+    <string name="title_invoiceHistory">Invoice History</string>
+    <string name="title_feed_back_list">Feedback List</string>
+    <string name="title_merchindising_list">Merchandising List</string>
+    <string name="title_merchindising_snapshot">Merchandising Snapshot</string>
+    <string name="title_snapshot">Snapshots</string>
+    <string name="title_snapshot_list">Snapshot List</string>
+    <string name="title_merchindising_details">Merchandising Details</string>
+    <string name="title_comp_info_list">Competitor Information</string>
+    <string name="title_feed_back_details">Feedback Details</string>
+    <string name="title_collection_history">Collection History</string>
+    <string name="title_collections">Collections</string>
+    <string name="title_collection_details">Collection Details</string>
+    <string name="title_competitor_info">Competitor Information</string>
+    <string name="title_invoiceHistoryDetails">Invoice Item Details</string>
+    <string name="lbl_collection_document">Collection Document #</string>
+    <string name="lbl_collection_amount">Collection Amount</string>
+    <string name="lbl_coll_amount">Collection Amount</string>
+    <string name="lbl_paymeny_mode">Payment Mode</string>
+    <string name="lbl_coll_method_paymeny_mode">Coll Method/Payment Mode</string>
+    <string name="lbl_comp_info">CompetitorInfos</string>
+    <string name="lbl_amt">Amt.</string>
+
+    <string name="str_concat_two_texts_item_no">Item %1$s</string>
+    <string name="lbl_retailer_collection">Retailer Invoice</string>
+    <string name="lbl_retailer_name">Retailer Name</string>
+    <string name="lbl_activity_type">Activity Type</string>
+    <string name="lbl_cleared_amount">Cleared Amount</string>
+    <string name="lbl_balance_amount">Balance Amount</string>
+    <string name="lbl_invoices_no">Invoice #</string>
+    <string name="lbl_coll_no">Coll #</string>
+
+
+    <!-- === General error messages  ======================================================================= -->
+    <string name="msg_success_delete_agency_param">The travel agency %1$s has been deleted</string>
+    <string name="msg_success_delete_agency">The travel agency has been deleted</string>
+    <string name="msg_success_create_agency_param">The travel agency %1$s has been created</string>
+    <string name="msg_success_update_agency_param">The travel agency %1$s has been modified</string>
+    <string name="msg_success_update_agency">The travel agency has been modified</string>
+    <string name="msg_success_flush_agency">Requests were sent successfully</string>
+    <string name="msg_success_refresh_agency">Updates were received successfully</string>
+    <string name="err_odata_unexpected_param">Unexpected error occurred %1$s</string>
+    <string name="err_odata_unexpected">Unexpected error occurred %1$s</string>
+
+    <!-- === General messages  ======================================================================= -->
+    <string name="msg_sync_started">Synchronization %1$s started </string>
+    <string name="msg_error_sync">%1$s synchronized with errors :  </string>
+    <string name="msg_success_sync">%1$s synchronized successfully</string>
+    <string name="msg_sync_progress_msg_plz_wait">Synchronization in Progress, Please wait&#8230;</string>
+    <string name="msg_success_delete_log">Log deleted successfully</string>
+    <string name="msg_success_upload_log">Log uploaded successfully</string>
+    <string name="msg_error_upload_log">Error occured while uploading logs to server</string>
+    <string name="msg_success_store_open">Offline store opened successfully</string>
+
+    <string name="msg_success_registration">Device registered successfully</string>
+    <string name="msg_sync_terminated">Sync terminated</string>
+    <string name="mark_now">Mark Now</string>
+
+    <string name="settings">Settings</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="no">No</string>
+    <!-- <string name="no_network_conn">No Network Connectivity</string>-->
+    <string name="no_network_conn">Sync cannot be performed due to network unavailability</string>
+    <string name="pls_select_valid_time">Appointment can not be created with past time</string>
+    <string name="msg_time_should_be_grater_now">Start time should be greater than 20 minutes from current time</string>
+    <string name="msg_end_time_duration_20_min_from_start_time">Appointment duration should be greater than 20 minutes from start time</string>
+
+    <string name="data_conn_lost_during_sync_error_code">[%1$s] Unable to reach server. Please check the data connection and try again</string>
+    <string name="data_conn_lost_during_upload_log_error_code">[%1$s] Unable to reach server. Please check the data connection and try again</string>
+    <string name="data_conn_lost_during_sync">Unable to reach server. Please check the data connection and try again</string>
+    <string name="techincal_error_plz_contact">[%1$s] Technical error, Please upload log and inform administrator</string>
+    <string name="comm_error_server_failed_plz_contact">[%1$s] Communication with server failed with status code 503, Please upload log and inform administrator</string>
+    <string name="internal_error_during_sync">Internal error occurred during sync, Please try again</string>
+    <string name="auth_fail_plz_contact_admin">[%1$s] Authentication failed or user locked, Please contact channel team</string>
+    <string name="issue_copied_to_clipboard_send_to_chnnel_team">Issues copied to clipboard.Please send to channel team</string>
+
+    <string name="qty">Qty</string>
+    <string name="quantity">Quantity</string>
+    <string name="range">Range</string>
+    <string name="menu_add">Add</string>
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="str_concat_two_texts_sales_achieved">Sales(Achieved: %1$s Value : %2$s )</string>
+    <string name="str_concat_two_texts_month_achieved">Month(Achieved: %1$s Value : %2$s )</string>
+    <string name="str_concat_two_texts_visit_achieved_heading">Visit Status:</string>
+    <string name="str_concat_two_texts_visit_achieved_val">%1$s/%2$s</string>
+    <string name="str_concat_two_texts_visit_unique_bill_cut">Unique Bill Cut:</string>
+    <string name="str_concat_two_texts_visit_unique_bill_cut_value">%1$s/%2$s</string>
+    <string name="str_concat_two_texts">%1$s - %2$s</string>
+    <string name="str_concat_two_texts_with_coma">%1$s , %2$s</string>
+    <string name="total_inv_value">Total Invoice Value</string>
+    <string name="total_inv_amount">Total Invoice Amount</string>
+    <string name="do_want_to_delete_retailer_stock">Do you want to delete %1$s ?</string>
+    <string name="do_want_to_delete_return_order">Do you want to delete %1$s ?</string>
+    <string name="total_coll_amount">Collection Amount</string>
+    <string name="advance_coll_amount">Advance Amount</string>
+    <string name="adjust_coll_amount">Adjusted Amount</string>
+
+    <string name="str_concat_two_texts_month_ach">Month Achieved:</string>
+    <string name="str_concat_two_texts_today_achieved">Today Achieved:</string>
+    <string name="str_concat_two_texts_today_value">Value:</string>
+    <string name="str_rupee_symbol">\u20B9</string>
+    <!-- === alert messages  ======================================================================= -->
+    <string name="alert_exit_create_retailer">Do you want to exit from Create Retailer?</string>
+    <string name="alert_exit_outlet_survey">Do you want to exit from Outlet Survey?</string>
+    <string name="alert_exit_update_retailer">Do you want to exit from Update Retailer?</string>
+    <string name="alert_exit_create_merchndising">Do you want to exit from Merchandising Snapshot?</string>
+    <string name="alert_exit_create_feed_back">Do you want to exit from Feed Back?</string>
+    <string name="alert_exit_create_collection">Do you want to exit from Collection Entry?</string>
+    <string name="alert_exit_customer_complaints">Do you want to exit from Complaint?</string>
+    <string name="alert_exit_create_so">Do you want to exit from Sales Order Create?</string>
+    <string name="alert_exit_create_retailer_stock">Do you want to exit from Retailer Stock Entry?</string>
+    <string name="alert_exit_create_invoice">Do you want to exit from Invoice Create?</string>
+    <string name="alert_exit_create_return">Do you want to exit from Return Order Create?</string>
+    <string name="alert_exit_create_competitor_info">Do you want to exit from Competitor Information?</string>
+    <string name="alert_plz_start_day">Please start the day</string>
+    <string name="alert_start_visit">Do you want start the visit?</string>
+    <string name="alert_end_visit">Do you want end the visit?</string>
+    <string name="alert_start_visit_gps">Visit cannot be started.Please enable GPS</string>
+    <string name="alert_end_visit_gps">Visit cannot be ended.Please enable GPS</string>
+    <string name="msg_as_on">As on</string>
+
+    <string name="alert_visit_pause">Visit end not marked</string>
+    <string name="alert_plz_enter_qty">Please enter the quantity</string>
+    <string name="alert_plz_enter_range">Please enter the range</string>
+    <string name="alert_plz_enter_remarks">Please select the remarks</string>
+    <string name="alert_plz_enter_deviation_reason">Please select the reason for deviation</string>
+    <string name="alert_no_data_found">* No records found *</string>
+    <string name="alert_sync_cannot_be_performed"> Sync cannot be performed due to network unavailability</string>
+    <string name="alert_gps_not_enabled">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="alert_do_u_want_remove_sno">Do you want remove?</string>
+    <string name="alert_delete_retailer_invoice">Do you want to delete?</string>
+    <string name="alert_auto_sync_is_progress">Auto sync is in progress.Sync cannot be performed now</string>
+    <string name="alert_whatsapp_not_installed">WhatsApp not Installed</string>
+    <string name="alert_mail_id_not_maintend">Email ID not maintained</string>
+    <string name="alert_mobile_no_maintend">Mobile number not maintained</string>
+    <string name="pop_up_msg_update_retailer">Updating Retailer details, please wait</string>
+    <string name="pop_up_msg_create_retailer"> Submitting Retailer details, please wait</string>
+    <string name="alert_stock_entered_qty_more_than_avalible_qty">Entered quantity is more than available quantity</string>
+
+    <string name="alert_stock_is_not_available">Serial numbers not available</string>
+    <string name="alert_select_atleast_one_material">Please select at least one material</string>
+    <string name="alert_select_serial_number">Please enter serial number for selected materials</string>
+    <string name="alert_enter_valid_qty">Please enter valid invoice quantity</string>
+    <string name="alert_enter_valid_coll_amount">Collection amount is not matching with entered amount</string>
+    <string name="alert_select_atleast_one_invoice">select atleast one invoice</string>
+    <string name="alert_unit_price_not_maintained_for_sel_material">Unit Price not maintained for the selected material</string>
+    <string name="alert_comp_info_already_updated">Competitor Info created for the day</string>
+
+    <string name="alert_unit_price_not_maintained">Unit Price not maintained</string>
+    <string name="alert_enter_valid_rate">Please enter valid rate</string>
+
+    <string name="val_plz_select_collection_method">Please select collection method</string>
+    <string name="val_plz_select_payment_mode">Please select payment mode</string>
+    <string name="val_plz_select_bank_name">Please select bank name</string>
+    <string name="val_plz_enter_instrument">Please enter instrument #</string>
+    <string name="val_plz_enter_utr_no">Please enter UTR Number</string>
+    <string name="val_plz_enter_current_inv_value">Please enter current invoice value</string>
+    <string name="val_plz_enter_current_valid_inv_value">Please enter valid current invoice value</string>
+    <string name="val_plz_enter_outstanding_value">Please enter outstanding value</string>
+    <string name="val_plz_enter_valid_outstanding_value">Please enter valid outstanding value</string>
+    <string name="val_plz_enter_amount">Please enter amount</string>
+    <string name="val_plz_valid_enter_amount">Please enter valid collection amount</string>
+    <string name="val_plz_select_at_least_one_invoice">Please select at least one invoice.</string>
+
+    <string name="alert_enter_qty">Please enter valid quantity</string>
+    <string name="alert_allocated_qty_less_than_invoice_qty">Allocated quantity should be less than invoice quantity</string>
+    <string name="alert_allocated_qty_equal_to_invoice_qty">Allocated quantity should be equal to invoice quantity</string>
+
+    <!-- === Retailer CreateOperation Screen======================================================================= -->
+    <string name="val_plz_select_retailer_type">Please select retailer type</string>
+    <string name="val_plz_enter_outlet_name">Please enter outlet name</string>
+    <string name="val_plz_enter_owner_name">Please enter owner name</string>
+    <string name="val_plz_enter_retailer_profile">Please enter retailer profile</string>
+    <string name="val_plz_enter_address">Please enter address</string>
+    <string name="val_plz_enter_district">Please enter district</string>
+    <string name="val_plz_enter_city">Please enter city</string>
+    <string name="val_plz_select_state">Please select state</string>
+    <string name="val_plz_select_dist">Please select distributor</string>
+    <string name="val_plz_enter_landmark">Please enter landmark</string>
+    <string name="val_plz_enter_pin_code">Please enter PIN code</string>
+    <string name="val_plz_enter_valid_pin_code">Please enter valid PIN code</string>
+    <string name="val_plz_select_lat_long">Please select location</string>
+    <string name="val_plz_enter_mobile">Please enter Mobile #</string>
+    <string name="val_plz_enter_valid_mobile">Please enter valid Mobile #</string>
+    <string name="val_plz_enter_email_id">Please enter valid E-Mail ID</string>
+    <string name="val_plz_enter_valid_email_id">Please enter valid E-Mail ID</string>
+    <string name="val_plz_select_dob">Please select date of birth</string>
+    <string name="val_plz_enter_pan">Please enter PAN #</string>
+    <string name="val_plz_enter_valid_pan">Please enter valid PAN #</string>
+    <string name="val_plz_enter_vat">Please enter VAT #</string>
+    <string name="val_plz_enter_tin">Please enter TIN #</string>
+    <string name="val_plz_enter_valid_tin">Please enter valid TIN #</string>
+    <string name="val_plz_enter_etop">Please enter etop up number</string>
+    <string name="val_plz_enter_valid_etop">Please enter valid etop up number</string>
+
+
+    <!-- === Invoice Details screen  ======================================================================= -->
+    <string name="lbl_details_invoice_no">Invoice #</string>
+    <string name="lbl_code">Code</string>
+    <string name="lbl_details_mat_code">Material Code</string>
+    <string name="lbl_details_mat_desc">Material Desc</string>
+    <string name="lbl_details_net_amount">Net Amount</string>
+    <string name="lbl_details_inv_qty">Invoice Qty</string>
+
+    <!-- === My Targets screen  ======================================================================= -->
+    <string name="lbl_month">Month</string>
+    <string name="lbl_inv_value_mtd_sim">Invoice Value MTD - SIM</string>
+    <string name="lbl_inv_value_mtd_rcv">Invoice Value MTD - RCV</string>
+    <string name="lbl_inv_value_mtd_data">Invoice Value MTD – Data</string>
+    <string name="lbl_inv_value_mtd_voice">Invoice Value MTD – Voice</string>
+    <string name="lbl_kpi">KPI</string>
+    <string name="lbl_month_target">Month Target</string>
+    <string name="lbl_mtda">MTDA</string>
+    <string name="lbl_crr">CRR</string>
+    <string name="lbl_arr">RR</string>
+
+    <string name="lbl_target">Target</string>
+    <string name="lbl_achived">Achieved</string>
+    <string name="lbl_achieved_per">Achieved %</string>
+    <string name="lbl_btd">BTD</string>
+
+    <!-- === My Stock screen  ======================================================================= -->
+    <string name="lbl_description">Description</string>
+    <string name="lbl_material_description">Material Description</string>
+    <string name="lbl_material">Material</string>
+    <string name="lbl_stock_quantity">Stock Qty</string>
+    <string name="lbl_serial_number">Serial #</string>
+    <string name="lbl_total_Quantity">Total Qty</string>
+    <string name="lbl_total_value">Total Value</string>
+    <string name="lbl_serial_from">Serial From</string>
+    <string name="lbl_stock_value">Stock Value</string>
+    <string name="lbl_serial_to">Serial To</string>
+    <string name="lbl_discrete_serial">Discrete Serial</string>
+    <string name="lbl_sim_stock_value">SIM Stock</string>
+    <string name="lbl_rcv_stock_value">RCV Stock Value</string>
+    <string name="lbl_from">From</string>
+    <string name="lbl_to">To</string>
+
+    <!-- === Retailer Trends screen  ======================================================================= -->
+    <string name="lbl_mat_desc">Material Desc</string>
+    <string name="lbl_mat_code">Code</string>
+    <string name="lbl_lmtd">LMTD</string>
+    <string name="lbl_mtd">MTD</string>
+    <string name="lbl_gr">GR%</string>
+    <string name="lbl_m1">M1</string>
+    <string name="lbl_m2">M2</string>
+    <string name="lbl_m3">M3</string>
+
+    <string name="lbl_cat">CAT</string>
+    <string name="lbl_visit_act">VisitActivities</string>
+
+    <string name="lbl_avg_lst_three_months">Avg Lst 3 MTS</string>
+    <string name="lbl_ly_sm_ach">LYSMA</string>
+    <string name="lbl_cm_target">CM Target</string>
+    <string name="lbl_cmtd">CMTD</string>
+    <string name="lbl_bal_to_do">BTD</string>
+    <string name="lbl_ach_per">ACHD %</string>
+    <string name="lbl_ly_gr_per">LY Growth %</string>
+    <!-- === Comp Info  ======================================================================= -->
+    <string name="lbl_competitor">Competitor</string>
+    <string name="lbl_ga">GA</string>
+    <string name="lbl_h_frc">H.FRC</string>
+    <string name="lbl_h_src">H.SRC</string>
+    <string name="lbl_earning_month">Earning per month</string>
+    <string name="lbl_schemes">Schemes</string>
+    <string name="lbl_tertiary">Tertiary</string>
+    <string name="lbl_sales_order">Sales Order</string>
+
+    <string name="lbl_coll_name">Collections</string>
+    <string name="lbl_create">Create</string>
+    <string name="lbl_read">Read</string>
+    <string name="lbl_update">Update</string>
+    <string name="lbl_delete_heding">Delete</string>
+    <string name="lbl_query">Query</string>
+
+    <!-- === Feed Back screen  ======================================================================= -->
+    <string name="lbl_bts_id">BTS ID</string>
+    <string name="lbl_bts">BTS</string>
+    <string name="lbl_feed_back_type">Feedback Type</string>
+    <string name="lbl_feed_back_desc">Feedback Desc</string>
+    <string name="lbl_feed_back_no">Feedback No</string>
+
+    <string name="lbl_merchandising_type_desc">Merchandising Type</string>
+    <string name="lbl_merchandising_remarks">Remarks</string>
+    <string name="lbl_comp_date">Competitor Visit Date</string>
+
+    <string name="lbl_feedback_type">Feedback Type</string>
+    <string name="lbl_payment_related">Payment Related</string>
+    <string name="lbl_location">Location</string>
+
+    <string name="lbl_ret_mobile">Retailer \nMobile #</string>
+    <string name="lbl_coll_time">Collection \nTime</string>
+    <string name="lbl_Amount_rupee_symbol">Amount \n\u20B9</string>
+
+
+    <!-- === Retailer Activation Status screen  ======================================================================= -->
+    <string name="lbl_cef_pending">CEF Pending</string>
+    <string name="lbl_111b_pending">111 B Pending</string>
+    <string name="lbl_222_pending">222 Pending</string>
+    <string name="lbl_mobile_number">Mobile Number</string>
+
+    <string name="close">Close</string>
+    <string name="pause">Pause</string>
+    <string name="lbl_reports_links">Reports</string>
+    <string name="error_occured_during_post">Error occurred while posting, Please check the log.</string>
+    <string name="error_occured_during_save">Error occurred while saving, Please check the log.</string>
+
+    <string name="lbl_out_amount">Outstanding Amount</string>
+    <string name="lbl_last_date">Last 111 Date</string>
+    <string name="lbl_data_bal">Data Balance</string>
+    <string name="lbl_voice_bal">Voice Balance</string>
+    <string name="lbl_mobile_no">Mobile No</string>
+    <string name="lbl_email_id">Email-ID</string>
+    <string name="lbl_owner_name">Owner Name</string>
+    <string name="lbl_comp_name">Competitor</string>
+
+    <string name="lbl_date_heading">Date</string>
+    <string name="lbl_pic">Picture</string>
+    <string name="one">ONE</string>
+    <string name="eight">EIGHT</string>
+    <string name="five">FIVE</string>
+    <string name="four">FOUR</string>
+    <string name="nine">NINE</string>
+    <string name="seven">SEVEN</string>
+    <string name="six">SIX</string>
+    <string name="ten">TEN</string>
+    <string name="three">THREE</string>
+    <string name="two">TWO</string>
+    <string name="title_activity_scrollable_tabs">Scrollable Tabs</string>
+    <string name="title_activity_simple_tabs">Simple Tabs</string>
+    <string name="btn_simple_tabs">Simple Tabs</string>
+    <string name="btn_scrollable_tabs">Scrollable Tabs</string>
+    <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
+    <string name="btn_icon_tabs">Only Icon Tabs</string>
+    <string name="btn_pinned_top_tabs">Pinned To Top Tabs</string>
+    <string name="title_activity_icon_text_tabs">Icon and Text Tabs</string>
+    <string name="title_activity_icon_tabs">Icon Tabs</string>
+    <string name="btn_custom_icon_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="font_fontFamily_medium">sans-serif</string>
+
+    <string name="lbl_total_count">Total Count</string>
+
+
+    <string name="lbl_inv_out_status">Invoice Outstanding Status</string>
+
+    <!-- === Competitor create validation  ======================================================================= -->
+
+    <string name="alert_fill_atleast_one_comp">Please fill data for at least one competitor</string>
+    <string name="alert_enter_values_for_selected_comp">Enter the values for selected competitor</string>
+    <string name="alert_please_select_diff_comp">Please select different competitors</string>
+    <string name="alert_please_select_comp">Please select competitor</string>
+
+    <string name="alert_please_fill_mandatory_fields">Please Fill Mandatory Fields</string>
+    <string name="alert_please_fill_all_fields">Please Fill All Fields</string>
+
+    <string name="title_attendance">Attendance</string>
+    <string name="title_non_field_work">Non - Field Work</string>
+    <string name="lbl_non_filed_work_type">Attendance For</string>
+    <string name="lbl_remarks_attendance">Remarks</string>
+
+    <string name="lbl_today_beats">Today"'"s Beats</string>
+    <string name="lbl_other_beats">Other Beats</string>
+
+    <string name="val_plz_select_attendance_type">Please select attendance type</string>
+
+    <string name="do_u_want_delete_etop_up_retailer_from_beat_plan">Updating the retailer will remove it from beat work.Do you want to Proceed?</string>
+    <string name="title_BillHistory">Bill History</string>
+    <string name="str_colon">:</string>
+    <string name="title_UID">UID</string>
+    <string name="lbl_Search_by_bill_number">Bill number search</string>
+    <string name="lbl_bill_date">Bill Date</string>
+    <string name="lbl_bill_number">Bill Number</string>
+    <string name="lbl_bill_amt">Bill Amount</string>
+    <string name="lbl_payment_status">Payment Status</string>
+    <string name="title_BillHistoryDetails">Bill History Details</string>
+    <string name="lbl_BillValue">Bill Value</string>
+    <string name="lbl_BillOutstandingDays">Bill Outstanding Days</string>
+    <string name="title_OutstandingHistory">Outstanding</string>
+    <string name="lbl_total_out_val">Total Outstanding Value</string>
+    <string name="lbl_BillAge">Bill Age</string>
+    <string name="lbl_outstanding_amount">Outstanding Amount</string>
+    <string name="title_OutstandingBillDetails">Outstanding Bill Details</string>
+    <string name="lbl_TotalBillValue">Total Bill Value</string>
+    <string name="lbl_item_desc">Item Description</string>
+    <string name="lbl_crs_sku_group">CRS SKU GROUP</string>
+    <string name="lbl_select_crs_sku_group">Select CRS SKU Group</string>
+    <string name="lbl_bill_qty">Bill Quantity</string>
+    <string name="lbl_net_amt">Net Amount</string>
+    <string name="str_INR"> INR</string>
+    <string name="lbl_bill_item_no">Bill Item #</string>
+    <string name="title_BillItemDetails">Bill Item Details</string>
+    <string name="lbl_coll_doc_num_search">Collection Doc No. Search</string>
+    <string name="lbl_collection_doc_num">Collection Doc No.</string>
+    <string name="lbl_collection_val">Collection Value</string>
+    <string name="lbl_inst_num">Instrument Number</string>
+    <string name="lbl_inv_amt">Invoice Amount</string>
+    <string name="lbl_paid_amt">Paid Amount</string>
+    <string name="lbl_total_paid_amt">Total Paid Amount</string>
+    <string name="lbl_bal_amt">Balance Amount</string>
+    <string name="lbl_distributor_name">Distributor Name</string>
+    <string name="lbl_ProprietorName">Proprietor Name</string>
+    <string name="lbl_RetailerAddress">Retailer Address</string>
+    <string name="lbl_DistributorAddress">Distributor Address</string>
+    <string name="lbl_ContactNumber">Contact Number</string>
+    <string name="lbl_RetailerCategory">Retailer Category</string>
+    <string name="lbl_Classification">Classification</string>
+    <string name="lbl_gst_in">GSTIN</string>
+    <string name="lbl_gst_reg_status">GST Registration Status</string>
+    <string name="lbl_WeeklyOff">Weekly Off</string>
+    <string name="lbl_RetailerDOB">Retailer DOB</string>
+    <string name="lbl_RetailerAnniversary">Retailer Anniversary</string>
+    <string name="lbl_Distributor">Distributor</string>
+    <string name="lbl_collection_entry">Collection Entry</string>
+    <string name="hint_start_time">Start Time</string>
+    <string name="hint_end_time">End Time</string>
+    <string name="lbl_alerts">Alerts</string>
+    <string name="lbl_alerts_history">History</string>
+    <string name="lbl_beat">Beat Name</string>
+    <string name="lbl_Retailers">Retailers</string>
+    <string name="lbl_beat_name">Beat Name</string>
+
+    <string name="lbl_select_date">Select Date</string>
+    <string name="lbl_select_start_time">Start Time</string>
+    <string name="lbl_select_end_time">End Time</string>
+    <string name="lbl_appointment_date">Appointment Date</string>
+    <string name="lbl_appointment_duration">Appointment Duration</string>
+    <string name="lbl_RetailerDateOfBirth">Retailer Date Of Birth</string>
+    <string name="lbl_not_visited_retailer">Not Visited Retailer</string>
+    <string name="lbl_retailer">Retailer</string>
+    <string name="lbl_refresh">Refresh</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="last_sync_time">Last Sync</string>
+    <string name="alert_amt_greater_than_bal_amt">Enterd amount greater than balance amount</string>
+
+    <string name="alert_please_start_visit">Please start visit</string>
+    <string name="visit_started">Visit started</string>
+    <string name="visit_ended">Visit ended</string>
+    <string name="marking_visit_end_plz_wait">Marking visit end, please wait</string>
+    <string name="marking_visit_start_plz_wait">Marking Visit start, please wait</string>
+    <string name="visit_end_not_marked_for_specific_retailer">Visit end not marked for %1$s. Do you want to mark now?</string>
+    <string name="Saved_Successfully">Saved Successfully</string>
+    <string name="close_update_with_err">Day end completed with errors</string>
+    <string name="Day_ended">Day ended</string>
+    <string name="err_no_network">Sync cannot be performed due to network unavailability</string>
+    <string name="msg_Collection_created">Collection created</string>
+    <string name="updating_data_plz_wait">Updating data, Please wait...</string>
+    <string name="saving_data_plz_wait">Saving data, Please wait...</string>
+
+    <string name="lbl_authorization">Authorization</string>
+    <string name="prg_dialog_txt_retrive_merch_img">Retrieving merchandising image, please wait</string>
+    <string name="lbl_search_by_mat_name">Material name search</string>
+
+    <!-- SO Create Labels-->
+    <string name="lbl_bmt">BMT</string>
+    <string name="lbl_tlsd">TLSD</string>
+    <string name="lbl_crs_sku_grp">CRS SKU Group</string>
+    <string name="lbl_soq">SOQ</string>
+    <string name="lbl_ord_qty">Ord Qty</string>
+    <string name="lbl_mrp">MRP</string>
+    <string name="lbl_db_stock">DB STK</string>
+    <string name="lbl_rl_stock">RL STK</string>
+    <string name="lbl_total_order_val">Total Order Value</string>
+    <string name="lbl_total_bill_val">Total Bill Value</string>
+    <string name="lbl_pmr_scheme">Pri.Scheme%</string>
+    <string name="lbl_sec_scheme">Sec.Scheme%</string>
+    <string name="lbl_sec_scheme_amt">Sec.Scheme Amt</string>
+    <string name="lbl_net_amount">Net Amt</string>
+    <string name="lbl_ratio_dis_amount">Ratio Sch Dis Amt</string>
+    <string name="lbl_free_dis_amount">Free Qty Dis Amt</string>
+
+    <string name="lbl_search_by_sku_group">Search by CRS SKU Group Description</string>
+    <string name="lbl_search_by_beat_name">Beat name search</string>
+    <string name="lbl_mfd">MFD</string>
+    <string name="lbl_batch">BATCH</string>
+    <string name="lbl_batch_number">Batch Number</string>
+    <string name="lbl_batch_no">Batch No.</string>
+
+    <string name="Error_in_create_retailer">Error in create retailer</string>
+    <string name="Retailer_created">Retailer created</string>
+    <string name="Select_DOB">Select DOB</string>
+    <string name="select_anniversary">Select Anniversary</string>
+    <string name="Zero_0">0</string>
+    <string name="Retailer_updated">Retailer updated</string>
+    <string name="GPS_settings">GPS settings</string>
+    <string name="Settings">Settings</string>
+    <string name="Error_in_Retailer_invoice">Error in Retailer invoice</string>
+    <string name="You_have_already_entered_quantity">You have already entered quantity</string>
+    <string name="please_enter_valid_quantity">please enter valid quantity</string>
+    <string name="Competitor_information_created">Competitor information created</string>
+    <string name="Device_registration_failed">Device registration failed</string>
+    <string name="Bad_Request">Bad Request</string>
+
+
+    <string name="title_dbstoxk_and_price">DB Stock and Price</string>
+    <string name="title_distributor">Distributor</string>
+    <string name="title_OutletSurvey">Outlet Survey</string>
+    <string name="title_dist_stock">Distributor Stock</string>
+    <string name="title_return_order_create">Return Order</string>
+    <string name="title_customer_complaints_create">Complaints</string>
+    <string name="title_return_order_list">History</string>
+    <string name="title_ac_return_order_list">Return Order</string>
+    <string name="title_ssso_order_list">Secondary Sales Order</string>
+    <string name="lbl_Search_by_SKU_Desc">Search by SKU Description</string>
+    <string name="lbl_Search_by_SKU_group">Search by CRS SKU Group</string>
+    <string name="lbl_sku_desc">SKU Description</string>
+    <string name="lbl_order_reason">Order Reason</string>
+    <string name="lbl_sku_group">SKU Group</string>
+    <string name="lbl_DB_Stock">DB Stock</string>
+    <string name="lbl_ret_price">RL Price</string>
+    <string name="lbl_DB_STK">DB STK</string>
+    <string name="lbl_MRP">MRP</string>
+    <string name="Device_Retailers">Device Retailers</string>
+    <string name="MyStock">My Stock</string>
+    <string name="alert_enter_valid_range">Please enter valid range</string>
+    <string name="Error_in_update_retailer">Error in update retailer</string>
+    <string name="Retailer_updated_successfully">Retailer updated successfully</string>
+
+    <string name="date_just_now">Just now</string>
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hr</string>
+    <string name="date_util_unit_hours">hrs</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+    <string name="date_util_sufix_ago">ago</string>
+
+    <string name="simple_ime">Simple IME</string>
+    <string name="subtype_en_US">English (US)</string>
+
+    <string name="lbl_target_out_to_visit">Target Outlets to Visit</string>
+    <string name="lbl_actual_out_to_visit">Actual Outlets Visited</string>
+    <string name="lbl_target_out_to_adhoc_visit">Target Adhoc to Visit</string>
+    <string name="lbl_actual_out_to_adhoc_visit">Adhoc Visited</string>
+
+    <!-- === Comp Info  ======================================================================= -->
+    <string name="title_competitor_information">Competition Information</string>
+    <string name="lbl_competitor_name">Competitor Name</string>
+    <string name="lbl_product_name">Product Name</string>
+    <string name="lbl_scheme_launched">Scheme Launched</string>
+    <string name="lbl_retailer_margin">Retailer Margin</string>
+    <string name="lbl_retailer_landing_rate">Retailer Landing Rate</string>
+    <string name="lbl_wholesaler_landing_rate">Wholesaler Landing Rate</string>
+    <string name="lbl_trade_offer">Trade Offer</string>
+    <string name="lbl_consumer_offer">Consumer Offer</string>
+    <string name="lbl_shelf_life">Shelf Life</string>
+    <string name="lbl_other_information">Other Information</string>
+    <string name="lbl_enter_scheme_details">Enter Scheme  Details</string>
+    <string name="lbl_days"> Days</string>
+    <string name="validation_plz_enter_valid_mrp">Please enter valid value for MRP</string>
+    <string name="validation_plz_enter_valid_margin">Please enter valid value for Retailer Margin</string>
+    <string name="comp_info_created_success">Information captured for %1$s.Do you want to capture another information?</string>
+    <string name="alert_exit_competition_information">Do you want to exit from Competiton Information?</string>
+    <string name="pop_up_msg_retailer_stock">Saving Retailer Stock, please wait</string>
+    <string name="msg_ret_stock_created">Retailer stock created</string>
+
+    <string name="Feedback_created">Feedback created</string>
+    <string name="lbl_s_no">S.No</string>
+    <string name="lbl_mtd_bill_val">MTD Bill Value</string>
+    <string name="str_concat_two_texts_colon">%1$s : %2$s</string>
+    <string name="lbl_uid">UID</string>
+
+    <string name="lbl_visit_start">Visit Start</string>
+    <string name="lbl_visit_end">Visit End</string>
+    <string name="lbl_time_taken">Time Taken HH:MM:SS</string>
+    <string name="lbl_today_tlsd">Today TLSD</string>
+    <string name="lbl_tlsd_till_date">TLSD Till Date</string>
+    <string name="lbl_ach_mtd">Ach MTD</string>
+    <string name="lbl_mtd_per">MTD %</string>
+    <string name="lbl_order_val">Order Value</string>
+    <string name="lbl_day_target">Day Target</string>
+    <string name="alert_pls_enter_records">Please enter records</string>
+
+
+    <string name="lbl_outlet_stock">Outlet Stock</string>
+    <string name="lbl_retailer_stock_entry">Retailer Stock Entry</string>
+    <string name="lbl_retailer_outlet_survey">Retailer Outlet Survey</string>
+    <string name="lbl_retailer_stock">Retailer Stock</string>
+    <string name="lbl_crs_sku_group_desc">CRS SKU Group Description</string>
+
+    <string name="alert_pls_select_atlest_one_stock">Please enter atleast one stock</string>
+    <string name="lbl_feed_back_created">Feedback created</string>
+
+    <!--sample collection-->
+    <string name="sample_disbursement_title">Sample Disbursement</string>
+    <string name="sample_disbursement_dialog_title">Select Material</string>
+    <string name="lbl_search_material_Desc">Search Material Description</string>
+    <string name="sample_d_material">CRS-SKU Group</string>
+    <string name="sample_d_db_stk">DB Stk</string>
+    <string name="sample_d_qty">Qty</string>
+    <string name="lbl_brochures">Brochures</string>
+    <string name="lbl_video_clips">Video Clips</string>
+    <string name="sample_material_description">Material Description</string>
+    <string name="sample_disbursement_error_valid_qty">Please enter valid Qty</string>
+    <string name="sample_disbursement_error_all_qty">Please enter all Qty</string>
+    <string name="sample_disbursement_error_one_item">Please add atleast one item</string>
+    <string name="sample_disbursement_error_no_data">No records found</string>
+    <string name="sample_disbursement_back_pressed">Do you want to exit sample disbursement</string>
+    <string name="so_no_search_hint">Sales order no search…</string>
+    <string name="so_order_no">Sales Order #</string>
+    <string name="so_order_date">Sales Order Date</string>
+    <string name="so_order_value">Sales Order Value</string>
+    <string name="sample_disbursement_val_error">Entered quantity should not be greater than DB Stock</string>
+
+
+    <!--return order list-->
+    <string name="ro_title_no">Return Order #</string>
+    <string name="ro_title_date">Return Order Date</string>
+    <string name="ro_title_value">Return Order Value</string>
+    <string name="ro_no_search_hint">Return order no search…</string>
+    <string name="lbl_select_order_mat_grp">Select Order Material Group</string>
+
+    <!--customer complaints-->
+    <string name="customer_complaints">Complaint</string>
+    <string name="customer_complaints_title">Complaint</string>
+    <string name="customer_complaints_list_title">Complaints list</string>
+    <string name="customer_complaints_error_mfd">Please select valid MFD</string>
+    <string name="complaints_no_search_hint">Complaint order no search…</string>
+    <string name="complaints_order_no">Complaint #</string>
+    <string name="complaints_order_date">Complaint Date</string>
+    <string name="complaints_order_value">Complaint Desc</string>
+
+    <string name="title_window_display">Window Display</string>
+    <string name="lbl_window_display_type">Window Display Type</string>
+    <string name="lbl_promo_code">Promo Code</string>
+    <string name="lbl_window_size">Window Size</string>
+    <string name="lbl_contract_form">Contract Form</string>
+    <string name="alert_exit_window_display">Do you want to exit from Window Display?</string>
+    <!--expense-->
+    <string name="title_expense_entry">Expense Entry</string>
+    <string name="title_expense_attachment_entry">Expense Attachment</string>
+    <string name="radio_expense_daily">Daily Expenses</string>
+    <string name="radio_expense_monthly">Monthly Expense</string>
+
+    <string name="lbl_expense_type">Expense Type</string>
+    <string name="lbl_expense_date">Expense Date</string>
+    <string name="lbl_beat_work_at">Beat Work At</string>
+    <string name="lbl_daily_allowance">Daily Allowance</string>
+    <string name="lbl_mode_of_conveyance">Mode Of Conveyance</string>
+    <string name="lbl_beat_distance">Beat Distance</string>
+    <string name="hint_enter_distance_km">Enter Distance in KM</string>
+    <string name="lbl_fare_total">Fare Total</string>
+    <string name="lbl_total_day_exp">Total Day Expenses</string>
+    <string name="lbl_phone_mobile_bill">Phone/Mobile Bill</string>
+    <string name="lbl_other_exp">Other Expenses</string>
+    <string name="hint_enter_other_exp">Enter Other Expenses</string>
+    <string name="hint_enter_remarks">Enter Remarks</string>
+    <string name="alert_exit_expense_entry">Do you want to exit from Expense Entry?</string>
+    <string name="title_documents">Documents</string>
+    <string name="title_alerts">Alerts</string>
+
+    <!--digital product-->
+    <string name="title_digital_product">Digital Product</string>
+    <string name="daily_expense_item_type">Item Type</string>
+    <string name="daily_expense_field">Fields</string>
+    <string name="lbl_expense_item_type">Item Type</string>
+    <string name="lbl_expense_item_field">Field</string>
+    <string name="lbl_expense_item_review">Review</string>
+    <string name="lbl_expense_item_attachmnt">Attachment</string>
+    <string name="lbl_expense_item_beat">Beat</string>
+    <string name="lbl_expense_item_location">Location</string>
+    <string name="lbl_expense_item_mode">Mode</string>
+    <string name="lbl_expense_item_distance">Distance</string>
+    <string name="lbl_expense_item_amount">Amount</string>
+    <string name="lbl_expense_item_remarks">Remarks</string>
+    <string name="lbl_no_expense_found">No Expense Found</string>
+
+    <string name="lbl_other_comp_name">Other Competitor</string>
+    <string name="expense_daily_save">Please wait ...</string>
+    <string name="expense_secondtime_daily_error">Already expense has bee created</string>
+
+    <string name="lbl_products">Products</string>
+    <string name="lbl_size">Size</string>
+    <string name="lbl_pri_scheme">Primary Scheme</string>
+    <string name="lbl_scheme_ret">Scheme To Retailers</string>
+    <string name="lbl_scheme_whole">Scheme To Wholesalers</string>
+    <string name="lbl_slab">SLAB</string>
+    <string name="lbl_scheme_per">% Scheme</string>
+    <string name="lbl_primary_per">Primary %</string>
+    <string name="lbl_secondary_per">Secondary %</string>
+    <string name="lbl_consumer_scheme">Consumer Scheme</string>
+    <string name="lbl_to_be_passed_on_to_ret_wholesale">To Be Passed On To Wholesalers/Retailers/</string>
+    <string name="expense_error_enter_valid_amount">Enter valid amount</string>
+    <string name="expense_delete_conformation">Are you sure delete this item?</string>
+    <string name="expense_monthly_created_success">Monthly expense created successfully</string>
+    <string name="expense_daily_created_success">%s created successfully</string>
+    <string name="expense_beat_non_beat_work">Expense for Beat work/ Non Beat work </string>
+    <string name="expense_error_change_type">Do you want to change expanse type</string>
+    <string name="expense_error_amount">Entered amount is greater than max amount</string>
+    <string name="lbl_banner">Banner</string>
+    <string name="lbl_sales_area">Sales Area</string>
+    <string name="lbl_dist_channel">Distribution Channel</string>
+    <string name="lbl_div">Division</string>
+    <string name="lbl_dms_division">DMS Division</string>
+    <string name="lbl_zone">Zone</string>
+    <string name="lbl_region">Region</string>
+    <string name="lbl_area">Area</string>
+    <string name="lbl_head_quarter">Head Quarter</string>
+    <string name="lbl_to_val">To Value</string>
+    <string name="lbl_exc_inc">Exclude</string>
+
+    <!--window display created-->
+    <string name="window_display_created_success">Registration for window display completed successfully</string>
+    <string name="window_display_second_created_success">Window display review updated successfully</string>
+    <string name="window_display_not_valid">No invoice created for registration</string>
+    <string name="lbl_window_size_l">L</string>
+    <string name="lbl_window_size_b">B</string>
+    <string name="lbl_window_size_h">H</string>
+    <string name="lbl_scheme_type">Scheme Type</string>
+    <string name="lbl_scheme_applicable">Applicable for</string>
+    <string name="lbl_scheme_slabs">Slab (%s)</string>
+    <string name="lbl_scheme_on_sale_of">On Sale of</string>
+    <string name="lbl_scheme_min_qty">Min Qty</string>
+    <string name="lbl_scheme_benefit">Benefit</string>
+    <string name="lbl_category">Category</string>
+    <!--  <string name="mr_name"><![CDATA[<b>MR Name :</b>]]></string>-->
+    <string name="mr_name">MR Name :</string>
+    <string name="window_claims">Shelf Display</string>
+    <string name="title_change_password">Change Password</string>
+
+    <!--expense-->
+    <string name="lbl_non_beat_work_at">Non Beat Work At</string>
+    <string name="lbl_non_beat_distance">Travel Distance</string>
+    <string name="lbl_scheme_from_date">From Date</string>
+    <string name="lbl_scheme_to_date">To Date</string>
+    <string name="non_beat_work_type">Non Beat Work Type</string>
+
+    <string name="alert_pwd_updated_succefully">Password updated successfully</string>
+    <string name="alert_pwd_chnaged_succefully">Password changed successfully</string>
+    <string name="alert_pwd_created_succefully">Password created successfully</string>
+    <string name="alert_otp_generated_succefully">OTP generated successfully</string>
+    <string name="gps_location_empty_try_again">GPS Location values getting empty,Please try again</string>
+
+    <string name="msg_otp_generating">OTP generating, please wait</string>
+    <string name="msg_otp_submitting">Submitting OTP, please wait</string>
+    <string name="val_plz_enter_otp">Please enter otp</string>
+    <string name="val_plz_enter_valid_credetials">Please enter valid credentials</string>
+    <string name="title_old_password">Old Password</string>
+    <string name="title_new_password">New Password</string>
+    <string name="do_want_cancel">Do you want to cancel change password request?</string>
+    <string name="str_concat_two_texts_black_slash">%1$s / %2$s</string>
+    <string name="alert_update_app_version">Your app is not upto date, Please update to the latest version.</string>
+    <string name="alert_msg_mobile_secure_not_installed">Mobile secure is not installed, Please install mobile secure</string>
+    <string name="lbl_later">Later</string>
+    <string name="msg_error_occured_during_sync_except">Synchronization completed successfully except</string>
+    <string name="you_have_enterd_worng_pin">You have entered wrong pin</string>
+    <string name="do_u_want_change_access_pin">Do you want to change the Access pin</string>
+    <!-- <string name="enter_diffrent_pwd">you cannot use this password.Please try another password</string>-->
+    <string name="enter_diffrent_pwd">you used this password recently. please choose a different one</string>
+    <string name="plz_enter_all_values">Please enter the all values</string>
+    <string name="err_visit_end">Visit end completed with errors</string>
+    <string name="err_visit_start">Visit start completed with errors</string>
+
+    <string name="msg_end_date_should_be_greterthan_startdate">End date should be greater than or equal to start date : %1$s</string>
+    <string name="msg_start_date_should_not_be_past_date">Attendance start cannot  be marked for past date</string>
+    <string name="msg_reset_date_should_not_be_past_date">Attendance reset cannot  be marked for past date</string>
+
+    <string name="lbl_attence_start">Attendance start</string>
+    <string name="lbl_attence_end">Attendance end</string>
+    <string name="lbl_attence_reset">Attendance reset</string>
+    <string name="visit_end">Visit end</string>
+    <string name="visit_start">Visit start</string>
+    <string name="lbl_create_retailer">Create retailer</string>
+    <string name="lbl_update_retailer">Update retailer</string>
+    <string name="lbl_merchindisng">Merchandising</string>
+    <string name="comp_info">Competitor information</string>
+    <string name="err_msg_concat">%1$s : %2$s</string>
+    <string name="need_to_storage_permission">Need storage permission</string>
+    <string name="need_to_camera_permission">Need camera permission</string>
+    <string name="need_to_camera_storage_permission">Need camera and storage permission</string>
+    <string name="this_app_needs_storage_permission">Permission for storage</string>
+    <string name="this_app_needs_location_permission">Permission for location</string>
+    <string name="this_app_needs_camera_permission">Permission for take picture</string>
+    <string name="this_app_needs_camera_storage_permission">Permission for take picture and storage</string>
+    <string name="permission_denied_u_cannot_access_location_data">Permission Denied, You cannot access location data.</string>
+    <string name="permission_denied_u_can_access_location_data">Permission Granted, Now you can access location data.</string>
+    <string name="enable">Enable</string>
+    <string name="lbl_avail_quantity">Avail Qty</string>
+    <string name="lbl_tax_amt">Tax Amount</string>
+    <string name="total_Amount">Total Amount</string>
+    <string name="lbl_total_Amount">Total Amount</string>
+    <string name="title_invoice_review">Invoice Review</string>
+    <string name="auto_sync_trigger">Auto sync trigger</string>
+    <string name="auto_sync_not_perfrom_due_to_no_network">Auto sync not performed due to no network</string>
+    <string name="sync_prog_auto_sync_not_perfrom">Sync is in progress, auto sync not started</string>
+    <string name="auto_sync_started">Auto sync started</string>
+    <string name="auto_sync_end">Auto sync ended</string>
+
+    <string name="str_dob_update">DOB updated</string>
+    <string name="str_Anniversary_update">Anniversary date updated</string>
+    <string name="str_lat_long_update">Latitude and longitude value updated</string>
+    <string name="retailer_update">Retailer data updated</string>
+    <string name="add_product_hint">Please add a product from the menu</string>
+    <string name="pending_req_aval_do_want_reopen_store">Pending request will be ignored if any and DB will be initialized. Do you want to proceed?</string>
+    <string name="db_reinit_request">DB reinitialization requested</string>
+    <string name="db_reinit_confirmed">DB reinitialization request confirmed</string>
+    <string name="store_removed">Offline store removed</string>
+    <string name="store_opened">Offline DB opened successfully</string>
+    <string name="data_refresh_in_progress">Data refresh is in progress</string>
+
+
+    <string name="lbl_Search_by_material_Desc">Search by Material</string>
+
+    <string name="gps_progress">Getting location please wait...</string>
+    <string name="register_support_email"></string>
+    <string name="register_support_phone">18002586789</string>
+    <string name="email_subject">App support</string>
+    <string name="attempt">Attempt</string>
+    <string name="checking_pemission">Checking location permission please wait...</string>
+    <string name="lbl_Search_by_skugroup">Search by SKU GROUP</string>
+    <string name="lbl_Search_by_crsskugroup">Search by CRS SKU GROUP</string>
+
+    <string name="lbl_Search_by_skugroupdesc">Search by SKU Description</string>
+    <string name="lbl_Search_by_crsskugroupdesc">Search by CRS SKU Description</string>
+
+    <string name="lbl_tax_reg_status">Tax Reg Status</string>
+    <string name="lbl_tax_one">Tax1</string>
+    <string name="lbl_date_of_birth">DOB</string>
+    <string name="lbl_annv_date">Anniversary Date</string>
+    <string name="alert_unit_price_cannot_zero">Unit price can not be zero</string>
+    <string name="alert_mat_batch_not_avalible">%1$s .Batch materials not available</string>
+    <string name="alert_please_select_remarks">Please select remarks</string>
+    <string name="alert_please_enter_remarks">Please enter remarks</string>
+    <string name="lbl_reason">Reason</string>
+    <string name="lbl_cal_centre">Support</string>
+    <string name="update_lat_long_retailer">Do you want to update location values?</string>
+    <string name="update_retailer">Do you want to update the data?</string>
+
+    <!--configuration-->
+    <string name="autodate_change_msg">Automatic Date and Time is not enabled</string>
+    <string name="autodate_change_btn">Enable</string>
+
+    <!--Invoice Create-->
+    <string name="lbl_po_date">PO Date</string>
+    <string name="lbl_po_no">PO Number</string>
+    <string name="lbl_delivery">Delivery</string>
+    <string name="lbl_delivery_date">Delivery Date</string>
+    <string name="lbl_delivery_person">Delivery Person</string>
+    <string name="lbl_vehicle_no">Vehicle Number</string>
+    <string name="lbl_driver_name">Driver Name</string>
+    <string name="lbl_driver_mob_no">Driver Mobile No</string>
+    <string name="lbl_pay_mode">Payment Mode</string>
+    <string name="saving_data_wait">Saving data please wait...</string>
+    <string name="lbl_stock_qty">Stock Qty</string>
+    <string name="lbl_batch_no_sp">Batch</string>
+    <string name="lbl_cash_disc">Cash %</string>
+    <string name="invoice_save_conformation_msg">Do you want to save Invoice Order?</string>
+    <string name="alert_invoice_create_open_status">Invoice of only open status can be created</string>
+    <string name="alert_select_valid_batch">Batch should not be repeated</string>
+    <string name="title_invoice_Create">Invoice Create</string>
+    <string name="alert_enter_atlest_one_mat">Enter quantity for atleast one Material</string>
+    <string name="sans_serif_font" untranslateable="true">sans-serif-medium</string>
+    <string name="bill_to">Bill To</string>
+    <string name="title_activity_distributor_list">DistributorListActivity</string>
+
+    <string name="set_password">New Password</string>
+    <string name="change_pwd_menu">Change Password</string>
+    <string name="new_plw">New Password</string>
+    <string name="submit">Update</string>
+    <string name="alert_plz_enter_password">Please enter New Password</string>
+    <string name="extend_pwd_please_wait">Changing password, Please wait&#8230;</string>
+    <string name="extend_pwd_updated_succefully">Password changed successfully for 6 months. App will close now, please open it again</string>
+    <string name="extend_pwd_error_occured">Error occurred while doing change password.</string>
+    <string name="extend_pwd_finish_success">Password changed successfully.</string>
+    <string name="androidid_error">Device ID not mapped</string>
+    <string name="validation_androidID">Please wait validating your Device ID</string>
+
+</resources>

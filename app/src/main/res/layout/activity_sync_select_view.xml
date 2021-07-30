@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/lbl_sync_sel"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/BLACK"></LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.83">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingTop="1px"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#FFFFFF"></LinearLayout>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_all"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/ch_actvation_status"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_activation_status"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_alerts"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_alerts"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_attendances_lists"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attendances"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:visibility="visible">
+
+                <CheckBox
+                    android:id="@+id/ch_authorization"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_authorization"
+                    android:textSize="@dimen/medium_text" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_route_plan"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_beat_paln"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_ret_behaviour"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_behaviour_list"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/ch_dlr_bhivor"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_retailer_behaviour"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_financial_postings"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_collection"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_comp_info"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_comp_info"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_complaints"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/customer_complaints"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_db_stock"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_db_sock"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_documents"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_documents"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_expense"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_expense_entry"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_focused_prd"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/lbl_focused_product"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_sales_persons"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="FOS"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_merch_reivew"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/lbl_merchndising_rivews"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_my_stk"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/MyStock"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_outstanding"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_outstanding_invoices"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_channel_partner"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retailers"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_return_order"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_return_order_create"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_ss_invoices"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Invoice"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_ss_orders"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_sales_order"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_schemes"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_schemes"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_trends"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_retailer_trends"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_ss_targets"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_targets"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_value_helps"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value Helps"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_visits_act"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_visit_act"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <CheckBox
+                    android:id="@+id/ch_visits"
+                    style="@style/Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visits"
+                    android:textSize="@dimen/medium_text"
+                    android:visibility="visible" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

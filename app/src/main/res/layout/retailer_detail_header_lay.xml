@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:padding="4dp"
+        android:id="@+id/icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="@dimen/padding_six_dip"
+        android:layout_marginLeft="@dimen/padding_six_dip"
+        android:src="@drawable/ic_retailer"
+        android:contentDescription="@null"/>
+
+
+    <LinearLayout
+        android:layout_weight="1.2"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_reatiler_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Retailer Name"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:textSize="@dimen/medium_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_UID"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_colon"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:id="@+id/tv_reatiler_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Od -15362"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

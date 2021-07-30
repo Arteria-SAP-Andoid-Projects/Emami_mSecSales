@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margin_two_dip"
+        android:visibility="gone"
+        android:src="@android:drawable/ic_media_play" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#000000" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7FAAFF"
+        android:visibility="gone"
+    >
+
+        <TextView
+            android:id="@+id/so_createreview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lbl_retailer_stock_entry"
+            android:textColor="#000000"
+            android:textSize="@dimen/large_text" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#000000" >
+    </LinearLayout>
+    <include layout="@layout/retailer_detail_header_lay" />
+    <RelativeLayout
+        android:id="@+id/relative_layout_spinner"
+        android:layout_width="@dimen/width_zero_dip"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#000000" >
+    </LinearLayout>
+    <EditText
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:id="@+id/et_retiler_sku_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_Search_by_SKU_Desc"
+        style="@style/EditBookTextEdit"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#000000" >
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BLACK" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/GREY"
+            android:gravity="center"
+            android:padding="3sp"
+            android:textStyle="bold"
+             android:id="@+id/tv_crs_sku_heading"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/tvAsOnDateView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:textStyle="bold"
+
+            android:layout_weight="0.5"
+            android:background="@color/GREY"
+            android:gravity="center"
+            android:padding="3sp"
+            android:text="As on 23.01.2015"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75"
+            android:background="@color/GREY"
+            android:layout_marginRight="1dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="3sp"
+            android:text="@string/lbl_outlet_stock"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#000000" >
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scroll_dealer_stock_create"
+            android:layout_above="@+id/keyboard_custom_invoice_sel"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llDealerStockCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <android.inputmethodservice.KeyboardView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/keyboard_custom_invoice_sel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keyPreviewLayout ="@layout/preview"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_device_retailer"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:title="@string/create_retailer_menu"/>
+
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/menu_save"
+        android:orderInCategory="100"
+        android:title="@string/save_menu"/>
+
+</menu>

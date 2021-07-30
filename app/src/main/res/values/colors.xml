@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="BLACK" type="color">#000000</item>
+    <item name="YELLOW" type="color">#FFFF00</item>
+    <item name="text_color_yellow" type="color">#999900</item>
+    <item name="BLUE" type="color">#183883</item>
+    <item name="GREEN" type="color">#008000</item>
+    <item name="mat_code_color" type="color">#008000</item>
+    <item name="PURPLE" type="color">#800080</item>
+    <item name="RED" type="color">#ff0000</item>
+    <item name="ORANGE" type="color">#ffa500</item>
+    <item name="PINK" type="color">#ffc0cb</item>
+    <item name="GREY" type="color"> #D3D3D3</item>
+    <item name="BUTTONBACKGOUNDCOLOR" type="color"> #CCCCFF</item>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="light_alice_blue">#D3D3D3</color>
+    <color name="blue_ivy">#000000</color>
+    <color name="icon_text_blue">#000000</color>
+    <color name="text_red">#DA2128</color>
+    <color name="button_background_color">#ADD8E6</color>
+    <color name="light_blue_color">#c8dcff</color>
+    <color name="light_custom_spinner_bg_clr">#dfdfdf</color>
+
+    <color name="gradient_start">#FFFFFF</color>
+    <color name="gradient_end">#EBF0FA</color>
+    <color name="splash_end">#0000cc</color>
+
+    <color name="TEXT_COLOR">#000033</color>
+    <color name="HeaderTileBackground">#7BAAFF</color>
+    <color name="header_tile_text_color">#000000</color>
+    <color name="vertical_line_color">#EBF0FA</color>
+    <color name="line_color">#000000</color>
+    <color name="LBL_BACKGROUND_ASH_COLOR">#cccccc</color>
+
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <!--<color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>-->
+    <color name="colorAccent">#125688</color>
+    <color name="green_light">#00a98f</color>
+    <color name="tabColorPrimary">#125688</color>
+
+
+    <color name="edit_label">#D3D3D3</color>
+    <color name="edittext_background">#ffffff</color>
+    <color name="edittext_background_pressed">#ffffff</color>
+    <color name="edittext_border">#e9e9e9</color>
+    <color name="scheme_header_background">#85aefa</color>
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#00000000</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#cccccc</color>
+    <color name="colorDarkGray">#FFCDD2</color>
+    <color name="colorGrayLight">#eeeeee</color>
+    <color name="colorBlue">#6f99ff</color>
+    <color name="colorYellow">#FFD54F</color>
+
+    <color name="light_green">#c4f79f</color>
+
+    <color name="error_color">#E7492E</color>
+    <color name="disabled_color">#44000000</color>
+    <color name="cardBackgroundColor">#EEEEEE</color>
+    <color name="retailerbackgroundcolor">#c4c2c2</color>
+</resources>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--<include layout="@layout/appbar_layout"/>-->
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentTop="true">
+
+             <RelativeLayout
+                 android:id="@+id/relativeLayout1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@color/BLACK">
+                 <TextView
+                     android:background="@color/GREY"
+                     android:layout_marginLeft="@dimen/margin_point_one_dip"
+                     android:layout_marginRight="@dimen/margin_point_one_dip"
+                     android:layout_height="@dimen/_45sdp"
+                     android:layout_width="@dimen/_140sdp"
+                     android:gravity="center"
+                     android:text="@string/lbl_material"
+                     android:textColor="@color/BLACK"
+                     android:textSize="@dimen/medium_text" />
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentTop="true"
+                 android:layout_toRightOf="@+id/relativeLayout1">
+
+                 <HorizontalScrollView
+
+                     android:scrollbars="none"
+                     android:id="@+id/sv_header"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true">
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <TableLayout
+                             android:id="@+id/tl_header1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content">
+
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:background="@color/BLACK">
+                                 <TextView
+                                     android:id="@+id/tv_order_val_label"
+                                     android:layout_width="@dimen/_80sdp"
+                                     android:layout_height="@dimen/_45sdp"
+                                     android:background="@color/GREY"
+                                     android:layout_marginLeft="@dimen/margin_point_one_dip"
+                                     android:layout_marginRight="@dimen/margin_point_one_dip"
+                                     android:gravity="center"
+                                     android:text="@string/qty"
+                                     android:textColor="@color/BLACK"
+                                     android:textSize="@dimen/medium_text" />
+
+                                 <TextView
+                                     android:id="@+id/tv_stk_qty_label"
+                                     android:layout_width="@dimen/_80sdp"
+                                     android:layout_height="@dimen/_45sdp"
+                                     android:background="@color/GREY"
+                                     android:layout_marginLeft="@dimen/margin_point_one_dip"
+                                     android:layout_marginRight="@dimen/margin_point_one_dip"
+                                     android:gravity="center"
+                                     android:text="@string/lbl_stock_qty"
+                                     android:textColor="@color/BLACK"
+                                     android:textSize="@dimen/medium_text" />
+
+                                 <TextView
+                                     android:layout_width="@dimen/_80sdp"
+                                     android:layout_height="@dimen/_45sdp"
+                                     android:background="@color/GREY"
+                                     android:layout_marginLeft="@dimen/margin_point_one_dip"
+                                     android:layout_marginRight="@dimen/margin_point_one_dip"
+                                     android:gravity="center"
+                                     android:text="@string/lbl_batch_no_sp"
+                                     android:textColor="@color/BLACK"
+                                     android:textSize="@dimen/medium_text" />
+
+                                 <TextView
+                                     android:layout_width="@dimen/_80sdp"
+                                     android:layout_height="@dimen/_45sdp"
+                                     android:background="@color/GREY"
+                                     android:layout_marginLeft="@dimen/margin_point_one_dip"
+                                     android:layout_marginRight="@dimen/margin_point_one_dip"
+                                     android:gravity="center"
+                                     android:text="@string/lbl_mrp"
+                                     android:textColor="@color/BLACK"
+                                     android:textSize="@dimen/medium_text" />
+
+                                 <TextView
+                                     android:layout_width="@dimen/_80sdp"
+                                     android:layout_height="@dimen/_45sdp"
+                                     android:gravity="center"
+                                     android:background="@color/GREY"
+                                     android:layout_marginLeft="@dimen/margin_point_one_dip"
+                                     android:layout_marginRight="@dimen/margin_point_one_dip"
+                                     android:text="@string/unit_price"
+                                     android:textColor="@color/BLACK"
+                                     android:textSize="@dimen/medium_text" />
+                                 <TextView
+                                     android:layout_width="@dimen/_80sdp"
+                                     android:layout_height="@dimen/_45sdp"
+                                     android:background="@color/GREY"
+                                     android:layout_marginLeft="@dimen/margin_point_one_dip"
+                                     android:layout_marginRight="@dimen/margin_point_one_dip"
+                                     android:gravity="center"
+                                     android:text="@string/lbl_cash_disc"
+                                     android:textColor="@color/BLUE"
+                                     android:textSize="@dimen/medium_text" />
+
+
+                             </TableRow>
+
+                         </TableLayout>
+                     </RelativeLayout>
+
+                 </HorizontalScrollView>
+
+
+             </RelativeLayout>
+
+             <ScrollView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/relativeLayout1">
+
+                 <RelativeLayout
+
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+                     <TableLayout
+                         android:id="@+id/tl_material"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                     </TableLayout>
+
+                     <HorizontalScrollView
+                         android:fillViewport="true"
+                         android:id="@+id/sv_item"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/tl_material"
+                         android:scrollbars="none">
+                         <TableLayout
+                             android:id="@+id/tl_material_values"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+                         </TableLayout>
+                     </HorizontalScrollView>
+
+                 </RelativeLayout>
+
+             </ScrollView>
+         </RelativeLayout>
+     </RelativeLayout>-->
+    <include layout="@layout/ll_retiler_name_no" />
+    <include layout="@layout/single_line_lay" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="@dimen/padding_four_dip"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_sku_desc"
+            android:text="@string/lbl_material"
+            android:textStyle="bold"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+
+
+
+
+
+
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="1.5"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_stock_qty"
+            android:layout_marginLeft="@dimen/margin_four_dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="1.5"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_MRP"
+            android:layout_marginLeft="@dimen/margin_four_dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/margin_four_dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK">
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scroll_dealer_stock_create"
+            android:layout_above="@+id/keyboard_custom_invoice_sel"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llDealerStockCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <android.inputmethodservice.KeyboardView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/keyboard_custom_invoice_sel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keyPreviewLayout ="@layout/preview"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

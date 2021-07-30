@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :ODataAPI-3.16.9:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/b11ca7c190205e16c497482e422d94ea0b8b4d84/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b11ca7c190205e16c497482e422d94ea0b8b4d84/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/b11ca7c190205e16c497482e422d94ea0b8b4d84/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/9967b93d2c6e2dcefe8e0028019ac4fb419790b7/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/9967b93d2c6e2dcefe8e0028019ac4fb419790b7/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/9967b93d2c6e2dcefe8e0028019ac4fb419790b7/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b1fd290ffb17ec6f3f731486f533512652454817/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b1fd290ffb17ec6f3f731486f533512652454817/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/b1fd290ffb17ec6f3f731486f533512652454817/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6d54d9a64192d2892002e1baf0e7053dfc9457a4/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/6d54d9a64192d2892002e1baf0e7053dfc9457a4/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/6d54d9a64192d2892002e1baf0e7053dfc9457a4/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

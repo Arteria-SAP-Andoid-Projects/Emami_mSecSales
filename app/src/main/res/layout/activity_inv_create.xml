@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE">>
+    <!--<include layout="@layout/appbar_layout" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/single_line_lay" />
+
+            <include layout="@layout/ll_retiler_name_no" />
+
+            <include layout="@layout/single_line_lay" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:id="@+id/nsvContainer"
+                    android:layout_above="@+id/keyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        style="@style/UtilsItemSpacing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tiPONumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextTheme">
+
+                            <EditText
+                                android:id="@+id/etPONumber"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="10"
+                                android:hint="@string/lbl_po_no"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tiPODate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextTheme">
+
+                            <EditText
+                                android:id="@+id/etPODate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="@string/lbl_po_date"
+                                android:inputType="date"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/tvTitlePaymentTerm"
+                            style="@style/Header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="0dp"
+                            android:paddingLeft="0dp"
+                            android:paddingTop="@dimen/padding_normal_16"
+                            android:text="@string/lbl_delivery" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tiDelDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextTheme">
+
+                            <EditText
+                                android:id="@+id/etDelDate"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="false"
+                                android:editable="false"
+                                android:focusable="false"
+                                android:hint="@string/lbl_delivery_date"
+                                android:inputType="date"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tiDelPerson"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextTheme">
+
+                            <EditText
+                                android:id="@+id/etDelPerson"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/lbl_delivery_person"
+                                android:maxLength="40"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tiVehicleNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextTheme">
+
+                            <EditText
+                                android:id="@+id/etVehicleNo"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="10"
+                                android:hint="@string/lbl_vehicle_no"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tiDriverName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextTheme">
+
+                            <EditText
+                                android:id="@+id/etDriverName"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/lbl_driver_name"
+                                android:maxLength="40"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/tiDriverMobNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/MyEditTextTheme">
+
+                            <EditText
+                                android:id="@+id/etDriverMobNo"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/lbl_driver_mob_no"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <com.arteriatech.emami.ui.MaterialDesignSpinner
+                            android:id="@+id/spPaymentMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:ms_alwaysShowFloatingLabel="true"
+                            app:ms_enableFloatingLabel="true"
+                            app:ms_floatingLabelText="@string/lbl_pay_mode"
+                            app:ms_multiline="false" />
+
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

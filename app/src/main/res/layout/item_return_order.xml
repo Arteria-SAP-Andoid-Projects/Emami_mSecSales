@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_dbstk_sku_desc"
+            android:paddingLeft="4dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_sku_desc"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+
+        <Spinner
+            android:id="@+id/sp_select_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_three_dip"
+            android:paddingStart="@dimen/padding_zero_dip"
+            android:paddingEnd="@dimen/padding_zero_dip"
+            android:textSize="@dimen/medium_text"
+            style="@style/spinner_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/edit_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/qty"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding_three_dip"
+                android:paddingRight="@dimen/padding_three_dip"
+                android:textSize="@dimen/medium_text"
+                android:gravity="right"
+                android:paddingEnd="@dimen/padding_ten_dip"
+                android:inputType="number"
+                android:textColor="@color/BLACK"
+
+                style="@style/EditBookTextEdit"/>
+            <EditText
+                android:id="@+id/edit_mrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_MRP"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/padding_three_dip"
+                android:paddingRight="@dimen/padding_three_dip"
+                android:textSize="@dimen/medium_text"
+                android:gravity="right"
+                android:paddingEnd="@dimen/padding_ten_dip"
+                android:textColor="@color/BLACK"
+                style="@style/EditBookTextEdit"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edit_batch_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_batch_number"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:paddingRight="@dimen/padding_three_dip"
+            android:textSize="@dimen/medium_text"
+            android:gravity="right"
+            android:paddingEnd="@dimen/padding_ten_dip"
+            android:textColor="@color/BLACK"
+            style="@style/EditBookTextEdit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/margin_two_dip"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_delete"
+            android:id="@+id/ib_delete_item"
+            android:background="@color/WHITE"
+            android:layout_weight="0.20"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK"/>
+
+</LinearLayout>

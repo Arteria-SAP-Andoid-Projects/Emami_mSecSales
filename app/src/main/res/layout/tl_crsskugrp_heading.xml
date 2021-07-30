@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/crs_sku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+    <TableRow
+        android:background="@color/GREY"
+        android:id="@+id/tr_crssku"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="match_parent">
+        <TextView
+            android:paddingLeft="@dimen/_3sdp"
+            android:gravity="center"
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_crsname"
+            android:height="50dp"
+            android:text="@string/lbl_crs_sku_group"
+            android:textSize="@dimen/medium_text"
+            />
+    </TableRow>
+    </TableLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:padding="4dp"
+    android:background="@color/WHITE"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/item_dbstk_sku_desc"
+            android:paddingLeft="4dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_sku_desc"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+
+            android:id="@+id/item_dbstk_crs_sku_group"
+            android:paddingLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_crs_sku_group"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_dbstk_dbstock"
+        android:paddingLeft="4dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:maxLines="1"
+        android:layout_height="match_parent"
+        android:text="@string/lbl_DB_STK"
+
+        android:ellipsize="end"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/header_tile_text_color"
+        android:textSize="@dimen/medium_text" />
+
+    <ImageView
+        android:id="@+id/iv_expand_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="@dimen/margin_five_dip"
+        android:src="@drawable/ic_view_details" />
+
+</LinearLayout>

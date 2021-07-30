@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btn_seven"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btn_zero"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="45dp">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="70dp">
+
+            <Button
+                android:id="@+id/btn_up"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/up" />
+
+            <Button
+
+                android:id="@+id/btn_down"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/down" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_back"
+                android:text="-" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

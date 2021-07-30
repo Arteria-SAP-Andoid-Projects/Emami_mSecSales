@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mainmenuHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_BillHistory"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:id="@+id/tv_last_sync_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/icon_text_blue"
+            android:textSize="@dimen/very_small_text" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_inv_status"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_six_dip"
+                android:layout_marginLeft="@dimen/padding_six_dip"
+                android:src="@drawable/ic_retailer"
+                android:contentDescription="@null"/>
+
+
+            <LinearLayout
+                android:layout_weight="1.2"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_bill_hist_ret_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="Retailer Name"
+                    android:textColor="@color/header_tile_text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/medium_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/title_UID"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/str_colon"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/tv_bill_hist_uid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Od -15362"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/header_tile_text_color"
+                        android:textSize="@dimen/medium_text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Spinner
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/margin_two_dip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spin_invoice_his_status_id"
+                style="@style/spinner_style"></Spinner>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_color"
+            android:orientation="horizontal"
+            android:visibility="visible"/>
+
+        <EditText
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:id="@+id/ed_invoice_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_Search_by_bill_number"
+            style="@style/EditBookTextEdit"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/line_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:padding="4dp"
+            android:background="@color/light_alice_blue"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/lbl_bill_date"
+                    android:textStyle="bold"
+                    android:textColor="@color/header_tile_text_color"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/lbl_bill_number"
+                    android:textStyle="bold"
+                    android:textColor="@color/header_tile_text_color"
+                    android:textSize="@dimen/medium_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginRight="24dp"
+                android:paddingLeft="4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/lbl_bill_amt"
+                android:textStyle="bold"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:paddingLeft="4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lbl_payment_status"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_alice_blue"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@color/light_alice_blue"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="@dimen/padding_three_dip"
+                    android:text="@string/lbl_inv_no"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:paddingLeft="@dimen/padding_three_dip"
+                    android:text="@string/lbl_date_heading"
+                    android:textColor="@color/GREEN"
+                    android:textSize="@dimen/medium_text" />
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:text="@string/lbl_amount"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_gravity="center"                android:gravity="center"
+                android:text="@string/lbl_status"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height_one_dip"
+            android:background="@color/line_color"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_route_ret_list"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:footerDividersEnabled="true"
+            android:focusableInTouchMode="true" />
+
+
+
+        <include layout="@layout/empty_list_lay" />
+    </LinearLayout>
+
+
+</LinearLayout>

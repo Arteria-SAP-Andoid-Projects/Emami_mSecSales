@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_oldpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your old pin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_oldpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/ed_oldone"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_oldtwo"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_oldthree"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_oldfour"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_enterpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your pin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_pinlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/ed_pinone"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_pintwo"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_pinthree"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_pinfour"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/GREY"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Confirm your pin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp" />
+
+    <LinearLayout
+
+        android:id="@+id/ll_confirmlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/ed_confrim_one"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true"></EditText>
+
+        <EditText
+            android:id="@+id/ed_confrim_two"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_confrim_three"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/ed_confrim_four"
+            style="@style/EditBookTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:password="true">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pinconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_login_clear" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_confirm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_oldconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_oldclear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_login_clear" />
+
+        <Button
+            android:id="@+id/btn_oldconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_confirm" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/GREY" />
+</LinearLayout>

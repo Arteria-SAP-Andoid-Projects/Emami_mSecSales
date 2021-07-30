@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.evrencoskun.library:tableview:0.8.8@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/0cfc20e31490fcf698ecf4b34727aa3a593f0b32/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/0cfc20e31490fcf698ecf4b34727aa3a593f0b32/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/0cfc20e31490fcf698ecf4b34727aa3a593f0b32/output/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

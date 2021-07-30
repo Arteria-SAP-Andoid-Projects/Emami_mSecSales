@@ -1,0 +1,25 @@
+
+// TODO Below code checking for current month collections created or not in datavault(RoutePlanAdapter.java)
+
+boolean isExist = false;
+                    //check in Data vault
+                    ArrayList<CollectionHistoryBean> alCollectionBean = new ArrayList<>();
+                    alCollectionBean = OfflineManager.getDevCollHisList(context.getContext(), retailerListBean.getCpGuidStringFormat().toUpperCase());
+                    if(alCollectionBean.size()>0){
+                        for (CollectionHistoryBean collection: alCollectionBean){
+                            SimpleDateFormat sdf = new SimpleDateFormat(Constants.dtFormat_ddMMyyyywithslash);
+                            Date date = new Date();
+                            try {
+                                date = sdf.parse(collection.getFIPDate());
+
+                                if(date.getTime()>=Constants.getFirstDateOfCurrentMonthInMiliseconds()){
+                                    isExist = true;
+                                    break;
+                                }
+                            } catch (ParseException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                    if(!isExist)
+                        tvRetailerName.setTextColor(Color.RED);

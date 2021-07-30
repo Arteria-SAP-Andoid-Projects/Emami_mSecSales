@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE" >
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/back_menu"
+        android:padding="@dimen/padding_three_dip"
+        android:textColor="@color/BLACK"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="@dimen/medium_text"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvRegistrationHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/extra_large_text"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_sales_person_mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:textColor="@color/BLACK"
+            android:visibility="visible"
+            android:textSize="@dimen/medium_text">
+        </TextView>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit_menu"
+            android:padding="@dimen/padding_three_dip"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="@dimen/medium_text">
+        </TextView>
+        <ImageView
+            android:id="@+id/iv_logo_aircel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:paddingRight="@dimen/padding_three_dip"
+            android:src="@drawable/arteria_new_logo_transparent" />
+
+        <ImageView
+            android:id="@+id/iv_pop_up_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_three_dots"
+            android:onClick="showPopup">
+        </ImageView>
+
+
+
+        <TextView
+            android:id="@+id/tv_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/options_menu"
+            android:padding="@dimen/padding_three_dip"
+            android:textColor="@color/BLACK"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="@dimen/medium_text"
+            android:onClick="showPopup">
+        </TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vg_root"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="@drawable/cell_white_border_bottom_right_gray"-->
+
+    <LinearLayout
+        android:id="@+id/ll_header_body_area_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/etQty"
+        style="@style/EditBookTextEdit"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="45dp"
+        android:gravity="right"
+        android:maxLength="4"
+        android:hint="@string/qty"
+        android:inputType="number"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        />
+        </LinearLayout>
+    <!--android:gravity="left"-->
+</LinearLayout>

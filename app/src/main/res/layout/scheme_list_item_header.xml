@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.70"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_name"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.16"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <!--  <TextView
+              android:id="@+id/tv_scheme_valid_to"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1.05"
+              android:padding="@dimen/_2sdp"
+              android:textColor="@color/BLACK"
+              android:textSize="@dimen/_11ssp"
+              android:textStyle="bold" />
+
+          <View
+              android:layout_width="@dimen/height_one_dip"
+              android:layout_height="match_parent"
+              android:background="@color/LBL_BACKGROUND_ASH_COLOR" />-->
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.70"
+            android:background="@color/light_blue_color"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_type"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_type_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.16"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_11ssp" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue_color"
+            android:layout_weight="1"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_from_date"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_from_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_sales_of_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.05"
+            android:gravity="right"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_min_qty"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    </LinearLayout>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+    <!--<TextView
+        android:id="@+id/tv_scheme_valid_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.05"
+        android:padding="@dimen/_2sdp"
+        android:textColor="@color/BLACK"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.70"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_from_date"
+            android:textColor="@color/BLACK"
+            android:background="@color/light_blue_color"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1.16"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_scheme_from_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_11ssp" />
+            <View
+                android:layout_width="@dimen/height_one_dip"
+                android:layout_height="match_parent"
+                android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lbl_scheme_to_date"
+                android:padding="@dimen/_2sdp"
+                android:background="@color/light_blue_color"
+                android:textColor="@color/BLACK"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11ssp" />
+            <View
+                android:layout_width="@dimen/height_one_dip"
+                android:layout_height="match_parent"
+                android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+            <TextView
+                android:id="@+id/tv_scheme_valid_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_color"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.70"
+            android:padding="@dimen/_2sdp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="@string/lbl_scheme_applicable"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+      <!--  <TextView
+            android:id="@+id/tv_scheme_type_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.16"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp" />-->
+        <TableLayout
+            android:id="@+id/ll_sales_area"
+            android:layout_width="match_parent"
+            android:layout_weight="1.16"
+            android:layout_height="wrap_content"
+            android:background="@color/WHITE"
+            android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_color"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_sales_of_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:text="@string/lbl_scheme_on_sale_of"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+       <!-- <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_sales_of_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp" />-->
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_sales_of_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.78"
+            android:gravity="right"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_min_qty"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/ll_scheme_item_details_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_color"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_slabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_slabs"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_benefit_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:padding="@dimen/_2sdp"
+            android:textStyle="bold"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+        <TextView
+            android:id="@+id/tv_scheme_benefit_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.05"
+            android:gravity="right"
+            android:padding="@dimen/_2sdp"
+            android:text="@string/lbl_scheme_min_qty"
+            android:textStyle="bold"
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/_11ssp" />
+
+        <View
+            android:layout_width="@dimen/height_one_dip"
+            android:layout_height="match_parent"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/ll_scheme_slabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK" />
+</LinearLayout>

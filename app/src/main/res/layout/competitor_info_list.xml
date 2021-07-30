@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="1dp">
+
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_com_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:background="@color/WHITE"
+        android:paddingLeft="@dimen/padding_three_dip"
+        android:gravity="left|center_vertical"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        style="@style/EditBookTextEdit"
+        android:layout_margin="4dp"
+        android:id="@+id/ed_com_text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:maxLength="10"
+        android:imeOptions="flagNoExtractUi"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        style="@style/EditBookTextEdit"
+        android:layout_margin="4dp"
+        android:id="@+id/ed_com_text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:maxLength="10"
+        android:imeOptions="flagNoExtractUi"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        style="@style/EditBookTextEdit"
+        android:layout_margin="4dp"
+        android:id="@+id/ed_com_text3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:maxLength="10"
+        android:imeOptions="flagNoExtractUi"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_retailer_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_retailer_list"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/BLACK" />
+
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:stretchColumns="2" >
+
+        <TableRow
+            android:visibility="gone"
+            android:id="@+id/tr_distributor_name">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_Distributor"
+                android:paddingLeft="3dip"
+                android:textColor="#000033"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="@string/lbl_semi_colon"
+                android:textSize="@dimen/medium_text"
+                android:textColor="@color/BLACK" />
+
+
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:id="@+id/tv_distributor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/medium_text"
+                android:paddingLeft="@dimen/padding_three_dip"
+                android:paddingStart="@dimen/padding_three_dip"
+                android:text="" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_column="0"
+            android:gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text="@string/lbl_beat"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:textColor="#000033"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/width_zero_dip"
+            android:gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.1"
+            android:text="@string/lbl_semi_colon"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@color/BLACK" />
+
+        <Spinner
+            android:layout_margin="@dimen/margin_two_dip"
+            android:layout_weight="1"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnr_beat_list"
+            style="@style/spinner_style"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/ll_dist_line"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/line_height_one_dip"
+    android:background="@color/line_color"
+    android:orientation="horizontal">
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/et_name_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_search_by_retailer_name"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:textColor="@color/BLACK"
+        style="@style/EditBookTextEdit"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/line_color"
+        android:id="@+id/ll_edit_text_above_line"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_route_ret_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:divider="@color/line_color"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:focusableInTouchMode="true" />
+
+    <include layout="@layout/empty_list_lay" />
+
+</LinearLayout>

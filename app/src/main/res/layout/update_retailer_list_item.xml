@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_three_dip" >
+
+        <TextView
+            android:id="@+id/tv_retailer_name"
+            android:layout_width="@dimen/width_two_twenty_dip"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_address_one"
+            android:layout_width="@dimen/width_two_twenty_dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_retailer_name"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/tv_retailer_msisdn"
+            android:layout_width="@dimen/width_two_twenty_dip"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_retailer_name"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/padding_three_dip"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </RelativeLayout>
+
+</LinearLayout>

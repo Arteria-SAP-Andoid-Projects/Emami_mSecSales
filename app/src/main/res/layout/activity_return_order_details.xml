@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_return_order_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical"
+    tools:context="com.arteriatech.emami.returnOrder.ReturnOrderDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="@dimen/padding_four_dip"
+        android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <TextView
+            android:paddingLeft="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_sku_desc"
+            android:textStyle="bold"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:paddingLeft="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_order_reason"
+            android:textStyle="bold"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:paddingLeft="@dimen/padding_four_dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_quantity"
+                android:layout_marginLeft="@dimen/margin_four_dip"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+            <TextView
+                android:paddingLeft="@dimen/padding_four_dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_batch_number"
+                android:layout_marginLeft="@dimen/margin_four_dip"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/header_tile_text_color"
+                android:textSize="@dimen/medium_text" />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:paddingLeft="@dimen/padding_four_dip"
+            android:layout_weight="0.5"
+            android:layout_width="@dimen/width_zero_dip"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_MRP"
+            android:layout_marginLeft="@dimen/margin_four_dip"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/medium_text" />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK">
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_return_order_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:divider="@color/line_color"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:focusableInTouchMode="true"
+        android:visibility="visible"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_one_dip"
+        android:background="@color/BLACK"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_record_found"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="@dimen/padding_normal_16"
+    android:paddingLeft="@dimen/padding_normal_16"
+    android:paddingRight="@dimen/padding_normal_16"
+    android:paddingTop="@dimen/padding_normal_16"
+    android:text="@string/lbl_no_records_found"
+    android:textSize="@dimen/medium_text"
+    android:textStyle="bold"
+    android:visibility="gone" />

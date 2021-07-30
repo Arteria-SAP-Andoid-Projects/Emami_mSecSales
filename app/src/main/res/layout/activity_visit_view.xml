@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include layout="@layout/title_bar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_point_five_dip"
+        android:background="@color/BLACK" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_visit_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:paddingTop="@dimen/padding_two_dip" >
+
+        <TextView
+            android:id="@+id/tv_visit_heading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_two_dip"
+            android:text="@string/lbl_visit"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/retailer_detail_header_lay"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_common_address_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_one_dip"
+                android:background="@color/line_color" >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_must_sell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_must_sell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_must_sell"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:id="@+id/icon_text"
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                   android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_must_sell"
+                    android:layout_weight="1"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_must_sell_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                     android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_must_sell_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+              />
+
+
+            <LinearLayout
+                android:id="@+id/ll_so_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_so_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_so_create_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_so_create"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_so_create_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_so_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_invoice_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_invoice_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_invoices"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_invoice_create"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_invoice_create_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_invoice_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_collection_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_collection_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_collection_entry"
+                    android:contentDescription="@null"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp" />
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_collection_entry"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_collection_create_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:scaleType="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_collection_line"
+                />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_competitor_info_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_competitor_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_comp_info_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/title_competitor_info"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_competitor_info_create_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_competitor_info_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_snap_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_merchndising_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_merch_create"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_merchndising"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_merchndising_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_mer_snap_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_feed_back_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_feed_back_create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_feed_back_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_feed_back_create"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_feed_back_create_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_feed_back_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_visit_retailer_stock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_visit_retailer_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_stock_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_retailer_stock_entry"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_retailer_stock_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_ret_stock_line"
+                />
+            <LinearLayout
+                android:id="@+id/ll_visit_outlet_survey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_visit_outlet_survey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/survey_icon"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_retailer_outlet_survey"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_outlet_survey_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_outlet_survey_line"
+                />
+            <LinearLayout
+                android:id="@+id/ll_return_order_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_return_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_return_order"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/title_return_order_create"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_return_order_create_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_return_order_line"
+                />
+            <LinearLayout
+                android:id="@+id/ll_customer_complaints_create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_customer_complaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_return_order"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/title_customer_complaints_create"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_cuustomer_complaint_selection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_customer_complaints_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_sample_collection_master"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/left_ib_sample_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_sample_disp"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:id="@+id/icon_text_sample_collection"
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/sample_disbursement_title"
+                    android:layout_weight="1"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/right_ib_sample_collection"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_sample_collection_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_window_disply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/left_ib_window_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_merch_create"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/title_window_display"
+                    android:layout_weight="1"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/right_ib_window_display"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_window_display_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_alice_blue"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/tv_reports_name"
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1.4"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_reports"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/iv_visit_address_collapse"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_add_det_down"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/padding_point_five_dip"
+                android:background="@color/line_color" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_visit_reports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/ll_visit_invoice_His"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_visit_invoice_His"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_invoices_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/title_invoiceHistory"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_invoice_his_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_inv_his_line"
+                />
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_trends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_visit_trends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_retailer_trends_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/title_retailer_trends"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_trends_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_trends_line"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ll_act_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_visit_act_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_activation_status_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="Activiation Status"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_act_status_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_act_status_line"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ll_coll_his"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_visit_coll_his"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_collection_history_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/title_collection_history"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_coll_his_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_coll_his_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_focused_prd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_focused_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_focused_product_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_focused_product"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_focused_prd_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_focused_prd_line"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ll_new_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_new_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_new_product_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_new_product"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_visit_new_product_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_new_product_line"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_mer_det"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_mer_detils"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_merchindising_snap_small"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:layout_width="@dimen/width_one_twenty_dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_five_dip"
+                    android:layout_marginStart="@dimen/margin_five_dip"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/lbl_merchndising_list"
+                    android:textColor="@color/BLACK"
+                    android:textSize="@dimen/medium_text" >
+                </TextView>
+
+                <ImageButton
+                    android:id="@+id/ib_mer_details_next"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:background="@drawable/my_button"
+                    android:fadingEdge="none"
+                    android:paddingRight="@dimen/padding_five_dip"
+                    android:paddingLeft="@dimen/padding_zero_dip"
+                    android:paddingEnd="@dimen/padding_zero_dip"
+                    android:paddingStart="@dimen/padding_zero_dip"
+                    android:layout_weight="0.9"
+                    android:src="@drawable/ic_start_small"
+                    android:contentDescription="@null"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_point_five_dip"
+                android:background="@color/line_color"
+                android:orientation="vertical"
+                android:id="@+id/ll_mer_details_line"
+                />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

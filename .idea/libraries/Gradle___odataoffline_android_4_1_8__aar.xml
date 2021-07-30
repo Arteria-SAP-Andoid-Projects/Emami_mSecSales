@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :odataoffline-android-4.1.8:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/e63cd035fe7b58df16f5b365726427ce9d45df86/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e63cd035fe7b58df16f5b365726427ce9d45df86/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/e63cd035fe7b58df16f5b365726427ce9d45df86/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/f52285af90e2b54d89a4906e9ac6a07ca56f8a70/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/f52285af90e2b54d89a4906e9ac6a07ca56f8a70/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/f52285af90e2b54d89a4906e9ac6a07ca56f8a70/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/7e466aa4a796489c3689655d369cf0beddfd09f4/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/7e466aa4a796489c3689655d369cf0beddfd09f4/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/7e466aa4a796489c3689655d369cf0beddfd09f4/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c466204c1ff6a49dde1d54be8fdb0f538eacf2e3/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/c466204c1ff6a49dde1d54be8fdb0f538eacf2e3/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/c466204c1ff6a49dde1d54be8fdb0f538eacf2e3/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

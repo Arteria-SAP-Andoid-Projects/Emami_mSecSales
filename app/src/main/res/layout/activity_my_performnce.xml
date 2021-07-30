@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_main_menu_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_my_performance"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_one_dip"
+        android:background="@color/BLACK"
+        tools:ignore="SmallSp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vertical_line_color"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/width_one_twenty_dip"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:background="@color/WHITE">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_kpi"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+          <!--  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/light_alice_blue"
+                android:gravity="center"
+                android:text="@string/lbl_mat_code"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/GREEN"
+                android:textSize="@dimen/medium_text" />-->
+
+
+</LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/width_forty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_lmtd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_width="@dimen/width_forty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_mtd"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_width="@dimen/width_thirty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_gr"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_width="@dimen/width_thirty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_m1"
+            android:id="@+id/perform_mon1"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_width="@dimen/width_thirty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_m2"
+            android:id="@+id/perform_mon2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:layout_width="@dimen/width_thirty_dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_point_one_dip"
+            android:layout_marginRight="@dimen/margin_point_one_dip"
+            android:layout_weight="1"
+            android:background="@color/light_alice_blue"
+            android:gravity="center"
+            android:text="@string/lbl_m3"
+            android:id="@+id/perform_mon3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_height_one_dip"
+        android:background="@color/line_color">
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_my_stock_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+    </ScrollView>
+
+
+</LinearLayout>

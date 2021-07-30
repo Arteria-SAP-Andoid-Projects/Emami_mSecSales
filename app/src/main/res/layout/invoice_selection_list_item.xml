@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:padding="4dp"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:paddingLeft="@dimen/padding_three_dip"
+        android:paddingTop="@dimen/padding_three_dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_one_dip">
+
+
+        <TextView
+            android:id="@+id/tv_invoice_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text=""
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginRight="4dp"
+        android:layout_weight="2.2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_invoice_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_three_dip"
+            android:gravity="right"
+            android:text=""
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_bal_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/padding_three_dip"
+            android:gravity="right"
+            android:text=""
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+        <EditText
+            android:layout_gravity="bottom"
+            android:paddingLeft="@dimen/padding_five_dip"
+            android:paddingRight="@dimen/padding_five_dip"
+            android:id="@+id/ed_invoice_inv_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:layout_weight="2.2"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/black"
+            style="@style/EditBookTextEdit"/>
+
+</LinearLayout>

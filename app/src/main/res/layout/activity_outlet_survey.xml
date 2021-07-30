@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.arteriatech.emami.outletsurvey.OutletSurveyActivity">
+
+    <include layout="@layout/retailer_detail_header_lay" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_column="0"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:text="@string/lbl_Retailers"
+                    android:paddingLeft="@dimen/padding_three_dip"
+                    android:textColor="#000033"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:gravity="center"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.1"
+                    android:text="@string/lbl_semi_colon"
+                    android:textSize="@dimen/medium_text"
+                    android:textColor="@color/BLACK" />
+
+                <Spinner
+                    android:layout_margin="@dimen/margin_two_dip"
+                    android:layout_weight="1"
+                    android:layout_width="@dimen/width_zero_dip"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spnr_retailer_list"
+                    style="@style/spinner_style"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_dist_line"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_height_one_dip"
+                android:background="@color/line_color"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/question_mark"
+                         />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q1"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Spinner
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/Spn_size_area_outlet"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/question_mark"
+                        />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q2"
+                    android:gravity="center|left"
+                    android:paddingLeft="8dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000"/>
+                </LinearLayout>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/Spn_FormatOutlet"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/question_mark"
+                        />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q3"
+                    android:gravity="center|left"
+                    android:paddingLeft="8dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000" />
+                </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_man_power"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textColor="@color/BLACK"
+
+                    style="@style/EditBookTextEdit"
+                    android:inputType="number"
+                    android:maxLength="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/question_mark"
+                        />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q4"
+                    android:gravity="center|left"
+                    android:paddingLeft="8dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="3">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Opening Time"
+                        android:textColor="#000000"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000000"
+                        android:layout_weight="0.1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="@color/BLACK"
+                        style="@style/EditBookTextEdit"
+                        android:id="@+id/et_opening_time"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLines="10"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Closing Time"
+                        android:textColor="#000000"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000000"
+                        android:layout_weight="0.1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_closing_time"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="@color/BLACK"
+                        style="@style/EditBookTextEdit"
+                        android:gravity="center"
+                        android:maxLines="10"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lunch Time"
+                        android:textColor="#000000"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000000"
+                        android:layout_weight="0.1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_lunch_time"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="@color/BLACK"
+                        style="@style/EditBookTextEdit"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:maxLines="10"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/question_mark"
+                        />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Q5"
+                    android:gravity="center|left"
+                    android:paddingLeft="8dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000" />
+                </LinearLayout>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:id="@+id/Spn_home_delivery"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q6"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000"/>
+                    </LinearLayout>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/Spn_outlet_take_order"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q7"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000"/>
+                    </LinearLayout>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spn_Outlet_Billing_System"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q8"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000" />
+                    </LinearLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_check_counter_outlet"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="@color/BLACK"
+                        style="@style/EditBookTextEdit"
+                        android:maxLength="2"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q9"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000" />
+                    </LinearLayout>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/spn_location_outlet"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q10"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000" />
+                    </LinearLayout>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/Spn_hospital_nearby"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q11"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000" />
+                    </LinearLayout>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/Spn_universityNearbyDesc"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q12"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000" />
+                    </LinearLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_window_display_outlet"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textColor="@color/BLACK"
+                        style="@style/EditBookTextEdit"
+                        android:maxLength="3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q13"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000"/>
+                    </LinearLayout>
+                    <com.arteriatech.emami.common.MultipleSelectionSpinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/questionSp13"
+                        android:background="@drawable/spinner_bg"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:theme="@style/DialogTheme"
+                        android:layout_height="wrap_content">
+                    </com.arteriatech.emami.common.MultipleSelectionSpinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/question_mark"
+                            />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Q14"
+                        android:textSize="15dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="8dp"
+                        android:textColor="#000000"/>
+                    </LinearLayout>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:id="@+id/Spn_Outlet_manager"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                </LinearLayout>
+
+
+
+            <!--&lt;!&ndash;  <View
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/_1sdp"
+                  android:background="@color/BLACK" />&ndash;&gt;
+            &lt;!&ndash;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_expense_daily"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/radio_expense_daily" />
+
+                        <RadioButton
+                            android:id="@+id/rb_expense_monthly"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="@string/radio_expense_monthly" />
+                    </RadioGroup>
+                </LinearLayout>&ndash;&gt;
+
+            &lt;!&ndash; <View
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_1sdp"
+                 android:background="@color/BLACK" />&ndash;&gt;
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:id="@+id/retailer_scroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/keyboard_custom_invoice_sel">
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:stretchColumns="2">
+
+                        <TableRow
+                            android:id="@+id/tr_retailer_code"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="3dip"
+                                android:text="Distributor"
+                                android:textColor="#000033"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="1"
+                                android:gravity="top|center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/medium_text" />
+
+                            &lt;!&ndash;<Spinner
+                                android:id="@+id/sp_distributor_name"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:text="" />&ndash;&gt;
+
+                            <TextView
+                                android:id="@+id/tv_retailer_code"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:text=""
+                                android:textColor="#000000" />
+                        </TableRow>
+
+                        <TableRow android:paddingTop="@dimen/padding_three_dip">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="Expense Type"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="top|center"
+                                    android:paddingLeft="@dimen/padding_three_dip"
+                                    android:text="@string/lbl_star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="1"
+                                android:layout_gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+
+                            <Spinner
+                                android:id="@+id/sp_expense_type"
+                                style="@style/spinner_style"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:spinnerMode="dropdown"
+                                android:text="" />
+                        </TableRow>
+
+                        <TableRow>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="Expense Date"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:id="@+id/tv_expense_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:hint="@string/lbl_select_date"
+                                android:maxLength="40"
+                                android:scrollHorizontally="false"
+                                android:textColor="@color/BLACK"
+                                android:textSize="@dimen/medium_text" />
+                        </TableRow>
+
+                        <TableRow android:id="@+id/tr_non_beat_type">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="@string/non_beat_work_type"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <Spinner
+                                android:id="@+id/sp_non_beat_type"
+                                style="@style/spinner_style"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:spinnerMode="dropdown"
+                                android:text="" />
+                        </TableRow>
+
+                        <TableRow android:id="@+id/tr_beat_name">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="Beat Name"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <Spinner
+                                android:id="@+id/sp_beat_name"
+                                style="@style/spinner_style"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:spinnerMode="dropdown"
+                                android:text="" />
+                        </TableRow>
+
+                        &lt;!&ndash;  <TableRow>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="Non Beat Work Type"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <Spinner
+                                android:id="@+id/sp_nonbeat_name"
+                                style="@style/spinner_style"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:spinnerMode="dropdown"
+                                android:text="" />
+                        </TableRow>&ndash;&gt;
+
+                        &lt;!&ndash;  <TableRow>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="Beat Work At"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <Spinner
+                                android:id="@+id/sp_beat_work"
+                                style="@style/spinner_style"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:spinnerMode="dropdown"
+                                android:text="" />
+                        </TableRow>&ndash;&gt;
+
+                        <TableRow>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_beat_work_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="@string/lbl_beat_work_at"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <Spinner
+                                android:id="@+id/sp_beat_work"
+                                style="@style/spinner_style"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:spinnerMode="dropdown"
+                                android:text="" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="Daily Allowance "
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:id="@+id/tv_daily_allowance_mandatory"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            &lt;!&ndash;<Spinner
+                                android:id="@+id/sp_district"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:text="" />&ndash;&gt;
+
+                            <TextView
+                                android:id="@+id/tv_daily_allowance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences|textMultiLine"
+                                android:maxLength="40"
+                                android:scrollHorizontally="false"
+                                android:textColor="@color/BLACK"
+                                android:textSize="@dimen/medium_text" />
+
+                            <EditText
+                                android:id="@+id/et_daily_allowance"
+                                style="@style/EditBookTextEdit"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:inputType="numberDecimal"
+                                android:maxLength="15"
+                                android:scrollHorizontally="true"
+                                android:text=""
+                                android:textColor="@color/BLACK"
+                                android:textSize="@dimen/medium_text"
+                                android:visibility="gone" />
+                        </TableRow>
+
+
+                        <TableRow>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="Mode of Conveyance"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="top|center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <Spinner
+                                android:id="@+id/sp_modeof_con"
+                                style="@style/spinner_style"
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:paddingLeft="5sp"
+                                android:spinnerMode="dropdown"
+                                android:text="" />
+                        </TableRow>
+
+                        <TableRow android:id="@+id/tr_other_conv_layout">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/tv_others"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text=""
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <EditText
+                                android:id="@+id/et_other_conv"
+                                style="@style/EditBookTextEdit"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:maxLength="40"
+                                android:scrollHorizontally="true"
+                                android:text=""
+                                android:textColor="@color/BLACK"
+                                android:textSize="@dimen/medium_text" />
+
+                        </TableRow>
+
+
+                        <TableRow>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_beat_distance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="3dip"
+                                    android:text="@string/lbl_beat_distance"
+                                    android:textColor="#000033"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:width="20dip"
+                                    android:gravity="top|center"
+                                    android:text="@string/star"
+                                    android:textColor="#FF0000"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="top|center"
+                                android:text="@string/lbl_semi_colon"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/medium_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_column="2"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/et_mode_distance"
+                                    style="@style/EditBookTextEdit"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="15"
+                                    android:scrollHorizontally="true"
+                                    android:text=""
+                                    android:textColor="@color/BLACK"
+                                    android:textSize="@dimen/medium_text" />
+
+                                <TextView
+                                    android:id="@+id/conv_uom"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_weight="1.9"
+                                    android:text="km"
+                                    android:textSize="@dimen/medium_text" />
+
+                            </LinearLayout>
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="3dip"
+                                android:text="Fare Total"
+                                android:textColor="#000033"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="top|center"
+                                android:text=":"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:id="@+id/tv_fare_total"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:scrollHorizontally="false"
+                                android:textColor="@color/BLACK"
+                                android:textSize="@dimen/medium_text" />
+
+                            <EditText
+                                android:id="@+id/et_fare_total"
+                                style="@style/EditBookTextEdit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapSentences|textMultiLine"
+                                android:maxLength="40"
+                                android:scrollHorizontally="false"
+                                android:textColor="@color/BLACK"
+                                android:textSize="@dimen/medium_text"
+                                android:visibility="gone" />
+                        </TableRow>
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_column="0"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="3dip"
+                                android:text="Total Day Expenses"
+                                android:textColor="#000033"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:layout_column="1"
+                                android:width="20dip"
+                                android:gravity="top|center"
+                                android:text=":"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:id="@+id/tv_total_daily_expenses"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:scrollHorizontally="false"
+                                android:textColor="@color/BLACK"
+                                android:textSize="@dimen/medium_text" />
+                            &lt;!&ndash; <EditText
+                                 android:id="@+id/et_pan_no"
+                                 style="@style/EditBookTextEdit"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_column="2"
+                                 android:layout_margin="4dp"
+                                 android:layout_weight="1"
+                                 android:visibility="gone"
+                                 android:gravity="left"
+                                 android:imeOptions="actionNext"
+                                 android:inputType="textCapSentences|textMultiLine|textCapCharacters"
+                                 android:maxLength="40"
+                                 android:scrollHorizontally="false"
+                                 android:textColor="@color/BLACK"
+                                 android:textSize="@dimen/medium_text" />&ndash;&gt;
+                        </TableRow>
+
+
+                    </TableLayout>
+
+
+                </ScrollView>
+
+                <android.inputmethodservice.KeyboardView
+                    android:id="@+id/keyboard_custom_invoice_sel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:keyPreviewLayout="@layout/preview"
+                    android:visibility="gone" />
+            </RelativeLayout>-->
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

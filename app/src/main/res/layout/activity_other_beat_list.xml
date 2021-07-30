@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_other_beat_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.arteriatech.emami.routeplan.OtherBeatListActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/HeaderTileBackground"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_retailer_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_other_beats"
+            android:textColor="@color/header_tile_text_color"
+            android:textSize="@dimen/large_text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/WHITE"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_dist_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height_one_dip"
+            android:background="@color/line_color"
+            android:orientation="horizontal">
+        </LinearLayout>
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_beat"
+                android:paddingLeft="3dip"
+                android:textColor="#000033"
+                android:textSize="@dimen/medium_text" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="2dp"
+                android:text="@string/lbl_semi_colon"
+                android:textSize="@dimen/medium_text"
+                android:textColor="@color/BLACK" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_beat_name"
+                android:gravity="center_vertical"
+                android:text=""
+                android:paddingLeft="3dip"
+                android:textColor="#000033"
+                android:textSize="@dimen/medium_text" />
+
+
+        </LinearLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_beat_name"
+            android:text=""
+            android:textColor="@color/BLACK"
+            android:textSize="@dimen/medium_text"
+            android:gravity="center_horizontal"
+            android:background="@color/LBL_BACKGROUND_ASH_COLOR"/>
+        <EditText
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:id="@+id/et_name_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_search_by_retailer_name"
+            android:drawableRight="@android:drawable/ic_menu_search"
+            android:textColor="@color/BLACK"
+            style="@style/EditBookTextEdit"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_height_one_dip"
+            android:background="@color/line_color"
+            android:id="@+id/ll_edit_text_above_line"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_empty_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/lbl_no_records_found"
+            android:textColor="@android:color/black" />
+
+
+        <ListView
+            android:id="@+id/lv_route_ret_list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/BLACK"
+            />
+
+        <!--<include layout="@layout/empty_list_lay" />-->
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

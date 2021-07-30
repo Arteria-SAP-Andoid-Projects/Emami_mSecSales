@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/report_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableRow
+        android:background="@color/GREY"
+        android:id="@+id/tr_soq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/BLACK"
+            android:width="@dimen/_100sdp"
+            android:id="@+id/tv_sqq"
+            android:paddingRight="@dimen/_3sdp"
+            android:height="50dp"
+            android:gravity="right"
+            android:text="@string/lbl_soq"
+            android:textSize="@dimen/medium_text"  />
+        <TextView
+            android:textColor="@color/BLACK"
+            android:width="@dimen/_70sdp"
+            android:id="@+id/tv_qrtystak"
+            android:gravity="right"
+            android:height="50dp"
+            android:text="@string/lbl_ord_qty"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:textColor="@color/BLACK"
+            android:width="@dimen/_100sdp"
+            android:id="@+id/tv_rate"
+            android:text="@string/mat_rate"
+            android:height="50dp"
+            android:gravity="right"
+            android:textSize="@dimen/medium_text" />
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_dbstak"
+            android:width="@dimen/_100sdp"
+            android:text="@string/lbl_db_stock"
+            android:textSize="@dimen/medium_text"
+            android:height="50dp"
+            android:gravity="right" />
+
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_rlstak"
+            android:width="@dimen/_100sdp"
+            android:text="@string/lbl_rl_stock"
+            android:gravity="right"
+            android:height="50dp"
+            android:textSize="@dimen/medium_text" />
+
+
+        <TextView
+            android:textColor="@color/BLACK"
+            android:id="@+id/tv_emoty"
+            android:gravity="center"
+            android:height="50dp"
+            android:text="  "
+            android:textSize="@dimen/medium_text" />
+    </TableRow>
+    <TableRow
+        android:background="@color/GREY"
+        android:id="@+id/tr_items"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp">
+
+
+    </TableRow>
+
+
+</TableLayout>

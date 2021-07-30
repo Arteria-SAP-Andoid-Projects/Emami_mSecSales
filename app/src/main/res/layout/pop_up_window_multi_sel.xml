@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PopUpView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_custom_spinner_bg_clr">
+    <EditText
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:id="@+id/et_retiler_sku_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_Search_by_SKU_Desc"
+        style="@style/EditBookTextEdit"
+        android:visibility="visible"/>
+    <View
+        android:layout_width="fill_parent"
+        android:background="@color/BLACK"
+        android:layout_height="@dimen/_1sdp"/>
+    <TextView
+        android:id="@+id/no_record_found"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/lbl_no_records_found"
+        android:visibility="gone"/>
+    <ScrollView
+        android:id="@+id/scroll_my_stock_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <Button
+            android:layout_margin="@dimen/margin_two_dip"
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            />
+        <Button
+            android:layout_margin="@dimen/margin_two_dip"
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

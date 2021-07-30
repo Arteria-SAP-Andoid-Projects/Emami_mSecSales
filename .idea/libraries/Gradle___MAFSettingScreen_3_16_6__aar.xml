@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: :MAFSettingScreen-3.16.6:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/dffc10ae10fee8ffffde586f5d482101c4542044/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/dffc10ae10fee8ffffde586f5d482101c4542044/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/dffc10ae10fee8ffffde586f5d482101c4542044/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/ea01e3cbac2d0a5dacc32201f3af29ff356942c2/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ea01e3cbac2d0a5dacc32201f3af29ff356942c2/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/ea01e3cbac2d0a5dacc32201f3af29ff356942c2/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/fd152413552fcd9023846ffa6bed579eab457b31/output/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.android/build-cache/fd152413552fcd9023846ffa6bed579eab457b31/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/fd152413552fcd9023846ffa6bed579eab457b31/output/res" />
+      <root url="file://$USER_HOME$/.android/build-cache/0c62081cabaf9abf82b2071e00ffcde9bdaa721c/output/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.android/build-cache/0c62081cabaf9abf82b2071e00ffcde9bdaa721c/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/0c62081cabaf9abf82b2071e00ffcde9bdaa721c/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
